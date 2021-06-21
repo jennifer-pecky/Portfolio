@@ -1,0 +1,29 @@
+.svg-wave{
+    position: absolute;
+    top: 0%;
+    height: 100vh;
+    width: 100%;
+}
+.svg-paths{
+    .path1{
+        animation: swell 3s ease alternate infinite;
+        animation-delay: -2s;
+    }
+    .path2{
+        animation: swell 5s ease alternate infinite;
+        animation-direction: reverse;
+        animation-duration: 5s;
+      
+    }
+}
+  @keyframes swell {
+    0%, 100% {
+      transform: translate3d(-10px,-25px,0);
+    }
+    50% {
+      transform: translate3d(15px,5px,0);
+    }
+  }
+
+
+ 

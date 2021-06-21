@@ -1,0 +1,53 @@
+@import '../../mixins/mixins.scss';
+
+.header{
+    .header-wrapper{
+        min-width: 100%;
+        position: absolute;
+        z-index: 2;
+        top: 20px;
+       @include flex(center, space-between);
+        .logo{
+            margin-left: 5%;
+            img{
+                width: 30%;
+            }
+        }
+        .menu-btn, .social-icons{
+            margin-right: 5%;
+            .line1, .line2{
+                width: 30px;
+                height: 3px;
+                background-color: #D7AD9D;
+                margin: 3px 0;
+            }
+        }
+        .gmail-text{
+           position: absolute;
+           color: white;
+           bottom: -600%;
+           transform: rotate(-90deg);
+           left: -3%;
+        }
+        .social-icons{
+          ul{
+              li{
+                  img{ 
+                      max-width: 2%;
+                    }
+                .icon1, .icon2, .icon3, .icon4{
+                    font-size: 48px;
+                    right: 5%;
+                    bottom: -690%;
+                    position: absolute;
+                    color: #C3C3C3;
+                  }
+                  .icon1{margin-bottom: 40px;}
+                  .icon2{margin-bottom: -2px;}
+                  .icon3{margin-bottom: -45px;}
+                  .icon4{margin-bottom: -87px;}
+              }
+          }
+        }
+    }
+}
