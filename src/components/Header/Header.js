@@ -1,10 +1,10 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import logoImg from '../../Assets/logo-small.png';
-import github from '../../Assets/github-square-brands.svg';
-import IG from '../../Assets/instagram-square-brands.svg';
-import twitter from '../../Assets/twitter-square-brands.svg';
-import linkedin from '../../Assets/linkedin-brands.svg';
+import github from '../../Assets/Vector-github.svg';
+import IG from '../../Assets/Vector-IG.svg';
+import twitter from '../../Assets/Vector-twitter.svg';
+import linkedin from '../../Assets/Vector-linkedin.svg';
 import './Header.scss';
 
 
@@ -13,9 +13,11 @@ const Header = () => {
     return(
      <div className = "header">
         <div className="header-wrapper">
+        <Link to="/" className="logo-link">
         <div className = "logo">
          <img src={logoImg} alt="logo" />
          </div>
+        </Link>
          <div className="menu-btn">
              <div className="line1"></div>
              <div className="line2"></div>

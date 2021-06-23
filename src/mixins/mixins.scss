@@ -1,7 +1,58 @@
-
+$peachprimary: #D7AD9D;
+$peachlight: #D9C6C0;
+$lightblue: #D0DBF8;
+$greyprimary: #C3C3C3;
+$white: #ffffff;
 
   @mixin flex($align,$justify) {
     display: flex;
     align-items: $align;
     justify-content: $justify;
+}
+@mixin background{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+@mixin widthandheight{
+    width: 100%;
+    height: 100vh;
+}
+@mixin scroll($bottom){
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    cursor: pointer;
+    @media screen and (max-width: 768px) {
+        color: $peachprimary;
+        bottom: $bottom;
+        left: 48%;
+        img{
+            width: 60%;
+        }
+    }
+    p{
+        color: $white;
+        font-weight: bold;
+        position: relative;
+        top: 30px;
+        right: 35px;
+        @media screen and (max-width: 768px) {
+            color: $peachprimary;
+            top: 25px;
+            right: 45px;
+        }
+        &:hover{color: $peachlight;}
+    }
+}
+
+@mixin back($top) {
+    position: absolute;
+    right: 5%;
+    top: $top;
+    font-size: 14px;
+    color: $white;
+    @media screen and (max-width:768px) {
+        top: 17%;
+     } 
 }

@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Peralta&display=swap');
+
+$peachprimary: #D7AD9D;
+$peachlight: #D9C6C0;
+$lightblue: #D0DBF8;
+$greyprimary: #C3C3C3;
+$white: #ffffff;
+$projectcolor: #3F3F3F;
+
+@import '../../mixins/mixins.scss';
+
+
+#uiux-section{
+    @include widthandheight;
+    background-image: linear-gradient(to bottom, rgba(24, 23, 23, 0.911), rgba(22, 21, 21, 0.911)), url("../../Assets/uiux-img.jpg");
+    @include background;
+}
+#wordpress-section{
+    @include widthandheight;
+    background-image: linear-gradient(to bottom, rgba(24, 23, 23, 0.911), rgba(22, 21, 21, 0.911)), url("../../Assets/elementor.png");
+    @include background;  
+}
+
+.main-section{
+   @include widthandheight;
+    background-image: linear-gradient(to bottom, rgba(24, 23, 23, 0.911), rgba(22, 21, 21, 0.911)), url("../../Assets/Web-development.jpg");
+    @include background;
+    @media screen and (max-width: 768px) {
+      height: 90vh;
+    }
+    .hero{
+        @include widthandheight;
+        .back{
+            @include back(20%);
+        }
+        .hero-text{
+          color: white;
+          width: 45%;
+          position: absolute;
+          top: 27%;
+          left: 17%;
+          @media screen and (max-width: 768px) {
+              width: 90%;
+              height: 100%;
+              left: 5%;
+          }
+          h1{
+              font-size: 38px;
+              width: 40%;
+              @media screen and (max-width: 768px) {
+                width: 90%;
+            }
+            }
+            p{
+                line-height: 1.5;
+                margin-top: 23px;
+            }
+        }
+            .scroll-bar, .scroll-text{
+                @include scroll(2%);
+                @media screen and (max-width: 768px) {
+                   @include scroll(16%);
+                }
+            }
+    }
+}
+
+.project-section{
+   height: 100vh;
+   @media screen and (max-width: 768px) {
+       padding: 50px 0;
+   }
+   .title{
+     @include flex(center, flex-start);
+     padding: 25px 80px;
+       .line{
+     width: 80px;
+     height: 4px;
+     background-color: $peachlight;
+       }
+       .text{
+           font-size: 24px;
+           color: $projectcolor;
+       p{
+           font-family: 'Peralta', cursive;
+           margin: 0 10px;
+        }
+       }
+   }
+   .projects{
+    padding: 25px 80px;
+    @media screen and (max-width: 768px) {
+        padding: 25px 20px;
+    }
+       .project-1{
+          @include flex(center, center);
+          @media screen and (max-width: 768px) {
+            flex-direction: column;  
+          }
+           .project-img{
+              flex: 2;
+              border: 50px solid $peachlight;
+              margin-right: 40px;
+              cursor: pointer;
+              @media screen and (max-width: 768px) {
+                border: 20px solid $peachlight;
+                margin-bottom: 30px;
+                margin-right: 5px;
+              }
+              img{
+                  max-width: 100%;
+              }
+           }
+           #img-2{
+            border: 50px solid $lightblue;
+            @media screen and (max-width: 768px) {
+                border: 20px solid $lightblue;
+              }
+          }  
+          #img-3{
+            border: 50px solid $greyprimary;
+            @media screen and (max-width: 768px) {
+                border: 20px solid $greyprimary;
+              }
+          }  
+           .project-text{
+              flex: 1;
+              margin-left: 40px;
+              @media screen and (max-width: 768px) {
+                margin-left: 0;
+            }
+              ul{
+                  padding: 16px 0;
+                  li{
+                      display: inline;
+                      margin-right: 10px;
+                      font-family: 'Montserrat', sans-serif;
+                  }
+              }
+              .links{                
+                  .livelink{
+                  display: flex;
+                  flex-direction: column;
+                
+                .link{
+                  display: inline-flex;
+                  margin: 4px 0;
+                    p{
+                        color: $peachprimary;
+                        font-weight: bold;
+                        text-decoration: underline;
+                        text-decoration-color: $peachprimary;
+                      }
+                      img{
+                        max-width: 5%;
+                        margin-left: 10px;
+                    }
+                }
+                  }
+              }
+           }
+       }
+   }
+}
