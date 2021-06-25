@@ -63,17 +63,21 @@ $white: #ffffff;
             font-weight: bold;
             background-color: $peachprimary;
             cursor: pointer;
+            border: none;
             &:hover{
                 background-color: $peachlight;
             }
         }
     }
-    
     .hero-img{
         flex: 1;
         position: relative;
         left: -5%;
         top: 23%;
+        overflow: hidden;
+        @media screen and (max-width: 768px) {
+         overflow: visible;   
+        }
         img{
             max-width: 80%;
             @media screen and (max-width: 768px) {
@@ -83,10 +87,6 @@ $white: #ffffff;
               top: -85%;
             }
         }
-    }
-
-    .scroll-bar, .scroll-text{
-        @include scroll(2%);
     }
 }
 

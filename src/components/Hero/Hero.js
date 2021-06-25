@@ -1,41 +1,33 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 import {SvgWave} from '../../Svg/Svg';
 import heroimage from '../../Assets/Hero-img.png';
 import handWave from '../../Assets/bye-hand.png';
-import scrollbar from '../../Assets/Vector.svg';
 import './Hero.scss';
-import Header from '../Header/Header';
+//Animations
+import {motion} from 'framer-motion';
+import { pageAnim, heroAnim, heroh1, fadein, imgAnim } from '../../Animation';
+import { useHistory } from 'react-router-dom';
 
 
 
 const Hero = () => {
 
-    return(
- <section className="hero-section">
-   <Header />
+let history = useHistory();
+
+    return(     
+ <motion.section className="hero-section" exit="exit" variants={pageAnim} initial="hidden" animate="show">
    <div className="hero-dark">
    <SvgWave />
    <div className="hero-text">
-   <h1 className="hero-h1">Hi <img src={handWave} className="hand" alt="wave" /></h1>
-   <h3>I’m <span>Rachel Tomi</span>, i’m here to make your web experience seemless</h3>
-   <button className="hero-btn">Get in touch</button>
+   <motion.h1 variants={heroh1} className="hero-h1">Hi <img src={handWave} className="hand" alt="wave" /></motion.h1>
+   <motion.h3 variants={heroAnim}>I’m <span>Rachel Tomi</span>, i’m here to make your web experience seemless</motion.h3>
+   <motion.button variants={fadein} className="hero-btn" onClick={() => history.push('/skillset')}>View my Skillsets</motion.button>
    </div>
    </div>
      <div className="hero-img">
-   <img src={heroimage} alt="Rachel tomi" />
+   <motion.img variants={imgAnim} src={heroimage} alt="Rachel tomi" />
      </div>
-    <div className="scroll-div">
-    <Link to="/skillset">
-    <div className="scroll-bar">
-         <img src={scrollbar} className="scroll" alt="scroll-down" />
-     </div>
-  <div className="scroll-text">
-     <p>View my skillset</p>
-     </div>
-  </Link>
-    </div>
- </section>       
+ </motion.section>      
  )
 }
 

@@ -6,20 +6,27 @@ import project2 from '../../../Assets/Paybox-screenshot.png';
 import externallinkicon from '../../../Assets/external-link-alt-solid.svg';
 import githubicon from '../../../Assets/github-brands.svg';
 import Footer from '../../Footer/Footer';
+//import {scroll} from '../../../Animation';
 
 const FrontProjects = () => {
+
+//let projects = useRef(null)
+
+//useEffect(()=> {
+   // scroll(projects);
+//})
 
     return(
        <div className="project-section">
          <div className="title">
              <div className="line"></div>
              <div className="text">
-                 <p>Projects</p>
+                 <p className="small-h">Projects</p>
              </div>
          </div>
 
-        <div className="projects">
-        <div className="project-1">
+        <div className=" projects">
+        <div className="panel project-1"  /*ref={(el) => (projects = el)}*/>
         <div className="project-img">
       <img src={project1} alt="project" />
         </div>
@@ -55,8 +62,8 @@ const FrontProjects = () => {
         </div>    
         </div> 
 
-        <div className="projects">
-        <div className="project-1">
+        <div className=" projects">
+        <div className="panel project-1">
         <div className="project-img" id="img-2">
       <img src={project2} alt="project" />
         </div>
@@ -95,7 +102,7 @@ const FrontProjects = () => {
         </div> 
 
         <div className="projects">
-        <div className="project-1">
+        <div className="panel project-1">
         <div className="project-img" id="img-3">
       <img src={project3} alt="project" />
         </div>
@@ -132,6 +139,7 @@ const FrontProjects = () => {
         </div> 
         <Footer />
        </div>
+    
        
     )
 }

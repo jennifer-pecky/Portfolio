@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import scrollbar from '../../../Assets/Vector.svg';
-
+import {motion} from 'framer-motion';
+import { heroAnim } from '../../../Animation';
 
 const FrontendHero = () => {
 
@@ -12,14 +12,11 @@ const FrontendHero = () => {
      <p className="back">Back to Skillsets</p>
      </Link>
      <div className="hero-text">
-          <h1>Front end Development</h1>
-          <p>sample text  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo. sample text sample text . sample text  Sed ut perspiciatis unde omnis iste natu  totam rem aperiam,
+          <motion.h1 variants={heroAnim}>Front end Development</motion.h1>
+          <motion.p variants={heroAnim}>sample text  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo. sample text sample text . sample text  Sed ut perspiciatis unde omnis iste natu  totam rem aperiam,
                eaque ipsa quae ab . sample text  sample text.
-         </p>
+         </motion.p>
       </div>
-      <div className="scroll-bar">
-         <img src={scrollbar} className="scroll" alt="scroll-down" />
-     </div>
      </div>
      </section>
     )

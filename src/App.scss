@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Laila:wght@500&family=Montserrat:wght@800&family=Poppins:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Peralta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -19,3 +20,7 @@ p{
     font-family: 'Poppins', sans-serif;
     letter-spacing: 0.2px;
 }
+.small-h{
+    font-family: 'Peralta', cursive;
+    margin: 0 10px;
+ }

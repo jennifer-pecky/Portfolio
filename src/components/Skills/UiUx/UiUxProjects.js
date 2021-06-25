@@ -14,7 +14,7 @@ const UiUxProjects = () => {
          <div className="title">
              <div className="line"></div>
              <div className="text">
-                 <p>Projects</p>
+                 <p className="small-h">Projects</p>
              </div>
          </div>
 
