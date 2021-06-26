@@ -4,6 +4,7 @@ import github from '../../Assets/Vector-github.svg';
 import IG from '../../Assets/Vector-IG.svg';
 import twitter from '../../Assets/Vector-twitter.svg';
 import linkedin from '../../Assets/Vector-linkedin.svg';
+import logoimg from '../../Assets/Hero-img.png';
 import Navigation from './Navigation';
 import './Header.scss';
 
@@ -22,7 +23,7 @@ const closeMenu = () => setClick(!click);
         {click && <Navigation closeMenu={closeMenu}  /> }
         <div className="header-wrapper">
         <Link to="/" className="logo-link">
-            <h2>RT</h2>
+           <img src={logoimg} className="logo-img" alt="logo" />
         </Link>
       
          <div className={click ? "menu-btn open" :  "menu-btn"} onClick={handleClick}>

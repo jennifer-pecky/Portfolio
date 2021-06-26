@@ -14,7 +14,7 @@ const Skillset= () => {
          <SvgWave />
          <div className="skills-div">
      <Link to="/">
-     <p className="back">Back to home</p>
+     <p className="back">&larr;</p>
      </Link>
          <div className="skill-h1">
          <motion.h1 variants={heroh1}>My <br />skillset</motion.h1>
@@ -23,19 +23,19 @@ const Skillset= () => {
              <motion.div variants={heroAnim} className="frontend">
                  <h2>Front end development</h2>
                  <Link to="/frontend" className="skill-link">
-                     <p>View more</p>
+                  <p>&rarr;</p>
                  </Link>
              </motion.div>
              <motion.div variants={heroAnim} className="uiux">
                  <h2>Ui/Ux Design</h2>
                  <Link to="/uiux" className="skill-link">
-                     <p>View more</p>
+                 <p>&rarr;</p>
                  </Link>
              </motion.div>
              <motion.div variants={heroAnim} className="wordpress">
                  <h2>Wordpress Development</h2> 
                  <Link to="/wordpress" className="skill-link">
-                     <p>View more</p>
+                 <p>&rarr;</p>
                  </Link>
              </motion.div>
              </div>

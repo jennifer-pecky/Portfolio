@@ -10,7 +10,7 @@ const UiUxHero = () => {
      <section className="main-section" id="uiux-section">
      <div className="hero">
      <Link to="/skillset">
-     <p className="back">Back to Skillsets</p>
+     <p className="back">&larr;</p>
      </Link>
      <div className="hero-text">
           <motion.h1 variants={heroAnim}>Ui/Ux Design</motion.h1>

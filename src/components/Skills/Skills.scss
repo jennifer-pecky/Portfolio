@@ -30,6 +30,7 @@ $projectcolor: #3F3F3F;
         @include widthandheight;
         .back{
             @include back(20%);
+            font-size: 24px;
         }
         .hero-text{
           color: white;
@@ -128,7 +129,8 @@ $projectcolor: #3F3F3F;
                   li{
                       display: inline;
                       margin-right: 10px;
-                      font-family: 'Montserrat', sans-serif;
+                      font-family: 'Noto Serif', serif;
+                      font-weight: bold;
                   }
               }
               .links{                

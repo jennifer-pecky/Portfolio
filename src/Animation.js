@@ -4,7 +4,7 @@
 export const pageAnim = {
    hidden: {
        opacity: 0,
-       scaleY: 0.1,
+       scaleY: 0.7,
    },
    show: {
        opacity: 1,
@@ -17,7 +17,7 @@ export const pageAnim = {
    },
    exit: {
     opacity: 0,
-    scaleY: 0.1
+    scaleY: 0.7
    }
 }
 

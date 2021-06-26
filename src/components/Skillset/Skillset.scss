@@ -13,6 +13,7 @@ $white: #ffffff;
     .skills-div{
         display: flex;
         flex-direction: column;
+        width: 70%;
         margin-top: 10%;
         margin-left: 17%;
         @media screen and (max-width:768px) {
@@ -20,10 +21,11 @@ $white: #ffffff;
          }
         .back{  
            @include back(20%);
+           font-size: 24px;
            }
         .skill-h1{
             h1{
-                color: $white;
+                color: $peachprimary;
                 text-align: left;
                 margin-bottom: 60px;
                 font-size: 48px;  
@@ -41,7 +43,7 @@ $white: #ffffff;
                flex-direction: column; 
             }
             .frontend, .uiux, .wordpress{
-                text-align: center;
+                text-align: left;
                 margin-right: 100px;
                 @media screen and (max-width:768px) {
                    margin-bottom: 25px;
@@ -55,10 +57,11 @@ $white: #ffffff;
                       } 
                 }
                 .skill-link{
-                    text-decoration-color: $peachprimary;
+                   /* text-decoration-color: $peachprimary;*/
+                   text-decoration: none;
                     font-weight: bold;
                     color: $white;
-                 p{ margin-top: 10px;}
+                 p{ margin-top: 5px; font-size: 24px;}
                 }
             }
         }
