@@ -9,6 +9,7 @@ $white: #ffffff;
 @import '../../mixins/mixins.scss';
 
 .header{
+     
     .header-wrapper{
         position: absolute;
         min-width: 100%;
@@ -16,7 +17,8 @@ $white: #ffffff;
         z-index: 2;
         /*top: -5px;*/
         top: 25px;
-       @include flex(center, space-between);    
+       @include flex(center, space-between); 
+      
             .logo-link{
                 margin-left: 5%;
                 text-decoration: none;
@@ -59,12 +61,19 @@ $white: #ffffff;
         .gmail-text{
            position: absolute;
            color: $greylight2;
-           bottom: -1000%;
+           bottom: -1050%;
            transform: rotate(-90deg);
            left: -4%;
            font-size: 13px;
            @media screen and (max-width: 768px) {
                display: none;
+           }
+           a{
+               color: $greylight2;
+               text-decoration: none;
+               &:hover{
+                   color: $greyprimary;
+               }
            }
         }
         .social-icons{
@@ -129,6 +138,11 @@ $white: #ffffff;
                 text-align: center;
                 li{
                     margin: 20px 0; 
+                    transition: all 0.3s ease-in-out;
+                    &:hover{
+                        color: $white;
+                        transform: scale(1.2);
+                    }
                 }
             }
          

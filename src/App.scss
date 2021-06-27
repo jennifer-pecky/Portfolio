@@ -1,6 +1,4 @@
-
-//@import url('https://fonts.googleapis.com/css2?family=Laila:wght@500&family=Montserrat:wght@800&family=Poppins:wght@300&display=swap');
-//@import url('https://fonts.googleapis.com/css2?family=Peralta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Peralta&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
 *{
@@ -12,18 +10,12 @@ html, body{
     height: 100%;
 }
 h1, h2, h3, h4, h5, h6{
-    /*font-family: 'Montserrat', sans-serif;*/
-   /*font-family: Georgia,times new roman,Times,serif;*/
    font-family: 'Noto Serif', serif;
 }
 .hero-h1, .herotext-h3, .project-h1{
-    /*font-family: 'Laila', sans-serif;*/
-    /*font-family: Georgia,times new roman,Times,serif;*/
     font-family: 'Noto Serif', serif;
 }
 p{
-    /*font-family: 'Poppins', sans-serif;*/
-   /* font-family: Georgia,times new roman,Times,serif;*/
     font-family: 'Noto Serif', serif;
     letter-spacing: 0.2px;
     line-height: 1.5;
@@ -32,3 +24,6 @@ p{
     font-family: 'Peralta', cursive;
     margin: 0 10px;
  }
+ .talk{
+    font-family: 'Charmonman', cursive;  
+}

@@ -14,10 +14,11 @@ $white: #ffffff;
         display: flex;
         flex-direction: column;
         width: 70%;
-        margin-top: 10%;
+        margin-top: 13%;
         margin-left: 17%;
         @media screen and (max-width:768px) {
            margin-top: 56%;
+           width: 100%;
          }
         .back{  
            @include back(20%);
@@ -25,29 +26,32 @@ $white: #ffffff;
            }
         .skill-h1{
             h1{
-                color: $peachprimary;
-                text-align: left;
-                margin-bottom: 60px;
-                font-size: 48px;  
+               @include headings(80px);
                 @media screen and (max-width:768px) {
-                   font-size: 36px;
-                   text-align: center;
-                   margin-right: 60px;
+                   font-size: 24px;
                  }
               }
+              .underline{
+              @include line(-75px);
+            }
         }
+     
         .skills{
             display: flex;
             margin-top: -20px;
             @media screen and (max-width:768px) {
                flex-direction: column; 
             }
+            .skills-heading{
+                color: $white;
+                text-decoration: none;
+                font-size: 24px;
+            }
             .frontend, .uiux, .wordpress{
                 text-align: left;
                 margin-right: 100px;
                 @media screen and (max-width:768px) {
                    margin-bottom: 25px;
-                   margin-left: 35px;
                  }
                 h2{
                     color: $white;
@@ -57,11 +61,10 @@ $white: #ffffff;
                       } 
                 }
                 .skill-link{
-                   /* text-decoration-color: $peachprimary;*/
                    text-decoration: none;
                     font-weight: bold;
-                    color: $white;
-                 p{ margin-top: 5px; font-size: 24px;}
+                    color: $peachlight;
+                 p{ font-size: 24px;}
                 }
             }
         }

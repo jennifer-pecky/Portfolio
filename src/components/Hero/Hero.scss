@@ -13,23 +13,24 @@ $white: #ffffff;
     position: fixed;
     @media screen and (max-width: 768px) {
         flex-direction: column;
+        height: 100%;
     }
     .hero-dark{
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 70px;
+        gap: 110px;
         flex: 1;
         @media screen and (max-width: 768px) {
             top: -20%;
+            gap: 73px;
            }
         .hero-text{
             flex: 1;
             position: relative;
             top: 7%;
-            left: 13%;
             @media screen and (max-width: 768px) {
-                top: 30%;
+                top: 25%;
                 width: 80%;
                 left: -12%;
                }
@@ -39,7 +40,7 @@ $white: #ffffff;
               font-size: 22px;
               margin: 10px 0;
               @media (max-width: 768px) {
-                  font-size: 36px;
+                font-size: 22px;
               }
           } 
           h3{
@@ -58,7 +59,7 @@ $white: #ffffff;
               transform-origin: 70% 70%;
               width: 3%;
               @media screen and (max-width: 768px) {
-                  width: 8%;
+                  width: 5%;
               }
           }
         } 
@@ -69,6 +70,7 @@ $white: #ffffff;
             background-color: $peachprimary;
             cursor: pointer;
             border: none;
+            transition: all 0.5s ease-in-out;
             &:hover{
                 background-color: $peachlight;
             }
@@ -77,22 +79,22 @@ $white: #ffffff;
     .hero-img{
         flex: 1;
         position: relative;
-        left: 18%;
-        top: 16%;
+        left: 6%;
+        top: 23%;
         overflow: hidden;
+        width: 100%;
         @media screen and (max-width: 768px) {
          overflow: visible;   
+         top: 15%;
+         left: 5%;
         }
         img{
-            max-width: 100%;
-            height: 400px;
+            max-width: 66%;
+            border-radius: 12px;
             @media screen and (max-width: 768px) {
-             width: 80%;
-             height: 180px;
+             max-width: 100%;
+             height: 230px;
              object-fit: cover;
-              position: relative;
-              left: -12%;
-              top: 3%;
             }
         }
     }

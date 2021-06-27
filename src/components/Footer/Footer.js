@@ -25,10 +25,10 @@ const Footer = () => {
           <div className="footer-base">
          <div className="footer-icons">
          <ul>
-              <li><Link to="/" className="footer-social-icon">Home</Link></li>
-              <li><Link to="/" className="footer-social-icon">About me</Link></li>
-              <li><Link to="/" className="footer-social-icon">My Skillset</Link></li>
-              <li><Link to="/" className="footer-social-icon">My Blog</Link></li>
+              <li><Link to="/" className="footer-menu">Home</Link></li>
+              <li><Link to="/" className="footer-menu">About me</Link></li>
+              <li><Link to="/" className="footer-menu">My Skillset</Link></li>
+              <li><Link to="/" className="footer-menu">My Blog</Link></li>
           </ul>
          </div>
           <div className="footer-t">

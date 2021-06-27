@@ -1,6 +1,6 @@
 import React from 'react';
 import {SvgWave} from '../../Svg/Svg';
-import heroimage from '../../Assets/bandw.jpg';
+import heroimage from '../../Assets/bandw4.png';
 import handWave from '../../Assets/bye-hand.png';
 import './Hero.scss';
 //Animations

@@ -36,16 +36,19 @@ $projectcolor: #3F3F3F;
           color: white;
           width: 45%;
           position: absolute;
-          top: 27%;
+          top: 30%;
           left: 17%;
           @media screen and (max-width: 768px) {
               width: 90%;
               height: 100%;
-              left: 5%;
+              left: 0;
+              margin: 0 25px;
+          }
+          .underline{
+              @include line(-15px);
           }
           h1{
-              font-size: 38px;
-              width: 40%;
+             @include headings(15px);
               @media screen and (max-width: 768px) {
                 width: 90%;
             }
@@ -60,17 +63,12 @@ $projectcolor: #3F3F3F;
 
 .project-section{
    height: 100vh;
-/*
-   display:flex;
-   flex-wrap:wrap;
-   flex-direction:column;
-  */
    @media screen and (max-width: 768px) {
-       padding: 50px 0;
+    padding: 50px 0px;
    }
    .title{
      @include flex(center, flex-start);
-     padding: 25px 80px;
+     padding: 25px 50px;
        .line{
      width: 80px;
      height: 4px;
@@ -82,19 +80,19 @@ $projectcolor: #3F3F3F;
        }
    }
    .projects{
-    padding: 25px 80px;
-
+    padding: 25px 50px;
     @media screen and (max-width: 768px) {
-        padding: 25px 20px;
+        padding: 25px 30px;
     }
        .project-1{
          @include flex(center, center);
           @media screen and (max-width: 768px) {
             flex-direction: column;  
+           
           }
            .project-img{
-              flex: 2;
-              border: 50px solid $peachlight;
+              flex: 1;
+              border: 30px solid rgba(190, 192, 74, 0.774);
               margin-right: 40px;
               cursor: pointer;
               @media screen and (max-width: 768px) {
@@ -107,20 +105,22 @@ $projectcolor: #3F3F3F;
               }
            }
            #img-2{
-            border: 50px solid $lightblue;
+            border: 30px solid rgb(164, 219, 217);
             @media screen and (max-width: 768px) {
                 border: 20px solid $lightblue;
               }
           }  
-          #img-3{
-            border: 50px solid $greyprimary;
-            @media screen and (max-width: 768px) {
-                border: 20px solid $greyprimary;
-              }
-          }  
+        
            .project-text{
               flex: 1;
-              margin-left: 40px;
+              margin-left: 30px;
+              .project-h1{
+                  font-size: 28px;
+               @media screen and (max-width: 768px) {
+                font-size: 24px;
+                margin: 10px 0;
+               }
+            }
               @media screen and (max-width: 768px) {
                 margin-left: 0;
             }

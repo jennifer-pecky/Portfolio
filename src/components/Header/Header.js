@@ -7,6 +7,8 @@ import linkedin from '../../Assets/Vector-linkedin.svg';
 import logoimg from '../../Assets/Hero-img.png';
 import Navigation from './Navigation';
 import './Header.scss';
+import {motion} from 'framer-motion';
+import {lineAnim, lineAnimContainer, navAnim} from '../../Animation';
 
 
 const Header = () => {
@@ -19,9 +21,9 @@ const closeMenu = () => setClick(!click);
 
     return(
      <div className = "header">
-       
-        {click && <Navigation closeMenu={closeMenu}  /> }
-        <div className="header-wrapper">
+        
+        {click && <Navigation closeMenu={closeMenu} clicked={click}  /> }
+        <motion.div className="header-wrapper"  exit="exit" variants={lineAnimContainer} initial="hidden" animate="show">
         <Link to="/" className="logo-link">
            <img src={logoimg} className="logo-img" alt="logo" />
         </Link>
@@ -34,7 +36,7 @@ const closeMenu = () => setClick(!click);
 
          <div className="header-wrapper">
         <div className = "gmail-text">
-        <p>Let's chat &rarr; tomisinrachel@gmail.com</p>
+        <a href="mailto:folorunshotosin334@gmail.com">Let's chat &rarr; tomisinrachel@gmail.com</a>
          </div>
          <div className="social-icons">
            <ul>
@@ -62,7 +64,7 @@ const closeMenu = () => setClick(!click);
          </div>
 
          </div>
-        </div>
+        </motion.div>
      </div>
     )
 }

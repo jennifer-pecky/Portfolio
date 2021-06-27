@@ -10,7 +10,7 @@ $greyprimary: #C3C3C3;
 
 .main-footer{
     background-color: $black;
-    padding: 50px 80px;
+    padding: 50px;
     margin-top: 30px;
     padding-bottom: 0;
     h4{color: $peachprimary;}
@@ -28,9 +28,7 @@ $greyprimary: #C3C3C3;
                 padding: 20px 0;
             }
         }
-        .talk{
-            font-family: 'Charmonman', cursive;
-        }
+       
        }
        .talk-arrow{margin-left: 20px;}
     }
@@ -56,20 +54,28 @@ $greyprimary: #C3C3C3;
        flex-direction: column;
     }
     .footer-icons{
+        @media screen and (max-width:768px) {
+           margin-right: 60px;
+           }
         ul{
             display: flex;
             list-style: none;
+           
             li{
                 margin-right: 20px;
                 @media screen and (max-width:768px) {
                    margin-right: 15px;
                    font-size: 14px;
                 }
-              .footer-social-icon{
+              .footer-menu{
                   color: $white;
                   text-decoration: none;
                   font-family: 'Poppins', sans-serif;
                   font-weight: bold;
+                  transition: all 0.4s ease-in-out;
+                  &:hover{
+                      color: $peachlight;
+                  }
               }
             }
     }
@@ -79,6 +85,9 @@ $greyprimary: #C3C3C3;
         width: 100%; 
         color: $greyprimary;
         font-size: 14px;
+        @media screen and (max-width:768px) {
+          margin-right: 75px;
+         }  
     }
 }
 }
