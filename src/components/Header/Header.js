@@ -4,11 +4,11 @@ import github from '../../Assets/Vector-github.svg';
 import IG from '../../Assets/Vector-IG.svg';
 import twitter from '../../Assets/Vector-twitter.svg';
 import linkedin from '../../Assets/Vector-linkedin.svg';
-import logoimg from '../../Assets/Hero-img.png';
+import logoimg from '../../Assets/bandw4.png';
 import Navigation from './Navigation';
 import './Header.scss';
 import {motion} from 'framer-motion';
-import {lineAnim, lineAnimContainer, navAnim} from '../../Animation';
+import {lineAnimContainer} from '../../Animation';
 
 
 const Header = () => {

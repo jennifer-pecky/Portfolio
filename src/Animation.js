@@ -1,8 +1,7 @@
 
 export const pageAnim = {
    hidden: {
-       opacity: 0,
-       scaleY: 0.7,
+       opacity: 0
    },
    show: {
        opacity: 1,
@@ -14,9 +13,21 @@ export const pageAnim = {
        }
    },
    exit: {
-    opacity: 0,
-    scaleY: 0.7
+    opacity: 0
    }
+}
+
+export const pagelineAnim = {
+    hidden: {
+        y: '-130%'
+    },
+    show: {
+        y: '100%',
+        transition: {
+            ease: "easeOut", 
+            duration: 0.8
+        }
+    }
 }
 
 export const navAnim = {
@@ -102,7 +113,7 @@ export const lineAnim = {
         skew: '0deg',
         transition: {
             ease: "easeOut", 
-            duration: 0.4
+            duration: 0.7
         }
     }
 }

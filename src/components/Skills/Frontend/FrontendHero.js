@@ -1,12 +1,13 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import {motion} from 'framer-motion';
-import { heroAnim } from '../../../Animation';
+import { heroAnim} from '../../../Animation';
 
 const FrontendHero = () => {
 
     return(
      <section className="main-section">
+    
      <div className="hero">
      <Link to="/skillset">
      <p className="back">&larr;</p>

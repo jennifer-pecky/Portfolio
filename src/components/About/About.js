@@ -5,18 +5,15 @@ import downloadicon from '../../Assets/download-icon.png';
 import rightarrow from '../../Assets/Right-arrow.png';
 //Animations
 import {motion} from 'framer-motion';
-import { heroAnim, heroh1, imgAnim, pageAnim } from '../../Animation';
+import { heroAnim, heroh1, imgAnim, pageAnim,pagelineAnim } from '../../Animation';
 
 
 const About = () => {
 
     return(
-    <motion.div
-    exit="exit" 
-    variants={pageAnim} 
-    initial="hidden" 
-    animate="show"
-    className="main-main">
+    <motion.div exit="exit" variants={pageAnim} initial="hidden" animate="show"className="main-main">
+       <motion.div className="pageline-div" variants={pagelineAnim}></motion.div>
+     <motion.div className="pageline-div" variants={pagelineAnim}></motion.div>   
      <div className="content">
            <div className="small-heading">
                  <motion.p variants={heroh1} className="small-h">About Me</motion.p>

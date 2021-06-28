@@ -3,6 +3,7 @@ $peachlight: #D9C6C0;
 $lightblue: #D0DBF8;
 $greyprimary: #C3C3C3;
 $white: #ffffff;
+$black: #222223;
 
   @mixin flex($align,$justify) {
     display: flex;
@@ -57,5 +58,21 @@ $white: #ffffff;
     transition: all 0.5s ease-in-out;
     &:hover{
         background-color: $peachlight;
+    }
+}
+
+@mixin pagelineAnim {
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100vh;
+    background-color: $black;
+    z-index: 2;
+    &:nth-child(2){
+        background-color: rgb(26, 25, 25);
+    }
+    &:nth-child(3){
+        background-color: rgb(26, 26, 26);
     }
 }

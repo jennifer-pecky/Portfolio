@@ -5,7 +5,7 @@ import handWave from '../../Assets/bye-hand.png';
 import './Hero.scss';
 //Animations
 import {motion} from 'framer-motion';
-import { pageAnim, heroAnim, heroh1, fadein, imgAnim } from '../../Animation';
+import { pageAnim, heroAnim, heroh1, fadein, imgAnim, pagelineAnim } from '../../Animation';
 import { useHistory } from 'react-router-dom';
 
 
@@ -16,8 +16,10 @@ let history = useHistory();
 
     return(     
  <motion.section className="hero-section" exit="exit" variants={pageAnim} initial="hidden" animate="show">
+     <motion.div className="pageline-div" variants={pagelineAnim}></motion.div>
+     <motion.div className="pageline-div" variants={pagelineAnim}></motion.div>
+     <SvgWave />
    <div className="hero-dark">
-   <SvgWave />
    <div className="hero-text">
    <motion.h1 variants={heroh1} className="hero-h1">Hi <img src={handWave} className="hand" alt="wave" /></motion.h1>
    <motion.h3 variants={heroAnim} className="herotext-h3">I’m <span>Rachel Tomi</span>, a UI Designer and Front end Developer</motion.h3>
@@ -25,9 +27,9 @@ let history = useHistory();
     and functional user interfaces for websites and web applications</motion.p>
    <motion.button variants={fadein} className="hero-btn" onClick={() => history.push('/skillset')}>View my Skillsets</motion.button>
    </div>
-   </div>
      <div className="hero-img">
    <motion.img variants={imgAnim} src={heroimage} alt="Rachel tomi" />
+     </div>
      </div>
  </motion.section>      
  )

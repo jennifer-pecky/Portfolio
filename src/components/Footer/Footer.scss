@@ -20,15 +20,17 @@ $greyprimary: #C3C3C3;
     .talk-div{
        @include flex(center, flex-start);
        .talk-text{
-          h5{
-            font-size: 48px;
-            color: $white;
-            @media screen and (max-width:768px) {
-                font-size: 32px;
-                padding: 20px 0;
+           .talk-link{
+               text-decoration: none;
+               h5{
+                font-size: 48px;
+                color: $white;
+                @media screen and (max-width:768px) {
+                    font-size: 32px;
+                    padding: 20px 0;
+                }
             }
-        }
-       
+           }
        }
        .talk-arrow{margin-left: 20px;}
     }

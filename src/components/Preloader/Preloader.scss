@@ -27,7 +27,6 @@ $projectcolor: #3F3F3F;
         font-weight: 400;
         transform: scale(.8);
         color: $peachlight;
-        -webkit-text-stroke: 2px gray;
         @media screen and (max-width: 768px) {
             font-size: 2rem;
         }
@@ -69,15 +68,14 @@ $projectcolor: #3F3F3F;
   @keyframes scale {
     0% {
       transform: scale(.8);
-      color: #121212;
-      -webkit-text-stroke: 1px gray;
+      color: white;
+      -webkit-text-stroke: 1px white;
     }
   
     20% {
       transform: scale(1.2);
-      color: pink;
-      -webkit-text-stroke: 2px $white;
-      filter: drop-shadow(0 0 1px pink)drop-shadow(0 0 1px white)drop-shadow(0 0 3px rgba(171, 171, 255, 0.795))drop-shadow(0 0 5px red)hue-rotate(10turn);
+      color: #D7AD9D;
+      filter: drop-shadow(0 0 1px #D7AD9D)drop-shadow(0 0 1px white)drop-shadow(0 0 3px rgba(171, 171, 255, 0.795))drop-shadow(0 0 5px #D7AD9D)hue-rotate(10turn);
     }
   
     50% {

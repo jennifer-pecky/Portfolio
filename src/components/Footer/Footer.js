@@ -10,7 +10,9 @@ const Footer = () => {
       <h4>What next?</h4>
       <div className="talk-div">
          <div className="talk-text">
-         <h5>Let's<span className="talk"> Talk?</span></h5>
+          <Link to="/contact" className="talk-link">
+          <h5>Let's<span className="talk"> Talk?</span></h5>
+          </Link>
          </div>
           <div className="talk-arrow">
           <img src={arrow} alt="arrow" />

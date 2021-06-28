@@ -4,14 +4,16 @@ import './Skillset.scss';
 import {SvgWave} from '../../Svg/Svg';
 //Animations
 import {motion} from 'framer-motion';
-import { pageAnim, heroh1, heroAnim } from '../../Animation';
+import { pageAnim, heroh1, heroAnim, pagelineAnim } from '../../Animation';
 
 
 const Skillset= () => {
 
     return(
         <motion.section className="skillset" exit="exit" variants={pageAnim} initial="hidden" animate="show">
-         <SvgWave />
+          <motion.div className="pageline-div" variants={pagelineAnim}></motion.div>
+     <motion.div className="pageline-div" variants={pagelineAnim}></motion.div>   
+       <SvgWave />
          <div className="skills-div">
      <Link to="/">
      <p className="back">&larr;</p>
