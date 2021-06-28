@@ -7,6 +7,7 @@ import Header from './components/Header/Header';
 import Frontend from './components/Skills/Frontend/Frontend';
 import UiUx from './components/Skills/UiUx/UiUx';
 import About from './components/About/About';
+import Contact from './components/Contact/Contact';
 import {AnimatePresence} from 'framer-motion';
 import Preloader from './components/Preloader/Preloader';
 
@@ -30,6 +31,7 @@ function App() {
         <Route path ="/frontend" component = {Frontend} />
         <Route path ="/uiux" component = {UiUx} />
         <Route path = "/about" component = {About} />
+        <Route path = "/contact" component = {Contact} />
       </Switch>
       </AnimatePresence>
     </div>

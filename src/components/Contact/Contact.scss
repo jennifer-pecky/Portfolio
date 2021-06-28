@@ -1,0 +1,90 @@
+$peachprimary: #D7AD9D;
+$black: #222223;
+$white: #ffffff;
+$peachlight: #D9C6C0;
+$greyprimary: #C3C3C3;
+
+@import '../../mixins/mixins.scss';
+
+.contact-page{
+   @include widthandheight;
+   position: fixed;
+    .contact-div{
+        @include flex(center, center);
+        width: 100%;
+        height: 100%;
+        gap: 100px;
+       padding: 0 14%;
+       @media screen and (max-width: 768px) {
+           padding: 0 10%;
+           gap: 0;
+           flex-direction: column;
+       }
+        .contact-text{
+          margin-top: -10%;
+          flex: 1;
+          @media screen and (max-width: 768px) {
+            margin-top: 40%;
+        }
+          h1{
+            color: $peachprimary;
+          }
+          p{
+              color: $greyprimary;
+              margin: 10px 0;
+          }
+                   }
+                   .contact-form{
+                flex: 1;
+                margin-top: 5%;
+                @media screen and (min-device-width: 414px) 
+                and (max-device-width: 736px)  
+                and (-webkit-min-device-pixel-ratio: 3){
+                    margin-top: -85%;
+                }
+                                @media only screen 
+                and (min-device-width: 375px) 
+                and (max-device-width: 812px) 
+                and (-webkit-min-device-pixel-ratio: 3) { 
+                    margin-top: -120%;
+                }
+                    form{
+                        /*
+                        @media only screen 
+                        and (min-device-width: 414px) 
+                        and (max-device-width: 736px) 
+                        and (-webkit-min-device-pixel-ratio: 3) { 
+                            margin-top: -80%;
+                        }
+                        */
+                        .form-div{
+                           
+                        label{
+                            display: flex;
+                            flex-direction: column;
+                            margin: 15px 0;
+                          
+                            span{
+                             color: $greyprimary;
+                             margin: 5px 0;
+                            }
+                         .text-input, textarea{
+                             padding: 13px;
+                             background-color: $black;
+                             border: none;
+                             color: $greyprimary;
+                             border-radius: 4px;
+                             @media screen and (max-width: 768px) {
+                                width: 100%;  
+                                background-color: rgb(82, 82, 82);
+                            }
+                         }
+                    }
+                    .contact-btn{
+                        @include mainButton;
+                    }
+               }
+            }
+        }
+    }
+}

@@ -46,3 +46,16 @@ $white: #ffffff;
         font-size: 28px;
     }
 }
+
+@mixin mainButton{
+    padding: 12px 18px;
+    margin: 25px 0;
+    font-weight: bold;
+    background-color: $peachprimary;
+    cursor: pointer;
+    border: none;
+    transition: all 0.5s ease-in-out;
+    &:hover{
+        background-color: $peachlight;
+    }
+}
