@@ -15,7 +15,7 @@ const Contact = () => {
               together on something? Feel free to reach out.</p>
            </div>
            <div className="contact-form">
-               <form action="POST" data-netlify="true">
+               <form name="contact" method="POST" data-netlify="true">
                 <div className="form-div">
                  <label>
                  <span>Your Name</span>
