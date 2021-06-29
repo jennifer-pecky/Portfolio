@@ -1,9 +1,16 @@
-import React from 'react';
+import React,{useState, useEffect} from 'react';
 import './Contact.scss';
 import { SvgWave } from '../../Svg/Svg';
 
 const Contact = () => {
 
+    const [success, setSuccess] = useState(false);
+
+    useEffect(() => {
+      if ( window.location.search.includes('success=true') ) {
+        setSuccess(true);
+      }
+    }, []);    
 
     return(
      <div className="contact-page">
@@ -14,8 +21,11 @@ const Contact = () => {
            <p>Got a question, proposal or project or want to work
               together on something? Feel free to reach out.</p>
            </div>
+           {success && (
+          <p style={{ color: "#D7AD9D" }}>Thank you for reaching out! I will reply shortly </p>
+           )}
            <div className="contact-form">
-               <form name="contact" method="POST" data-netlify="true">
+               <form name="contact" method="POST" action="/contact/?success=true" data-netlify="true">
                 <input type="hidden" name="form-name" value="contact" />
                 <div className="form-div">
                  <label>
