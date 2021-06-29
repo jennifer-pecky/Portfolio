@@ -13,12 +13,6 @@ $projectcolor: #3F3F3F;
     background-image: linear-gradient(to bottom, rgba(24, 23, 23, 0.911), rgba(22, 21, 21, 0.911)), url("../../Assets/uiux-img.jpg");
     @include background;
 }
-#wordpress-section{
-    @include widthandheight;
-    background-image: linear-gradient(to bottom, rgba(24, 23, 23, 0.911), rgba(22, 21, 21, 0.911)), url("../../Assets/elementor.png");
-    @include background;  
-}
-
 .main-section{
    @include widthandheight;
     background-image: linear-gradient(to bottom, rgba(24, 23, 23, 0.911), rgba(22, 21, 21, 0.911)), url("../../Assets/Web-development.jpg");

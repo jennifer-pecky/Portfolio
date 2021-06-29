@@ -21,10 +21,11 @@ const Contact = () => {
            <p>Got a question, proposal or project or want to work
               together on something? Feel free to reach out.</p>
            </div>
+         
+           <div className="contact-form">
            {success && (
           <p style={{ color: "#D7AD9D" }}>Thank you for reaching out! I will reply shortly </p>
            )}
-           <div className="contact-form">
                <form name="contact" method="POST" action="/contact/?success=true" data-netlify="true">
                 <input type="hidden" name="form-name" value="contact" />
                 <div className="form-div">
