@@ -15,7 +15,7 @@ const Contact = () => {
               together on something? Feel free to reach out.</p>
            </div>
            <div className="contact-form">
-               <form action="#">
+               <form action="POST" data-netlify="true">
                 <div className="form-div">
                  <label>
                  <span>Your Name</span>
@@ -36,7 +36,13 @@ const Contact = () => {
                   </label>
                   </div>
                   <div className="form-div">
-                      <button type="submit" className="contact-btn">Let's Talk</button>
+                   <input type="file" name="file" className="upload" placeholder="Upload file"></input>
+                 </div>
+                 <div className="recaptcha">
+                     <div data-netlify-recaptcha = "true"></div>
+                 </div>
+                  <div className="form-div">
+                      <button type="submit" value="send message" className="contact-btn">Let's Talk</button>
                   </div>
                </form>
               

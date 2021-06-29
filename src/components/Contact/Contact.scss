@@ -36,27 +36,20 @@ $greyprimary: #C3C3C3;
                    }
                    .contact-form{
                 flex: 1;
-                margin-top: 5%;
-                @media screen and (min-device-width: 414px) 
-                and (max-device-width: 736px)  
-                and (-webkit-min-device-pixel-ratio: 3){
-                    margin-top: -85%;
-                }
-                                @media only screen 
-                and (min-device-width: 375px) 
-                and (max-device-width: 812px) 
+                margin-top: 3%;
+                @media only screen 
+                and (min-width: 375px) 
+                and (max-width: 812px) 
                 and (-webkit-min-device-pixel-ratio: 3) { 
                     margin-top: -120%;
                 }
-                    form{
-                        /*
-                        @media only screen 
-                        and (min-device-width: 414px) 
-                        and (max-device-width: 736px) 
-                        and (-webkit-min-device-pixel-ratio: 3) { 
-                            margin-top: -80%;
-                        }
-                        */
+                @media only screen 
+                and (min-device-width: 414px) 
+                and (max-device-width: 736px) { 
+                    margin-top: -80%;
+                }
+                
+                    form{ 
                         .form-div{
                            
                         label{
