@@ -16,16 +16,17 @@ const Contact = () => {
            </div>
            <div className="contact-form">
                <form name="contact" method="POST" data-netlify="true">
+                <input type="hidden" name="name" value="contact" />
                 <div className="form-div">
                  <label>
                  <span>Your Name</span>
-                <input type="text" className="text-input" name="name"></input>
+                <input type="text" className="text-input" name="name" />
                  </label>
                 </div>
                  <div className="form-div">
                 <label>
                 <span>Your Email</span>
-                   <input type="text" name="email" className="text-input"></input>
+                   <input type="text" name="email" className="text-input" />
                 </label>
                  </div>
                   <div className="form-div">
