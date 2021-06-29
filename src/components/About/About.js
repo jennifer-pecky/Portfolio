@@ -23,10 +23,10 @@ const About = () => {
                I’m <span className="name">Rachel Tomi</span>, a Frontend developer based in Nigeria. I priotize user experience, create outstanding designs and bring 
                these designs to life using the latest technology.
                </motion.p>
-               <p>
+               <motion.p variants={heroAnim}>
                  There are many Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always f
                  or non-characteristic words etc.
-                 </p>
+                 </motion.p>
            </div>
            <div className="download">
            <img src={downloadicon} alt="downloadlink" />

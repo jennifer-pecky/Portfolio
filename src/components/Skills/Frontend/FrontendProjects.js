@@ -85,9 +85,7 @@ const FrontProjects = () => {
                      <Link to='/'>
                       <p>Code</p>
                       </Link>
-                     <Link to="/">
                      <img src={githubicon} alt="livelink" />
-                     </Link>
                      </div>
                   </div>
           </div>

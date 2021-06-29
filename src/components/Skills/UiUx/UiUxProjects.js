@@ -5,11 +5,12 @@ import project2 from '../../../Assets/unicashot.png';
 import externallinkicon from '../../../Assets/external-link-alt-solid.svg';
 import githubicon from '../../../Assets/github-brands.svg';
 import Footer from '../../Footer/Footer';
+import arrow from '../../../Assets/Arrow.png';
 
 const UiUxProjects = () => {
 
     return(
-       <div className="project-section">
+       <div className="card-section">
          <div className="title">
              <div className="line"></div>
              <div className="text">
@@ -17,82 +18,47 @@ const UiUxProjects = () => {
              </div>
          </div>
 
-        <div className="projects">
-        <div className="project-1">
-        <div className="project-img">
-      <img src={project1} alt="project" />
-        </div>
-        <div className="project-text">
-          <h1 className="project-h1">PayBox</h1>
-          <p>sample text  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-               doloremque laudantium, totam rem aperiam.
-          </p>
-          <ul>
-              <li>Html</li>
-              <li>CSS</li>
-              <li>React</li>
-              <li>Javascript</li>
-              <li>Redux</li>
-          </ul>
-          <div className="links">
-                  <div className="livelink">
-                     <div className="link">
-                     <Link to='/'>
-                      <p>Live link</p>
-                      </Link>
-                      <img src={externallinkicon} alt="livelink" />
-                     </div>
-                     <div className="link">
-                     <Link to='/'>
-                      <p>Code</p>
-                      </Link>
-                      <img src={githubicon} alt="livelink" />
-                     </div>
-                  </div>
-          </div>
-        </div>
-        </div>    
-        </div> 
+    {/*first card */}
+        <div className="card-container">
+           <div className="card">
+               <div className="card-front front1">
+                   <div className="content">
+                   <h2 class="card-h">PayBox</h2>
+        <p class="card-h">Java is a class-based, object-oriented programming language that
+         is designed to have as few implementation dependencies as possible.</p>
+         <div className="view-text">
+          <Link to="/contact" className="view-link">
+          <h5>View Project<span>&#8594;</span></h5>
+          </Link>
+      </div>
+                   </div>
+               </div>
+               <div class="card-front front2">
+                <h2>PayBox</h2>
+               </div>
+           </div> 
+        {/*second card */}
+        <div className="card">
+               <div className="card-front front1">
+                   <div className="content">
+                   <h2 class="card-h">Unica</h2>
+        <p class="card-h">Java is a class-based, object-oriented programming language that
+         is designed to have as few implementation dependencies as possible.</p>
+         <div className="view-text">
+          <Link to="/contact" className="view-link">
+          <h5>View Project<span>&#8594;</span></h5>
+          </Link>
+      </div>
+                   </div>
+               </div>
+               <div class="card-front front2">
+                <h2>Unica</h2>
+               </div>
+           </div> 
 
-        <div className="projects">
-        <div className="project-1">
-        <div className="project-img" id="img-2">
-      <img src={project2} alt="project" />
-        </div>
-        <div className="project-text">
-          <h1 className="project-h1">Unica</h1>
-          <p>sample text  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-               doloremque laudantium, totam rem aperiam.
-          </p>
-          <ul>
-              <li>Html</li>
-              <li>CSS</li>
-              <li>React</li>
-              <li>Javascript</li>
-              <li>Redux</li>
-          </ul>
-          <div className="links">
-                  <div className="livelink">
-                     <div className="link">
-                     <Link to='/'>
-                      <p>Live link</p>
-                      </Link>
-                      <img src={externallinkicon} alt="livelink" />
-                     </div>
-                     <div className="link">
-                     <Link to='/'>
-                      <p>Code</p>
-                      </Link>
-                     <Link to="/">
-                     <img src={githubicon} alt="livelink" />
-                     </Link>
-                     </div>
-                  </div>
-          </div>
-        </div>
-        </div>    
-        </div> 
+        </div>  {/*card container div ends */}   
 
+   
        <Footer />
        </div>
     )

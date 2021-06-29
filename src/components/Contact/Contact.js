@@ -1,6 +1,9 @@
 import React,{useState, useEffect} from 'react';
 import './Contact.scss';
 import { SvgWave } from '../../Svg/Svg';
+//Animations
+import {motion} from 'framer-motion';
+import { heroAnim, pageAnim,pagelineAnim } from '../../Animation';
 
 const Contact = () => {
 
@@ -13,16 +16,18 @@ const Contact = () => {
     }, []);    
 
     return(
-     <div className="contact-page">
+     <motion.div className="contact-page" exit="exit" variants={pageAnim} initial="hidden" animate="show">
+           <motion.div className="pageline-div" variants={pagelineAnim}></motion.div>
+           <motion.div className="pageline-div" variants={pagelineAnim}></motion.div> 
          <SvgWave />
        <div className="contact-div">
            <div className="contact-text">
-           <h1>Have a Project?</h1>
-           <p>Got a question, proposal or project or want to work
-              together on something? Feel free to reach out.</p>
+           <motion.h1 variants={heroAnim}>Have a Project?</motion.h1>
+           <motion.p variants={heroAnim}>Got a question, proposal or project or want to work
+              together on something? Feel free to reach out.</motion.p>
            </div>
          
-           <div className="contact-form">
+           <motion.div className="contact-form" variants={heroAnim}>
            {success && (
           <p style={{ color: "#D7AD9D" }}>Thank you for reaching out! I will reply shortly </p>
            )}
@@ -47,9 +52,6 @@ const Contact = () => {
                    </textarea>
                   </label>
                   </div>
-                  <div className="form-div">
-                   <input type="file" name="file" className="upload" placeholder="Upload file"></input>
-                 </div>
                  <div className="recaptcha">
                      <div data-netlify-recaptcha = "true"></div>
                  </div>
@@ -58,9 +60,9 @@ const Contact = () => {
                   </div>
                </form>
               
-           </div>
+           </motion.div>
        </div>
-     </div>
+     </motion.div>
     )
 }
 

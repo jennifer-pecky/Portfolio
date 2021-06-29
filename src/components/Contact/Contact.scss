@@ -9,6 +9,9 @@ $greyprimary: #C3C3C3;
 .contact-page{
    @include widthandheight;
    position: fixed;
+   .pageline-div{
+    @include pagelineAnim;
+  }
     .contact-div{
         @include flex(center, center);
         width: 100%;
