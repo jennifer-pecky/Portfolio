@@ -22,9 +22,10 @@ const Contact = () => {
          <SvgWave />
        <div className="contact-div">
            <div className="contact-text">
-           <motion.h1 variants={heroAnim}>Have a Project?</motion.h1>
-           <motion.p variants={heroAnim}>Got a question, proposal or project or want to work
-              together on something? Feel free to reach out.</motion.p>
+           <motion.h1 variants={heroAnim}>I love working on new projects</motion.h1>
+           <motion.p variants={heroAnim}> Send me a message to discuss the best 
+           possible ways to help achieve your goals. I will reply as quick as possible.
+           </motion.p>
            </div>
          
            <motion.div className="contact-form" variants={heroAnim}>

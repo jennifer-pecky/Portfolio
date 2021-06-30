@@ -24,7 +24,7 @@ $greyprimary: #C3C3C3;
            flex-direction: column;
        }
         .contact-text{
-          margin-top: -10%;
+          margin-top: -5%;
           flex: 1;
           @media screen and (max-width: 768px) {
             margin-top: 40%;
@@ -34,7 +34,7 @@ $greyprimary: #C3C3C3;
           }
           p{
               color: $greyprimary;
-              margin: 10px 0;
+              margin: 20px 0;
           }
                    }
                    .contact-form{

@@ -27,3 +27,18 @@ p{
  .talk{
     font-family: 'Charmonman', cursive;  
 }
+
+ //SCROLLBAR STYLES
+
+ ::-webkit-scrollbar {
+    width: 18px;  
+    height: 5px;             
+  }
+  ::-webkit-scrollbar-track {
+    background: #141414;      
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color:#D7AD9D;   
+    border-radius: 15px;      
+    border: 2px solid white;  
+  }

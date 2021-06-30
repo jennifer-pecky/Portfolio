@@ -15,8 +15,8 @@ const UiUxHero = () => {
      <div className="hero-text">
           <motion.h1 variants={heroAnim}>Ui/Ux Design</motion.h1>
           <motion.div variants={heroAnim} className="underline"></motion.div>
-          <motion.p variants={heroAnim}>sample text  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo. sample text sample text . sample text  Sed ut perspiciatis unde omnis iste natu  totam rem aperiam,
-               eaque ipsa quae ab . sample text  sample text.
+          <motion.p variants={heroAnim}>When I’m not coding, I design websites using Figma or Adobe XD. I’m able to collaborate with
+           a team to create products that tell stories and resonate with the ideal customers. 
          </motion.p>
       </div>
      </div>

@@ -22,9 +22,10 @@ let history = useHistory();
    <div className="hero-dark">
    <div className="hero-text">
    <motion.h1 variants={heroh1} className="hero-h1">Hi <img src={handWave} className="hand" alt="wave" /></motion.h1>
-   <motion.h3 variants={heroAnim} className="herotext-h3">I’m <span>Rachel Tomi</span>, a UI Designer and Front end Developer</motion.h3>
-   <motion.p variants={heroAnim}>I design and build beautiful and functional user interfaces for websites and web applications. I design and build beautiful
-    and functional user interfaces for websites and web applications</motion.p>
+   <motion.h3 variants={heroAnim} className="herotext-h3">I’m <span>Tomisin</span>, a front-end developer and UI designer based in Lagos Nigeria. </motion.h3>
+   <motion.p variants={heroAnim}>I design and build beautiful and functional user interfaces for websites and applications. As a core advocate of clean and responsive
+    designs, I’m able to bring ideas to life with scalable and readable codes following best practices.
+    </motion.p>
    <motion.button variants={fadein} className="hero-btn" onClick={() => history.push('/skillset')}>View my Skillsets</motion.button>
    </div>
      <div className="hero-img">

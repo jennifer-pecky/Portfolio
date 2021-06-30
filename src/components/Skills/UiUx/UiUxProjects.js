@@ -1,11 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import project1 from '../../../Assets/payboxshot.png';
-import project2 from '../../../Assets/unicashot.png';
-import externallinkicon from '../../../Assets/external-link-alt-solid.svg';
-import githubicon from '../../../Assets/github-brands.svg';
 import Footer from '../../Footer/Footer';
-import arrow from '../../../Assets/Arrow.png';
 
 const UiUxProjects = () => {
 
@@ -24,8 +19,9 @@ const UiUxProjects = () => {
                <div className="card-front front1">
                    <div className="content">
                    <h2 class="card-h">PayBox</h2>
-        <p class="card-h">Java is a class-based, object-oriented programming language that
-         is designed to have as few implementation dependencies as possible.</p>
+        <p class="card-h">PayBox is a fintech company that allows easy payment and all forms of local and international transaction. This landing page
+         was designed to promote the company's mobile app, showcasing the 
+         app features so that users can click through and download the app</p>
          <div className="view-text">
           <Link to="/contact" className="view-link">
           <h5>View Project<span>&#8594;</span></h5>
@@ -42,8 +38,8 @@ const UiUxProjects = () => {
                <div className="card-front front1">
                    <div className="content">
                    <h2 class="card-h">Unica</h2>
-        <p class="card-h">Java is a class-based, object-oriented programming language that
-         is designed to have as few implementation dependencies as possible.</p>
+        <p class="card-h">Unica is a digital marketing agency focused on branding and marketing. This website was designed
+         with the intent to increase the company's sales and conversation rate</p>
          <div className="view-text">
           <Link to="/contact" className="view-link">
           <h5>View Project<span>&#8594;</span></h5>
@@ -56,6 +52,23 @@ const UiUxProjects = () => {
                </div>
            </div> 
 
+  {/*third card */}
+  <div className="card">
+               <div className="card-front front1">
+                   <div className="content">
+                   <h2 class="card-h">Rachel Tomi Portfolio</h2>
+        <p class="card-h">This is my personal portfolio website design</p>
+         <div className="view-text">
+          <Link to="/contact" className="view-link">
+          <h5>View Project<span>&#8594;</span></h5>
+          </Link>
+      </div>
+                   </div>
+               </div>
+               <div class="card-front front2">
+                <h2>Rachel Tomi</h2>
+               </div>
+           </div> 
         </div>  {/*card container div ends */}   
 
    

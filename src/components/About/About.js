@@ -20,12 +20,15 @@ const About = () => {
            </div>
            <div className="text-content">
                <motion.p variants={heroAnim} className="big-text">
-               I’m <span className="name">Rachel Tomi</span>, a Frontend developer based in Nigeria. I priotize user experience, create outstanding designs and bring 
-               these designs to life using the latest technology.
+               Hi. My name is <span className="name">Tomi</span>, I’m a highly-motivated front end developer who’s able to translate designs into clean and beautiful websites that work. Having worked with remote teams on a few projects, 
+               I specialize mostly in using react JS to create web applications.
                </motion.p>
                <motion.p variants={heroAnim}>
-                 There are many Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always f
-                 or non-characteristic words etc.
+               As a tech blogger and community builder, I’m passionate about words that motivate and educate. I’m able to craft persuasive website copy for your website project. So yeah, I write, design and code. 
+                When I’m not in the streets of Figma or VS Code, you will find me chilling on my <Link to="/https://racheltomi.com" style={{ color: "#D7AD9D" }}>blog</Link> creating helpful content on tech for beginners.
+                My hobbies are all over the place. I love to watch movies, listen to music and hang out with friends. 
+                I’m open to work. It would be a pleasure to hear from you. 
+
                  </motion.p>
            </div>
            <div className="download">
@@ -76,11 +79,15 @@ const About = () => {
         </div>
         <div className="right-arrow">
            <img src={rightarrow} alt="downloadlink" />
-            <p>firebase</p>
+            <p>gsap</p>
         </div>
         <div className="right-arrow">
            <img src={rightarrow} alt="downloadlink" />
-            <p>gsap</p>
+            <p>Styled Components</p>
+        </div>
+        <div className="right-arrow">
+           <img src={rightarrow} alt="downloadlink" />
+            <p>framer motion</p>
         </div>
       </ul>
 
@@ -104,11 +111,15 @@ const About = () => {
         </div>
         <div className="right-arrow">
            <img src={rightarrow} alt="downloadlink" />
-            <p>adeobexd</p>
+            <p>web3</p>
         </div>
         <div className="right-arrow">
            <img src={rightarrow} alt="downloadlink" />
-            <p>framer motion</p>
+            <p>adobexd</p>
+        </div>
+        <div className="right-arrow">
+           <img src={rightarrow} alt="downloadlink" />
+            <p>firebase</p>
         </div>
 </ul>
 

@@ -36,27 +36,27 @@ const closeMenu = () => setClick(!click);
 
          <div className="header-wrapper">
         <div className = "gmail-text">
-        <a href="mailto:folorunshotosin334@gmail.com">Let's chat &rarr; tomisinrachel@gmail.com</a>
+        <a href="mailto:tomisinrachel@gmail.com">Let's chat &rarr; tomisinrachel@gmail.com</a>
          </div>
          <div className="social-icons">
            <ul>
                <li>
-                   <Link to="#">
+                   <Link to="https://github.com/Racheal-spec/">
                        <img src={github} className="icon1" alt="github" />
                    </Link>
                </li>
                <li>
-                   <Link to="#">
+                   <Link to="https://instagram.com/girlliketomi">
                        <img src={IG} className="icon2" alt="instagram" />
                    </Link>
                </li>
                <li>
-                   <Link to="#">
+                   <Link to="https://twitter.com/racheltomidev">
                        <img src={twitter} className="icon3" alt="twitter" />
                    </Link>
                </li>
                <li>
-                   <Link to="#">
+                   <Link to="https://www.linkedin.com/in/rachel-tomi-03572a195/">
                        <img src={linkedin} className="icon4" alt="linkedin" />
                    </Link>
                </li>

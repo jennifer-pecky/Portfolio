@@ -26,26 +26,26 @@ const FrontProjects = () => {
         </div>
         <div className="project-text">
           <h1 className="project-h1">FashionFiesta</h1>
-          <p>sample text  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-               doloremque laudantium, totam rem aperiam.
+          <p>FashionFiesta is an ecommerce website I handed coded from scratch using react js. 
+              A user can create an account, login, add items to cart, remove items from cart, view details of each item and proceed to make a payment using Paystack.
           </p>
           <ul>
-              <li>Html</li>
-              <li>CSS</li>
-              <li>React</li>
-              <li>Javascript</li>
-              <li>Redux</li>
+              <li>Tech Stack:</li>
+              <li>React Js</li>
+              <li>SCSS</li>
+              <li>Context Api</li>
+              <li>Firebase</li>
           </ul>
           <div className="links">
                   <div className="livelink">
                      <div className="link">
-                     <Link to='/'>
+                     <Link to='https://fashionfiesta-a4172.web.app/'>
                       <p>Live link</p>
                       </Link>
                       <img src={externallinkicon} alt="livelink" />
                      </div>
                      <div className="link">
-                     <Link to='/'>
+                     <Link to='https://github.com/Racheal-spec/FashionFiesta'>
                       <p>Code</p>
                       </Link>
                       <img src={githubicon} alt="livelink" />
@@ -63,26 +63,26 @@ const FrontProjects = () => {
         </div>
         <div className="project-text">
           <h1 className="project-h1">Paybox</h1>
-          <p>sample text  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-               doloremque laudantium, totam rem aperiam.
+          <p>A financial application landing page.
+               P.S-landing page and all assets designed by me
           </p>
           <ul>
+          <li>Tech Stack:</li>
               <li>Html</li>
               <li>CSS</li>
-              <li>React</li>
               <li>Javascript</li>
-              <li>Redux</li>
+              <li>Gsap</li>
           </ul>
           <div className="links">
                   <div className="livelink">
                      <div className="link">
-                     <Link to='/'>
+                     <Link to='https://payboxapp.netlify.app'>
                       <p>Live link</p>
                       </Link>
                       <img src={externallinkicon} alt="livelink" />
                      </div>
                      <div className="link">
-                     <Link to='/'>
+                     <Link to='https://github.com/Racheal-spec/PayBox'>
                       <p>Code</p>
                       </Link>
                      <img src={githubicon} alt="livelink" />
@@ -100,26 +100,26 @@ const FrontProjects = () => {
         </div>
         <div className="project-text">
           <h1 className="project-h1">Instamoviesearch</h1>
-          <p>sample text  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-               doloremque laudantium, totam rem aperiam.
+          <p>A react movie app built using The Movie DB Api. Users can get list of trending, popular and
+               top rated movies. What's more? Users can also search for their favourite movies and add these movies to their watchlist.
           </p>
           <ul>
-              <li>Html</li>
-              <li>CSS</li>
-              <li>React</li>
-              <li>Javascript</li>
+          <li>Tech Stack:</li>
+             <li>React Js</li>
+              <li>CSS Grid</li>
               <li>Redux</li>
+              <li>SCSS</li>
           </ul>
           <div className="links">
                   <div className="livelink">
                      <div className="link">
-                     <Link to='/'>
+                     <Link to='https://instamoviesearch.netlify.app/'>
                       <p>Live link</p>
                       </Link>
                       <img src={externallinkicon} alt="livelink" />
                      </div>
                      <div className="link">
-                     <Link to='/'>
+                     <Link to='https://github.com/Racheal-spec/Instasearchmovie'>
                       <p>Code</p>
                       </Link>
                       <img src={githubicon} alt="livelink" />
