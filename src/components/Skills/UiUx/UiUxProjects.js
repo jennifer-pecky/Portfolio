@@ -1,5 +1,4 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 import Footer from '../../Footer/Footer';
 
 const UiUxProjects = () => {
@@ -23,9 +22,9 @@ const UiUxProjects = () => {
          was designed to promote the company's mobile app, showcasing the 
          app features so that users can click through and download the app</p>
          <div className="view-text">
-          <Link to={{pathname: "https://dribbble.com/shots/15957084-App-landing-page-PayBox-Homepage"}} className="view-link">
+          <a href="https://dribbble.com/shots/15957084-App-landing-page-PayBox-Homepage" className="view-link">
           <h5>View Project<span>&#8594;</span></h5>
-          </Link>
+          </a>
       </div>
                    </div>
                </div>
@@ -41,9 +40,9 @@ const UiUxProjects = () => {
         <p class="card-h">Unica is a digital marketing agency focused on branding and marketing. This website was designed
          with the intent to increase the company's sales and conversation rate</p>
          <div className="view-text">
-          <Link to={{pathname: "https://dribbble.com/shots/15957155-Digital-Marketing-website-landing-page"}} className="view-link">
+          <a href="https://dribbble.com/shots/15957155-Digital-Marketing-website-landing-page" className="view-link">
           <h5>View Project<span>&#8594;</span></h5>
-          </Link>
+          </a>
       </div>
                    </div>
                </div>
@@ -59,9 +58,9 @@ const UiUxProjects = () => {
                    <h2 class="card-h">Rachel Tomi Portfolio</h2>
         <p class="card-h">This is my personal portfolio website design</p>
          <div className="view-text">
-          <Link to={{pathname: "https://dribbble.com/shots/15957309-RachelTomi-Portfolio-website"}} className="view-link">
+          <a href= "https://dribbble.com/shots/15957309-RachelTomi-Portfolio-website" className="view-link">
           <h5>View Project<span>&#8594;</span></h5>
-          </Link>
+          </a>
       </div>
                    </div>
                </div>
