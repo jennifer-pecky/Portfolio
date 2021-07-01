@@ -10,7 +10,7 @@ const Navigation = (props) => {
 
     return(
     
-      <motion.div className= "navigation"   >
+      <motion.div className= "navigation" >
            <motion.div variants={lineAnimContainer} initial="hidden" animate="show">
           <motion.div className="skew-div" variants={lineAnim}></motion.div>
         <motion.div className="skew-div" variants={lineAnim}></motion.div>

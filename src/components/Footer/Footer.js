@@ -20,9 +20,10 @@ const Footer = () => {
       </div>
       <hr />
       <p>You can also send me a message via gmail - 
-          <Link href="#" className="gmail-link">
+          <a href="mailto:tomisinrachel@gmail.com"  method="POST" 
+         encType="multipart/form-data" className="gmail-link">
           tomisinrachel@gmail.com
-          </Link>
+          </a>
           </p>
           <div className="footer-base">
          <div className="footer-icons">
