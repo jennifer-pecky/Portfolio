@@ -39,13 +39,13 @@ const FrontProjects = () => {
           <div className="links">
                   <div className="livelink">
                      <div className="link">
-                     <Link to='https://fashionfiesta-a4172.web.app/'>
+                     <Link to={{pathname: "https://fashionfiesta-a4172.web.app"}} target="_blank">
                       <p>Live link</p>
                       </Link>
                       <img src={externallinkicon} alt="livelink" />
                      </div>
                      <div className="link">
-                     <Link to='https://github.com/Racheal-spec/FashionFiesta'>
+                     <Link to={{pathname: "https://github.com/Racheal-spec/FashionFiesta"}} target="_blank">
                       <p>Code</p>
                       </Link>
                       <img src={githubicon} alt="livelink" />
@@ -76,13 +76,13 @@ const FrontProjects = () => {
           <div className="links">
                   <div className="livelink">
                      <div className="link">
-                     <Link to='https://payboxapp.netlify.app'>
+                     <Link to={{pathname: 'https://payboxapp.netlify.app'}} target="_blank">
                       <p>Live link</p>
                       </Link>
                       <img src={externallinkicon} alt="livelink" />
                      </div>
                      <div className="link">
-                     <Link to='https://github.com/Racheal-spec/PayBox'>
+                     <Link to={{pathname: 'https://github.com/Racheal-spec/PayBox'}} target="_blank">
                       <p>Code</p>
                       </Link>
                      <img src={githubicon} alt="livelink" />
@@ -113,13 +113,13 @@ const FrontProjects = () => {
           <div className="links">
                   <div className="livelink">
                      <div className="link">
-                     <Link to='https://instamoviesearch.netlify.app/'>
+                     <Link to={{pathname: 'https://instamoviesearch.netlify.app/'}} target="_blank">
                       <p>Live link</p>
                       </Link>
                       <img src={externallinkicon} alt="livelink" />
                      </div>
                      <div className="link">
-                     <Link to='https://github.com/Racheal-spec/Instasearchmovie'>
+                     <Link to={{pathname:'https://github.com/Racheal-spec/Instasearchmovie'}} target="_blank">
                       <p>Code</p>
                       </Link>
                       <img src={githubicon} alt="livelink" />

@@ -29,9 +29,10 @@ const Footer = () => {
          <div className="footer-icons">
          <ul>
               <li><Link to="/" className="footer-menu">Home</Link></li>
-              <li><Link to="/" className="footer-menu">About me</Link></li>
-              <li><Link to="/" className="footer-menu">My Skillset</Link></li>
-              <li><Link to="/" className="footer-menu">My Blog</Link></li>
+              <li><Link to="/about" className="footer-menu">About me</Link></li>
+              <li><Link to="/skillset" className="footer-menu">My Skillset</Link></li>
+              <li><Link to={{pathname: "https://racheltomi.com"}} target="_blank" className="footer-menu">My Blog</Link></li>
+              <li><Link to={{pathname: "https://dribbble.com/TomiRachel"}} className="footer-menu">Dribbble</Link></li>
           </ul>
          </div>
           <div className="footer-t">

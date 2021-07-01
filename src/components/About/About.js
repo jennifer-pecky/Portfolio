@@ -25,7 +25,7 @@ const About = () => {
                </motion.p>
                <motion.p variants={heroAnim}>
                As a tech blogger and community builder, I’m passionate about words that motivate and educate. I’m able to craft persuasive website copy for your website project. So yeah, I write, design and code. 
-                When I’m not in the streets of Figma or VS Code, you will find me chilling on my <Link to="/https://racheltomi.com" style={{ color: "#D7AD9D" }}>blog</Link> creating helpful content on tech for beginners.
+                When I’m not in the streets of Figma or VS Code, you will find me writing on my <Link to={{pathname: "/https://racheltomi.com"}} target="_blank" style={{ color: "#D7AD9D" }} >blog</Link> creating helpful content on tech, especially for beginners.
                 My hobbies are all over the place. I love to watch movies, listen to music and hang out with friends. 
                 I’m open to work. It would be a pleasure to hear from you. 
 
