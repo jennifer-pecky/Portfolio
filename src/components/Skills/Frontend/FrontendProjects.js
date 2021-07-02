@@ -1,5 +1,4 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 import project3 from '../../../Assets/IMS trending.png';
 import project1 from '../../../Assets/FF watches.png';
 import project2 from '../../../Assets/Paybox-screenshot.png';
@@ -39,15 +38,15 @@ const FrontProjects = () => {
           <div className="links">
                   <div className="livelink">
                      <div className="link">
-                     <Link to={{pathname: "https://fashionfiesta-a4172.web.app"}} target="_blank">
+                     <a href= "https://fashionfiesta-a4172.web.app" rel='noreferrer' target="_blank">
                       <p>Live link</p>
-                      </Link>
+                      </a>
                       <img src={externallinkicon} alt="livelink" />
                      </div>
                      <div className="link">
-                     <Link to={{pathname: "https://github.com/Racheal-spec/FashionFiesta"}} target="_blank">
+                     <a href= "https://github.com/Racheal-spec/FashionFiesta" rel='noreferrer' target="_blank">
                       <p>Code</p>
-                      </Link>
+                      </a>
                       <img src={githubicon} alt="livelink" />
                      </div>
                   </div>
@@ -76,15 +75,15 @@ const FrontProjects = () => {
           <div className="links">
                   <div className="livelink">
                      <div className="link">
-                     <Link to={{pathname: 'https://payboxapp.netlify.app'}} target="_blank">
+                     <a href='https://payboxapp.netlify.app' rel='noreferrer' target="_blank">
                       <p>Live link</p>
-                      </Link>
+                      </a>
                       <img src={externallinkicon} alt="livelink" />
                      </div>
                      <div className="link">
-                     <Link to={{pathname: 'https://github.com/Racheal-spec/PayBox'}} target="_blank">
+                     <a href='https://github.com/Racheal-spec/PayBox' rel='noreferrer' target="_blank">
                       <p>Code</p>
-                      </Link>
+                      </a>
                      <img src={githubicon} alt="livelink" />
                      </div>
                   </div>
@@ -113,15 +112,15 @@ const FrontProjects = () => {
           <div className="links">
                   <div className="livelink">
                      <div className="link">
-                     <Link to={{pathname: 'https://instamoviesearch.netlify.app/'}} target="_blank">
+                     <a href='https://instamoviesearch.netlify.app/' rel='noreferrer' target="_blank">
                       <p>Live link</p>
-                      </Link>
+                      </a>
                       <img src={externallinkicon} alt="livelink" />
                      </div>
                      <div className="link">
-                     <Link to={{pathname:'https://github.com/Racheal-spec/Instasearchmovie'}} target="_blank">
+                     <a href='https://github.com/Racheal-spec/Instasearchmovie' rel='noreferrer' target="_blank">
                       <p>Code</p>
-                      </Link>
+                      </a>
                       <img src={githubicon} alt="livelink" />
                      </div>
                   </div>

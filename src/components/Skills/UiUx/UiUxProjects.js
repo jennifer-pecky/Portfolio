@@ -18,7 +18,7 @@ const UiUxProjects = () => {
                <div className="card-front front1">
                    <div className="content">
                    <h2 class="card-h">PayBox</h2>
-        <p class="card-h">PayBox is a fintech company that allows easy payment and all forms of local and international transaction. This landing page
+        <p class="card-h">PayBox is a fintech company that allows easy payment across countries. This landing page
          was designed to promote the company's mobile app, showcasing the 
          app features so that users can click through and download the app</p>
          <div className="view-text">

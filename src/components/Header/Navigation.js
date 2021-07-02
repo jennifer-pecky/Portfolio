@@ -27,9 +27,9 @@ const Navigation = (props) => {
               <NavLink to="/about" className="navlinks" onClick={props.closeMenu}>
               <li>ABOUT</li>
               </NavLink>
-              <NavLink to={{pathname: "https://racheltomi.com"}} target="_blank" className="navlinks" onClick={props.closeMenu}>
+              <a href="https://racheltomi.com" target="_blank" rel='noreferrer' className="navlinks" onClick={props.closeMenu}>
               <li>MY BLOG</li>
-              </NavLink>
+              </a>
               <NavLink to="/contact" className="navlinks" onClick={props.closeMenu}>
               <li>CONTACT</li>
               </NavLink>
