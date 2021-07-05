@@ -9,7 +9,7 @@ $white: #ffffff;
 .hero-section{
     @include widthandheight;
     @include flex(center, center);
-    position: fixed;
+  
     .pageline-div{
           @include pagelineAnim;
     }

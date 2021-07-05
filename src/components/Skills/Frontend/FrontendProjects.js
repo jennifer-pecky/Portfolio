@@ -34,6 +34,7 @@ const FrontProjects = () => {
               <li>SCSS</li>
               <li>Context Api</li>
               <li>Firebase</li>
+              <li>Paystack</li>
           </ul>
           <div className="links">
                   <div className="livelink">

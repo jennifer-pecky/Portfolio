@@ -34,13 +34,14 @@ const closeMenu = () => setClick(!click);
              <div className="line3"></div>
          </div>
 
-         <div className="header-wrapper">
+        <div className="header-wrapper2">
         <div className = "gmail-text">
         <a href="mailto:tomisinrachel@gmail.com"  method="POST" 
-         encType="multipart/form-data">Let's chat &rarr; tomisinrachel@gmail.com</a>
+         encType="multipart/form-data">Let's chat &rarr; tomisinrachel@gmail.com
+         </a>
          </div>
-         <div className="social-icons">
-           <ul>
+
+         <ul className= "social-icons">
                <li>
                    <a href="https://github.com/Racheal-spec/">
                        <img src={github} className="icon1" alt="github" />
@@ -62,10 +63,10 @@ const closeMenu = () => setClick(!click);
                    </a>
                </li>
            </ul>
-         </div>
 
          </div>
-        </motion.div>
+        
+</motion.div>
      </div>
     )
 }
