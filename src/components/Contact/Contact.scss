@@ -8,7 +8,6 @@ $greyprimary: #C3C3C3;
 
 .contact-page{
    @include widthandheight;
-   position: fixed;
    .pageline-div{
     @include pagelineAnim;
   }
@@ -31,6 +30,9 @@ $greyprimary: #C3C3C3;
         }
           h1{
             color: $peachprimary;
+         @media screen and (max-width: 7680px) {
+            font-size: 22px;
+         }
           }
           p{
               color: $greyprimary;
@@ -44,7 +46,7 @@ $greyprimary: #C3C3C3;
                 and (min-width: 375px) 
                 and (max-width: 812px) 
                 and (-webkit-min-device-pixel-ratio: 3) { 
-                    margin-top: -120%;
+                    margin-top: -100%;
                 }
                 @media only screen 
                 and (min-device-width: 414px) 
