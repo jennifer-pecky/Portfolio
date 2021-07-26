@@ -49,7 +49,7 @@ const UiUxProjects = () => {
                <div class="card-front front2">
                 <h2>Unica</h2>
                </div>
-           </div> 
+           </div>    
 
   {/*third card */}
   <div className="card">
@@ -68,6 +68,26 @@ const UiUxProjects = () => {
                 <h2>Rachel Tomi</h2>
                </div>
            </div> 
+
+ {/*fourth card */}
+ <div className="card">
+               <div className="card-front front1">
+                   <div className="content">
+                   <h2 class="card-h">Akinlawon</h2>
+        <p class="card-h">Akinlawon is a photography website that shows Akinlawon's personality and a concise collection of his best work</p>
+         <div className="view-text">
+          <a href="https://dribbble.com/shots/16085290-Photography-portfolio-website" className="view-link">
+          <h5>View Project<span>&#8594;</span></h5>
+          </a>
+      </div>
+                   </div>
+               </div>
+               <div class="card-front front2">
+                <h2>Akinlawon</h2>
+               </div>
+           </div>     
+
+
         </div>  {/*card container div ends */}   
 
    

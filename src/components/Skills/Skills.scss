@@ -271,6 +271,11 @@ $projectcolor: #3F3F3F;
         @include background;
         border-radius: 15px;
       }
+      &:nth-child(4) .card-front.front2{
+        background-image: linear-gradient( to bottom, rgba(24, 23, 23, 0.671), rgba(22, 21, 21, 0.692)), url("../../Assets/Presentation2.jpg");
+        @include background;
+        border-radius: 15px;
+      }
     }/*card closing div*/
 
     }/* card container closing div*/
