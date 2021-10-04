@@ -76,3 +76,16 @@ $black: #222223;
         background-color: rgb(26, 26, 26);
     }
 }
+
+@mixin loadmore {
+    background-color: $peachprimary;
+color: $white;
+border: none;
+padding: 8px 10px;
+float: right;
+margin: 0% 10% 2% 0;
+cursor: pointer;
+&:hover{
+  background-color: $peachlight;
+}
+}

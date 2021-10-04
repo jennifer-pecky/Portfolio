@@ -56,9 +56,12 @@ $projectcolor: #3F3F3F;
 }
 
 .project-section{
-   height: 100vh;
+   height: 100%;
    @media screen and (max-width: 768px) {
     padding: 50px 0px;
+   }
+   .loadBtn{
+     @include loadmore;
    }
    .title{
      @include flex(center, flex-start);
@@ -161,6 +164,9 @@ $projectcolor: #3F3F3F;
     @media screen and (max-width: 768px) {
      padding: 50px 0px;
     }
+    .loadBtn{
+      @include loadmore;
+    }
     .title{
       @include flex(center, flex-start);
       padding: 25px 50px;
@@ -246,6 +252,7 @@ $projectcolor: #3F3F3F;
             color: #fff;
             transition: 0.5s;
             z-index: 10;
+            text-align: center;
           }
       }
       &:hover .card-front.front2 {
@@ -256,23 +263,8 @@ $projectcolor: #3F3F3F;
         }
       }
 
-      &:nth-child(1) .card-front.front2{
-        background-image: linear-gradient( to bottom, rgba(24, 23, 23, 0.671), rgba(22, 21, 21, 0.692)), url("../../Assets/Paybox-mockup.png");
-        @include background;
-        border-radius: 15px;
-      }
-      &:nth-child(2) .card-front.front2{
-        background-image: linear-gradient( to bottom, rgba(24, 23, 23, 0.671), rgba(22, 21, 21, 0.692)), url("../../Assets/Unica-mockup.png");
-        @include background;
-        border-radius: 15px;
-      }
-      &:nth-child(3) .card-front.front2{
-        background-image: linear-gradient( to bottom, rgba(24, 23, 23, 0.671), rgba(22, 21, 21, 0.692)), url("../../Assets/presentation.png");
-        @include background;
-        border-radius: 15px;
-      }
-      &:nth-child(4) .card-front.front2{
-        background-image: linear-gradient( to bottom, rgba(24, 23, 23, 0.671), rgba(22, 21, 21, 0.692)), url("../../Assets/Presentation2.jpg");
+    .card-front.front2{
+        background: #222222;
         @include background;
         border-radius: 15px;
       }

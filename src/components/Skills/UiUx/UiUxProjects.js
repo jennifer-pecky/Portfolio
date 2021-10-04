@@ -1,7 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Footer from '../../Footer/Footer';
+import { UiData } from './UiData';
 
 const UiUxProjects = () => {
+
+    const[show, setShow] = useState(4); 
+
+    const CardsloadHandler = () => {
+      setShow(initialValue => initialValue + 4)
+    }
 
     return(
        <div className="card-section">
@@ -13,84 +20,29 @@ const UiUxProjects = () => {
          </div>
 
     {/*first card */}
-        <div className="card-container">
-           <div className="card">
-               <div className="card-front front1">
-                   <div className="content">
-                   <h2 class="card-h">PayBox</h2>
-        <p class="card-h">PayBox is a fintech company that allows easy payment across countries. This landing page
-         was designed to promote the company's mobile app, showcasing the 
-         app features so that users can click through and download the app</p>
-         <div className="view-text">
-          <a href="https://dribbble.com/shots/15957084-App-landing-page-PayBox-Homepage" className="view-link">
-          <h5>View Project<span>&#8594;</span></h5>
-          </a>
-      </div>
-                   </div>
-               </div>
-               <div class="card-front front2">
-                <h2>PayBox</h2>
-               </div>
-           </div> 
-        {/*second card */}
-        <div className="card">
-               <div className="card-front front1">
-                   <div className="content">
-                   <h2 class="card-h">Unica</h2>
-        <p class="card-h">Unica is a digital marketing agency focused on branding and marketing. This website was designed
-         with the intent to increase the company's sales and conversation rate</p>
-         <div className="view-text">
-          <a href="https://dribbble.com/shots/15957155-Digital-Marketing-website-landing-page" className="view-link">
-          <h5>View Project<span>&#8594;</span></h5>
-          </a>
-      </div>
-                   </div>
-               </div>
-               <div class="card-front front2">
-                <h2>Unica</h2>
-               </div>
-           </div>    
 
-  {/*third card */}
-  <div className="card">
-               <div className="card-front front1">
-                   <div className="content">
-                   <h2 class="card-h">Rachel Tomi Portfolio</h2>
-        <p class="card-h">This is my personal portfolio website design</p>
-         <div className="view-text">
-          <a href= "https://dribbble.com/shots/15957309-RachelTomi-Portfolio-website" className="view-link">
-          <h5>View Project<span>&#8594;</span></h5>
-          </a>
-      </div>
-                   </div>
-               </div>
-               <div class="card-front front2">
-                <h2>Rachel Tomi</h2>
-               </div>
-           </div> 
-
- {/*fourth card */}
- <div className="card">
-               <div className="card-front front1">
-                   <div className="content">
-                   <h2 class="card-h">Akinlawon</h2>
-        <p class="card-h">Akinlawon is a photography website that shows Akinlawon's personality and a concise collection of his best work</p>
-         <div className="view-text">
-          <a href="https://dribbble.com/shots/16085290-Photography-portfolio-website" className="view-link">
-          <h5>View Project<span>&#8594;</span></h5>
-          </a>
-      </div>
-                   </div>
-               </div>
-               <div class="card-front front2">
-                <h2>Akinlawon</h2>
-               </div>
-           </div>     
-
-
-        </div>  {/*card container div ends */}   
-
+ <div className="card-container" >
+ {UiData.slice(0, show).map((item) => (
+ <div className="card" key={item.id}>
+     <div className="card-front front1">
+         <div className="content">
+         <h2 className="card-h">{item.title}</h2>
+<p className="card-h">{item.info}</p>
+<div className="view-text">
+<a href={item.url} className="view-link">
+<h5>View Project<span>&#8594;</span></h5>
+</a>
+</div>
+         </div>
+     </div>
+     <div className="card-front front2">
    
+      <h2>{item.title}</h2>
+     </div>
+ </div> 
+    ))}
+    </div> 
+    <button onClick={CardsloadHandler} className="loadBtn">Load More</button>
        <Footer />
        </div>
     )
