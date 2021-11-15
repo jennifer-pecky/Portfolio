@@ -1,160 +1,154 @@
-$peachprimary: #D7AD9D;
-$peachlight: #D9C6C0;
+$peachprimary: #d7ad9d;
+$peachlight: #d9c6c0;
 $peachlight2: #f0f0f0a6;
-$lightblue: #D0DBF8;
-$greyprimary: #C3C3C3;
+$lightblue: #d0dbf8;
+$greyprimary: #c3c3c3;
 $greylight2: #c3c3c37e;
 $white: #ffffff;
 
-@import '../../mixins/mixins.scss';
+@import "../../mixins/mixins.scss";
 
-.header{
+.header {
+  .header-wrapper {
+    position: absolute;
+    min-width: 100%;
+    max-height: 100%;
+    z-index: 12;
+    top: 25px;
+    @include flex(center, space-between);
 
-    .header-wrapper{
-        position: absolute;
-        min-width: 100%;
-        max-height: 100%;
-        z-index: 12;
-        top: 25px;
-       @include flex(center, space-between); 
-     
-            .logo-link{
-                margin-left: 5%;
-                text-decoration: none;
-                z-index: 10;
-               .logo-img{
-                   max-width: 8%;
-                   border-radius: 50%;
-               }
-        }
-        .opens{
-            margin-right: 0;
-        }
-        .menu-btn, .social-icons{
-           margin-right: 4%;
-            cursor: pointer;
-            .line1, .line2, .line3{
-                position: relative;
-                width: 30px;
-                height: 3px;
-                background-color: $peachprimary;
-                margin: 3px 0;
-                top: 0px;
-                -webkit-transition: .25s ease-in-out;
-                -moz-transition: .25s ease-in-out;
-                -o-transition: .25s ease-in-out;
-                transition: .25s ease-in-out;
-            }
-    }
-}
-
-.header-wrapper2{
-       width: 100%;
-       position: fixed;
-       bottom: 0;
-       z-index: 2;
-       color: $peachprimary;
-   .gmail-text{
-       position: absolute;
-       right: 6%;
-       bottom: 0;
-      a{
-       color: $greylight2;
-       writing-mode: vertical-lr;
-       font-size: 13px;
-       margin: 10px auto;
-       letter-spacing: 0.1em;
-       text-decoration: none;
-       @media screen and (max-width: 768px) {
-           display: none;
-       }
-          &:hover{
-              color: $greyprimary;
-          }
+    .logo-link {
+      margin-left: 5%;
+      text-decoration: none;
+      z-index: 10;
+      .logo-img {
+        max-width: 4%;
+        border-radius: 50%;
       }
-   }
-   .social-icons{
-    list-style: none;
-    position: relative;
-    z-index: 2;
-    left: 4%;
-    bottom: 0;
-    @media screen and (max-width: 768px) {
-        display: none;
     }
-      li{
-        padding: 2px;
-        a{
-            display: inline-block;
-            img{ 
-                max-width: 80%;
-              }
+    .opens {
+      margin-right: 0;
+    }
+    .menu-btn,
+    .social-icons {
+      margin-right: 4%;
+      cursor: pointer;
+      .line1,
+      .line2,
+      .line3 {
+        position: relative;
+        width: 30px;
+        height: 3px;
+        background-color: $peachprimary;
+        margin: 3px 0;
+        top: 0px;
+        -webkit-transition: 0.25s ease-in-out;
+        -moz-transition: 0.25s ease-in-out;
+        -o-transition: 0.25s ease-in-out;
+        transition: 0.25s ease-in-out;
+      }
+    }
+  }
+
+  .header-wrapper2 {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+    color: $peachprimary;
+    .gmail-text {
+      position: absolute;
+      right: 6%;
+      bottom: 0;
+      a {
+        color: $greylight2;
+        writing-mode: vertical-lr;
+        font-size: 13px;
+        margin: 10px auto;
+        letter-spacing: 0.1em;
+        text-decoration: none;
+        @media screen and (max-width: 768px) {
+          display: none;
         }
+        &:hover {
+          color: $greyprimary;
+        }
+      }
+    }
+    .social-icons {
+      list-style: none;
+      position: relative;
+      z-index: 2;
+      left: 4%;
+      bottom: 0;
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+      li {
+        padding: 2px;
+        a {
+          display: inline-block;
+          img {
+            max-width: 80%;
+          }
+        }
+      }
+    }
   }
 }
 
+.skew-div {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  @include widthandheight;
+  background-color: $black;
+  z-index: 2;
+  &:nth-child(2) {
+    background-color: #b99181c2;
+  }
+  &:nth-child(3) {
+    background-color: rgba(19, 18, 18, 0.884);
+  }
 }
 
-}
-
-.skew-div{
-    position: fixed;
-    left: 0%;
-    top: 0%;
-    @include widthandheight;
-    background-color: $black;
-    z-index: 2;
-    &:nth-child(2){
-        background-color: #b99181c2;
-    }
-    &:nth-child(3){
-    
-        background-color: rgba(19, 18, 18, 0.884);
-    }
-}
-
-
-.navigation{
-    background-color: #2f2f2f;
-    @include widthandheight;
-    @include flex(center, center);
-    position: fixed;
-    z-index: 2;
-    .nav-items{
-    
-        ul{
-            list-style: none;
-            .navlinks{
-                text-decoration: none;
-                color: $peachlight;
-                font-size: 30px;
-                text-align: center;
-                li{
-                    margin: 20px 0; 
-                    transition: all 0.3s ease-in-out;
-                    &:hover{
-                        color: $white;
-                        transform: scale(1.2);
-                    }
-                }
-            }
-         
+.navigation {
+  background-color: #2f2f2f;
+  @include widthandheight;
+  @include flex(center, center);
+  position: fixed;
+  z-index: 2;
+  .nav-items {
+    ul {
+      list-style: none;
+      .navlinks {
+        text-decoration: none;
+        color: $peachlight;
+        font-size: 30px;
+        text-align: center;
+        li {
+          margin: 20px 0;
+          transition: all 0.3s ease-in-out;
+          &:hover {
+            color: $white;
+            transform: scale(1.2);
+          }
         }
+      }
     }
+  }
 }
 
 .open .line1 {
-    top: 18px;
-    transform: rotate(45deg)translate(-9px, 6px) ;
-  }
-  
-.open .line2{
-    opacity: 0;
-  }
-  
-.open .line3{
-    top: -18px;
-    transform: rotate(-45deg )translate(2px, -18px);
-  }
+  top: 18px;
+  transform: rotate(45deg) translate(-9px, 6px);
+}
 
- 
+.open .line2 {
+  opacity: 0;
+}
+
+.open .line3 {
+  top: -18px;
+  transform: rotate(-45deg) translate(2px, -18px);
+}

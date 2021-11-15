@@ -1,29 +1,35 @@
-$peachprimary: #D7AD9D;
-$peachlight: #D9C6C0;
-$lightblue: #D0DBF8;
+$peachprimary: #d7ad9d;
+$peachlight: #d9c6c0;
+$lightblue: #d0dbf8;
 $black: #222223;
 $white: #ffffff;
-$greyprimary: #C3C3C3;
+$greyprimary: #c3c3c3;
 
-@import '../../mixins/mixins.scss';
+@import "../../mixins/mixins.scss";
 
-.main-main{
-    display: flex;
-    background-color: rgb(15, 15, 15);
-    position: relative;
-    z-index: -2;
-    @media screen and (max-width: 768px) {
-        flex-direction: column-reverse;
-    }
-    .pageline-div{
-        @include pagelineAnim;
-    }
+.main-main {
+  display: flex;
+  background-color: rgb(15, 15, 15);
+  position: relative;
+  @media screen and (max-width: 768px) {
+    flex-direction: column-reverse;
+  }
+  .pageline-div {
+    @include pagelineAnim;
+  }
 }
-.hide{  overflow: hidden;}
-.main{
+.hide {
+  overflow: hidden;
+}
+.main {
   width: 40%;
   height: 100vh;
-  background-image: linear-gradient(to left, rgb(15, 15, 15), rgba(14, 14, 14, 0.541)), url("../../Assets/Tomi36new.png");
+  background-image: linear-gradient(
+      to left,
+      rgb(15, 15, 15),
+      rgba(14, 14, 14, 0.541)
+    ),
+    url("../../Assets/Tomi36new.png");
   background-position-x: 63%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -32,97 +38,98 @@ $greyprimary: #C3C3C3;
     position: relative;
     width: 100%;
     height: 80vh;
+  }
 }
-}
-.content{
-    width: 60%;
-    height: auto;
-    color: $white;
-    position: relative;
-    top: 0;
-    right: -45%;
-    padding: 18% 0;
-    padding-right: 12%;
-    @media screen and (max-width: 768px) {
-        width: 100%;
-       right: 0;
-       padding: 18% 4%;
-       padding-right: 2%;
-    }
-    .small-heading{
-        color: $lightblue;
-        font-size: 24px;
-    }
-    .text-content{
-        .big-text{
-            font-size: 24px;
-            font-weight: bold;
-            padding: 30px 0;
-            width: 92%;
-            font-family: 'Poppins', sans-serif;
-            .name{
-                color: $peachprimary;
-            }
-        }
-        p{
-            line-height: 1.8;
-        }
-    }
-    .download{
-        display: inline-flex;
-        margin: 30px 0;
-        .link{
-            font-size: 14px;
-            color: $white;
-            font-weight: bold;
-            text-decoration: none;
-            margin-left: 10px;
-        }
-        img{
-            max-width: 10%;
-        }
-    }
-    h2{
+.content {
+  width: 60%;
+  height: auto;
+  color: $white;
+  position: relative;
+  top: 0;
+  right: -45%;
+  padding: 18% 0;
+  padding-right: 12%;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    right: 0;
+    padding: 18% 4%;
+    padding-right: 2%;
+  }
+  .small-heading {
+    color: $lightblue;
+    font-size: 24px;
+  }
+  .text-content {
+    .big-text {
+      font-size: 24px;
+      font-weight: bold;
+      padding: 30px 0;
+      width: 92%;
+      font-family: "Poppins", sans-serif;
+      .name {
         color: $peachprimary;
-        margin: 30px 0;
+      }
     }
-    .right-arrow{
-        @include flex(center, flex-start);
-        margin: 8px 0;
-        p{
-            font-size: 11px; 
-            font-weight: bold;
-            margin-left: 5px;
-            text-transform: uppercase;
-        }
-        img{
-            width: 6px;
-            height: 10px;
-        }
+    p {
+      line-height: 1.8;
     }
-    .techs{
-        display: flex;
-        ul{
-            margin-right: 100px;
-            .tech-h{
-                color: $lightblue;
-                margin-bottom: 20px;
-            }
-        }
+  }
+  .download {
+    display: inline-flex;
+    margin: 30px 0;
+    cursor: pointer;
+    .link {
+      font-size: 14px;
+      color: $white;
+      font-weight: bold;
+      text-decoration: none;
+      margin-left: 10px;
     }
-    .racheltomi{
-        font-family: 'Notable', sans-serif;
-        color: $white;
-        position: absolute;
-        font-size: 92px;
-        top: 68%;
-        left: 25%;
-        opacity: 0.1;
-        @media screen and (max-width: 768px) {
-            right: 0;
-            top: 80%;
-            width: 60%;
-            font-size: 48px;
-         }
+    img {
+      max-width: 10%;
     }
+  }
+  h2 {
+    color: $peachprimary;
+    margin: 30px 0;
+  }
+  .right-arrow {
+    @include flex(center, flex-start);
+    margin: 8px 0;
+    p {
+      font-size: 11px;
+      font-weight: bold;
+      margin-left: 5px;
+      text-transform: uppercase;
+    }
+    img {
+      width: 6px;
+      height: 10px;
+    }
+  }
+  .techs {
+    display: flex;
+    ul {
+      margin-right: 100px;
+      .tech-h {
+        color: $lightblue;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .racheltomi {
+    font-family: "Notable", sans-serif;
+    color: $white;
+    position: absolute;
+    font-size: 92px;
+    top: 68%;
+    left: 25%;
+    opacity: 0.1;
+    @media screen and (max-width: 768px) {
+      right: 0;
+      top: 80%;
+      width: 60%;
+      font-size: 48px;
+    }
+  }
 }
