@@ -35,8 +35,7 @@ const Hero = () => {
             Hi <img src={handWave} className="hand" alt="wave" />
           </motion.h1>
           <motion.h3 variants={heroAnim} className="herotext-h3">
-            I’m <span>Tomisin</span>, a front-end developer and UI designer
-            based in Nigeria.{" "}
+            I’m <span>Tomisin</span>, a front-end developer based in Nigeria.{" "}
           </motion.h3>
           <motion.p variants={heroAnim}>
             I design and build beautiful and functional user interfaces for
