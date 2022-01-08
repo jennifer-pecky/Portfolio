@@ -2,7 +2,6 @@ import project3 from "../../../Assets/IMS trending.png";
 import project1 from "../../../Assets/FF-watches.png";
 import project2 from "../../../Assets/spotify-clone-app4.jpg";
 import project5 from "../../../Assets/Paybox-screenshot.png";
-import project4 from "../../../Assets/dashboard-screenshot2.jpg";
 
 export const ProjectsData = [
   {
