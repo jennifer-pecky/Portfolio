@@ -60,7 +60,7 @@ const About = () => {
         <div className="download">
           <img src={downloadicon} alt="downloadlink" />
           <a
-            href="https://drive.google.com/file/d/15G3bMA2b_WNIxdcMeyVMvu4orvOguH9u/view?usp=sharing"
+            href="https://drive.google.com/file/d/1FwEzCY5Hv52DPoonMBIY0Qo490lOZ0-V/view?usp=sharing"
             target="_blank"
             className="link"
             rel="noreferrer"
