@@ -59,7 +59,7 @@ const Header = () => {
               </a>
             </li>
             <li>
-              <a href="https://instagram.com/girlliketomi">
+              <a href="https://instagram.com/racheltomiofficial">
                 <img src={IG} className="icon2" alt="instagram" />
               </a>
             </li>

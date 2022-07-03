@@ -29,7 +29,7 @@ const Navigation = (props) => {
             <li>ABOUT</li>
           </NavLink>
           <a
-            href="https://racheltomi.com"
+            href="https://blog.racheltomi.work"
             target="_blank"
             rel="noreferrer"
             className="navlinks"
