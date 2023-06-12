@@ -1,91 +1,108 @@
-$peachprimary: #D7AD9D;
-$peachlight: #D9C6C0;
-$lightblue: #D0DBF8;
-$greyprimary: #C3C3C3;
+$peachprimary: #d7ad9d;
+$peachlight: #d9c6c0;
+$lightblue: #d0dbf8;
+$greyprimary: #c3c3c3;
 $white: #ffffff;
 $black: #222223;
 
-  @mixin flex($align,$justify) {
-    display: flex;
-    align-items: $align;
-    justify-content: $justify;
+@mixin flex($align, $justify) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
 }
-@mixin background{
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; 
+@mixin background {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-@mixin widthandheight{
-    width: 100%;
-    height: 100vh;
+@mixin widthandheight {
+  width: 100%;
+  height: 100vh;
 }
 @mixin back($top) {
-    position: absolute;
-    right: 5%;
-    top: $top;
-    font-size: 14px;
-    color: $peachlight;
-    @media screen and (max-width:768px) {
-        top: 17%;
-     } 
+  position: absolute;
+  right: 5%;
+  top: $top;
+  font-size: 14px;
+  color: $peachlight;
+  @media screen and (max-width: 768px) {
+    top: 17%;
+  }
 }
 
-@mixin line($top){
-    width: 70px;
-    height: 4px;
-    background-color: $greyprimary;
-    top: $top;
-    position: relative;
+@mixin line($top) {
+  width: 70px;
+  height: 4px;
+  background-color: $greyprimary;
+  top: $top;
+  position: relative;
 }
 
-@mixin headings($margin-bottom){
-    color: $peachprimary;
-    text-align: left;
-    margin-bottom: $margin-bottom;
-    font-size: 36px;  
-    @media screen and (max-width: 768px) {
-        font-size: 28px;
-    }
+@mixin headings($margin-bottom) {
+  color: $peachprimary;
+  text-align: left;
+  margin-bottom: $margin-bottom;
+  font-size: 36px;
+  @media screen and (max-width: 768px) {
+    font-size: 28px;
+  }
 }
 
-@mixin mainButton{
-    padding: 12px 18px;
-    margin: 25px 0;
-    font-weight: bold;
-    background-color: $peachprimary;
-    cursor: pointer;
-    border: none;
-    transition: all 0.5s ease-in-out;
-    &:hover{
-        background-color: $peachlight;
-    }
+@mixin mainButton {
+  padding: 22px 18px;
+  margin: 25px 0;
+  font-weight: bold;
+  background-color: $peachprimary;
+  cursor: pointer;
+  border: none;
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    background-color: $peachlight;
+  }
+}
+
+@mixin outlineButton {
+  padding: 22px 18px;
+  margin: 25px 0;
+  font-weight: bold;
+  color: $peachprimary;
+  border-radius: 40px;
+  background-color: transparent;
+  border: 1px solid $peachprimary;
+  cursor: pointer;
+  //   border: none;
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    background-color: $peachlight;
+    color: $black;
+  }
 }
 
 @mixin pagelineAnim {
-    position: fixed;
-    left: 0%;
-    top: 0%;
-    width: 100%;
-    height: 100vh;
-    background-color: $black;
-    z-index: 2;
-    &:nth-child(2){
-        background-color: rgb(26, 25, 25);
-    }
-    &:nth-child(3){
-        background-color: rgb(26, 26, 26);
-    }
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100vh;
+  background-color: $black;
+  z-index: 2;
+  &:nth-child(2) {
+    background-color: rgb(26, 25, 25);
+  }
+  &:nth-child(3) {
+    background-color: rgb(26, 26, 26);
+  }
 }
 
 @mixin loadmore {
-    background-color: $peachprimary;
-color: $white;
-border: none;
-padding: 8px 10px;
-float: right;
-margin: 0% 10% 2% 0;
-cursor: pointer;
-&:hover{
-  background-color: $peachlight;
-}
+  background-color: $peachprimary;
+  color: $white;
+  border: none;
+  padding: 8px 10px;
+  float: right;
+  margin: 0% 10% 2% 0;
+  cursor: pointer;
+  &:hover {
+    background-color: $peachlight;
+  }
 }

@@ -1,46 +1,54 @@
-@import url('https://fonts.googleapis.com/css2?family=Peralta&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Peralta&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Notable&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-html, body{
-    height: 100%;
-    position: relative;
-    overflow-x: hidden;
+html,
+body {
+  height: 100%;
+  position: relative;
+  overflow-x: hidden;
 }
-h1, h2, h3, h4, h5, h6{
-   font-family: 'Noto Serif', serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Noto Serif", serif;
 }
-.hero-h1, .herotext-h3, .project-h1{
-    font-family: 'Noto Serif', serif;
+.hero-h1,
+.herotext-h3,
+.project-h1 {
+  font-family: "Noto Serif", serif;
 }
-p{
-    font-family: 'Noto Serif', serif;
-    letter-spacing: 0.2px;
-    line-height: 1.5;
+p {
+  font-family: "Noto Serif", serif;
+  letter-spacing: 0.2px;
+  line-height: 1.5;
 }
-.small-h{
-    font-family: 'Peralta', cursive;
-    margin: 0 10px;
- }
- .talk{
-    font-family: 'Charmonman', cursive;  
+.small-h {
+  font-family: "Peralta", cursive;
+  margin: 0 10px;
+}
+.talk {
+  font-family: "Charmonman", cursive;
 }
 
- //SCROLLBAR STYLES
+//SCROLLBAR STYLES
 
- ::-webkit-scrollbar {
-    width: 5px;  
-    height: 5px;             
-  }
-  ::-webkit-scrollbar-track {
-    background: #141414;      
-  }
-  ::-webkit-scrollbar-thumb {
-    background-color:#D7AD9D;   
-    border-radius: 15px;      
-    border: 2px solid white;  
-  }
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #141414;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #d7ad9d;
+  border-radius: 15px;
+  border: 2px solid white;
+}

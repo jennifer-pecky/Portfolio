@@ -59,12 +59,12 @@ const Header = () => {
               </a>
             </li>
             <li>
-              <a href="https://instagram.com/racheltomiofficial">
+              <a href="https://instagram.com/theracheltomi">
                 <img src={IG} className="icon2" alt="instagram" />
               </a>
             </li>
             <li>
-              <a href="https://twitter.com/racheltomidev">
+              <a href="https://twitter.com/theracheltomi">
                 <img src={twitter} className="icon3" alt="twitter" />
               </a>
             </li>

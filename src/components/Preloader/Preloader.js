@@ -1,18 +1,17 @@
-import React, { useEffect } from 'react';
-import './Preloader.scss';
+import React, { useEffect } from "react";
+import "./Preloader.scss";
 
-const Preloader = ({setLoading}) => {
-
-useEffect(()=> {
-    const timer = setTimeout(()=> {
-        setLoading(false);
-    }, 4000);
+const Preloader = ({ setLoading }) => {
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000);
     return () => clearTimeout(timer);
-})
+  });
 
-    return(
-     <div className="loader">
-     <div className="name-anim">
+  return (
+    <div className="loader">
+      <div className="name-anim">
         <p className="load">r</p>
         <p className="load">a</p>
         <p className="load">c</p>
@@ -23,9 +22,9 @@ useEffect(()=> {
         <p className="load">o</p>
         <p className="load">m</p>
         <p className="load">i</p>
-     </div>
-     </div>
-    )
-}
+      </div>
+    </div>
+  );
+};
 
 export default Preloader;

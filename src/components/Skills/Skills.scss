@@ -66,6 +66,7 @@ $projectcolor: #3f3f3f;
 
 .project-section {
   height: 100%;
+  background-color: #e4e4e4;
   @media screen and (max-width: 768px) {
     padding: 50px 0px;
   }
@@ -189,6 +190,7 @@ $projectcolor: #3f3f3f;
   }
   .card-container {
     max-width: 100%;
+
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-gap: 55px;
@@ -202,6 +204,7 @@ $projectcolor: #3f3f3f;
       position: relative;
       bottom: 0;
       left: 0;
+
       background-color: #222222;
       width: 100%;
       height: 400px;
@@ -214,6 +217,7 @@ $projectcolor: #3f3f3f;
         left: 0;
         width: 100%;
         height: 100%;
+
         display: flex;
         justify-content: center;
         align-items: center;
@@ -270,6 +274,11 @@ $projectcolor: #3f3f3f;
       }
 
       .card-front.front2 {
+        // background: linear-gradient(
+        //     rgba(21, 19, 19, 0.849),
+        //     rgba(44, 29, 25, 0.884)
+        //   ),
+        //   url("../../Assets/ffcut.jpg");
         background: #222222;
         @include background;
         border-radius: 15px;

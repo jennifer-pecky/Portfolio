@@ -24,6 +24,9 @@ $white: #ffffff;
       .logo-img {
         max-width: 4%;
         border-radius: 50%;
+        @media screen and (max-width: 768px) {
+          max-width: 9%;
+        }
       }
     }
     .opens {
@@ -151,4 +154,10 @@ $white: #ffffff;
 .open .line3 {
   top: -18px;
   transform: rotate(-45deg) translate(2px, -18px);
+}
+.togglediv {
+  display: flex;
+  align-items: center;
+  color: green;
+  font-weight: bold;
 }
