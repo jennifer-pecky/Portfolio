@@ -65,7 +65,13 @@
     background-color: $white;
   }
 }
-
+@mixin textGradient {
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+  animation: gradient 3s alternate infinite;
+}
 @mixin pagelineAnim {
   position: fixed;
   left: 0%;
@@ -86,7 +92,12 @@
   float: right;
   margin: 0% 10% 2% 0;
   cursor: pointer;
-  &:hover {
-    border: 2px solid $white;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
   }
 }

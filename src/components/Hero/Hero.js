@@ -32,14 +32,14 @@ const Hero = () => {
       <SvgWave />
       <div className="hero-dark">
         <motion.div variants={heroAnim} className="hero-text">
-          <motion.span variants={heroh1} className="namegradient">
+          <motion.p variants={heroh1} className="namegradient">
             Rachel Tomi
-          </motion.span>
+          </motion.p>
           <motion.h1 variants={heroh1} className="hero-h1">
             Front-End Developer
           </motion.h1>
 
-          <motion.p variants={heroAnim}>
+          <motion.p className="texth1" variants={heroAnim}>
             I design and build beautiful and functional user interfaces for
             websites and applications.
           </motion.p>

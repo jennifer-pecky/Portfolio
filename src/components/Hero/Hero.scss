@@ -13,26 +13,27 @@
     padding: 0 12%;
     gap: 100px;
     position: relative;
-    // left: 2%;
     @media screen and (max-width: 768px) {
       flex-direction: column;
       padding: 0%;
     }
+
     .hero-text {
       width: 85%;
       @include flex(flex-start, center);
       flex-direction: column;
       .namegradient {
-        color: $primaryColor;
+        background-image: radial-gradient(
+          circle at 250%,
+          #f10262 50%,
+          #ffffff33 80%,
+          #9c8f94 85%,
+          #b44c75 60%
+        );
+        @include textGradient;
         font-size: 5rem;
         position: relative;
         left: -10%;
-        // background: linear-gradient(-45deg, "#eee", "#d7ad9d");
-        // background-clip: text;
-        // -webkit-background-clip: text;
-        // -webkit-text-fill-color: transparent;
-        // background-size: 400% 400%;
-        // animation: gradient 3s ease infinite;
       }
       .hero-h1 {
         color: $white;
@@ -40,7 +41,6 @@
         line-height: 5rem;
         letter-spacing: 0.0125rem;
         font-weight: bold;
-        margin: 5px 0;
         @media (max-width: 768px) {
           font-size: 2.2rem;
           margin-bottom: 20px;
@@ -49,8 +49,9 @@
       p {
         color: $white;
         padding: 16px 0;
-        width: 50%;
-        // text-align: center;
+        width: 60%;
+        font-weight: bold;
+        font-size: 1.2rem;
         @media (max-width: 768px) {
           font-size: 14px;
           margin: 0;
@@ -60,7 +61,14 @@
         padding-top: 100px;
         h1 {
           color: $grey;
-          opacity: 0.4;
+          font-size: 1.8rem;
+          background-image: radial-gradient(
+            circle at 250%,
+            #62555a 50%,
+            #ffffff33 80%,
+            #9c8f94 85%
+          );
+          @include textGradient;
         }
       }
       // .hand {
