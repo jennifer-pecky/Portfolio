@@ -3,13 +3,7 @@ import { SvgWave } from "../../Svg/Svg";
 import "./Hero.scss";
 //Animations
 import { motion } from "framer-motion";
-import {
-  pageAnim,
-  heroAnim,
-  heroh1,
-  fadein,
-  pagelineAnim,
-} from "../../Animation";
+import { pageAnim, heroAnim, fadein, pagelineAnim } from "../../Animation";
 import { useHistory } from "react-router-dom";
 import Button from "../Button/Button";
 import techimages from "../../Assets/techimages.png";
@@ -29,11 +23,11 @@ const Hero = () => {
       <motion.div className="pageline-div" variants={pagelineAnim}></motion.div>
       <SvgWave />
       <div className="hero-dark">
-        <motion.div variants={heroAnim} className="hero-text">
-          <motion.h2 variants={heroh1} className="namegradient">
+        <motion.div className="hero-text">
+          <motion.h2 variants={heroAnim} className="namegradient">
             Rachel Tomi
           </motion.h2>
-          <motion.h1 variants={heroh1} className="hero-h1">
+          <motion.h1 variants={heroAnim} className="hero-h1">
             Front-End Developer
           </motion.h1>
 
