@@ -4,7 +4,7 @@ import logoimg from "../../Assets/headshot2.png";
 import Navigation from "./Navigation";
 import "./Header.scss";
 import { motion } from "framer-motion";
-import { lineAnim, lineAnimContainer } from "../../Animation";
+import { lineAnimContainer } from "../../Animation";
 
 const Header = () => {
   const [click, setClick] = useState(false);

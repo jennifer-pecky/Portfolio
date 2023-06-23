@@ -1,6 +1,5 @@
 import React from "react";
 import { SvgWave } from "../../Svg/Svg";
-import handWave from "../../Assets/bye-hand.png";
 import "./Hero.scss";
 //Animations
 import { motion } from "framer-motion";
@@ -12,7 +11,6 @@ import {
   pagelineAnim,
 } from "../../Animation";
 import { useHistory } from "react-router-dom";
-import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import Button from "../Button/Button";
 import techimages from "../../Assets/techimages.png";
 

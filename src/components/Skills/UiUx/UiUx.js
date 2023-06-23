@@ -4,7 +4,7 @@ import UiUxHero from "./UiUxHero";
 import UiUxProjects from "./UiUxProjects";
 //Animations
 import { motion } from "framer-motion";
-import { pageAnim, pagelineAnim } from "../../../Animation";
+import { pageAnim } from "../../../Animation";
 import { SvgWave } from "../../../Svg/Svg";
 
 const UiUx = () => {

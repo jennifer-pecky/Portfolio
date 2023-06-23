@@ -4,7 +4,7 @@ import FrontendHero from "./FrontendHero";
 import FrontendProjects from "./FrontendProjects";
 //Animations
 import { motion } from "framer-motion";
-import { pageAnim, pagelineAnim } from "../../../Animation";
+import { pageAnim } from "../../../Animation";
 import { SvgWave } from "../../../Svg/Svg";
 
 const Frontend = () => {

@@ -5,7 +5,7 @@ import Button from "../../Button/Button";
 import { heroAnim } from "../../../Animation";
 
 const UiUxProjects = () => {
-  const [show, setShow] = useState(4);
+  const [, setShow] = useState(4);
 
   const CardsloadHandler = () => {
     setShow((initialValue) => initialValue + 4);
