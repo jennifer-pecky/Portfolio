@@ -1,11 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { heroAnim } from "../../../Animation";
+import { heroAnim, pagelineAnim } from "../../../Animation";
 
 const UiUxHero = () => {
   return (
     <section className="main-section" id="uiux-section">
+      <motion.div className="pageline-div" variants={pagelineAnim}></motion.div>
+      <motion.div className="pageline-div" variants={pagelineAnim}></motion.div>
       <div className="hero">
         <Link to="/skillset">
           <p className="back">&larr;</p>

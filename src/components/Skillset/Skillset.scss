@@ -1,75 +1,107 @@
-$peachprimary: #D7AD9D;
-$peachlight: #D9C6C0;
-$lightblue: #D0DBF8;
-$greyprimary: #C3C3C3;
+$peachprimary: #d7ad9d;
+$peachlight: #d9c6c0;
+$lightblue: #d0dbf8;
+$greyprimary: #c3c3c3;
 $white: #ffffff;
 
-@import '../../mixins/mixins.scss';
+@import "../../mixins/mixins.scss";
 
-.skillset{
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    .pageline-div{
-        @include pagelineAnim;
+.skillset {
+  @include widthandheight(100%, 100%);
+
+  .pageline-div {
+    @include pagelineAnim;
+  }
+  .skills-div {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-top: 8%;
+    margin-left: 10%;
+    @media screen and (max-width: 768px) {
+      margin-top: 56%;
+      width: 100%;
     }
-    .skills-div{
-        display: flex;
+    .back {
+      @include back(15%);
+      font-size: 24px;
+    }
+    .skill-h1 {
+      h2 {
+        @include headings(60px);
+        @media screen and (max-width: 768px) {
+          font-size: 24px;
+        }
+      }
+      .underline {
+        @include line(-75px);
+      }
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+
+      @media screen and (max-width: 768px) {
         flex-direction: column;
-        width: 70%;
-        margin-top: 15%;
-        margin-left: 17%;
-        @media screen and (max-width:768px) {
-           margin-top: 56%;
-           width: 100%;
-         }
-        .back{  
-           @include back(20%);
-           font-size: 24px;
-           }
-        .skill-h1{
-            h1{
-               @include headings(80px);
-                @media screen and (max-width:768px) {
-                   font-size: 24px;
-                 }
-              }
-              .underline{
-              @include line(-75px);
-            }
+      }
+      .skills-heading {
+        text-decoration: none;
+        .skills-heading-frontend {
+          background: linear-gradient(#000000e9, rgba(21, 20, 20, 0.919)),
+            url("../../Assets/coding.jpg");
+
+          @include flex(center, center);
+          @include skillsBackground;
+          outline: 3px solid rgb(215, 195, 198);
         }
-     
-        .skills{
-            display: flex;
-            margin-top: -20px;
-            @media screen and (max-width:768px) {
-               flex-direction: column; 
-            }
-            .skills-heading{
-                color: $white;
-                text-decoration: none;
-                font-size: 24px;
-            }
-            .frontend, .uiux, .wordpress{
-                text-align: left;
-                margin-right: 100px;
-                @media screen and (max-width:768px) {
-                   margin-bottom: 25px;
-                 }
-                h2{
-                    color: $white;
-                    font-size: 21px;
-                    @media screen and (max-width:768px) {
-                       font-size: 18px;
-                      } 
-                }
-                .skill-link{
-                   text-decoration: none;
-                    font-weight: bold;
-                    color: $peachlight;
-                 p{ font-size: 24px;}
-                }
-            }
+      }
+      .skills-heading {
+        text-decoration: none;
+        .skills-heading-uiux {
+          background: linear-gradient(#000000e9, rgba(21, 20, 20, 0.919)),
+            url("../../Assets/Paybox-mockup.png");
+
+          @include flex(center, center);
+          @include skillsBackground;
+          outline: 3px solid rgb(215, 195, 198);
         }
+      }
+      .skills-heading {
+        text-decoration: none;
+        .skills-heading-techwriting {
+          background: linear-gradient(#000000e9, rgba(21, 20, 20, 0.919)),
+            url("../../Assets/techwriting.jpg");
+          @include flex(center, center);
+          @include skillsBackground;
+          outline: 3px solid rgb(215, 195, 198);
+        }
+      }
+      .frontend,
+      .uiux,
+      .wordpress {
+        text-align: left;
+        margin-right: 30px;
+        @media screen and (max-width: 768px) {
+          margin-bottom: 25px;
+        }
+        h2 {
+          color: $white;
+          font-size: 21px;
+          @media screen and (max-width: 768px) {
+            font-size: 18px;
+          }
+        }
+        .skill-link {
+          text-decoration: none;
+          font-weight: bold;
+          color: $peachlight;
+          text-align: center;
+          p {
+            font-size: 24px;
+          }
+        }
+      }
     }
+  }
 }

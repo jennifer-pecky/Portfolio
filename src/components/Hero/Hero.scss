@@ -1,113 +1,83 @@
-$peachprimary: #d7ad9d;
-$peachlight: #d9c6c0;
-$lightblue: #d0dbf8;
-$greyprimary: #c3c3c3;
-$white: #ffffff;
-
+@import "_color.scss";
 @import "../../mixins/mixins.scss";
 
 .hero-section {
-  @include widthandheight;
+  @include widthandheight(100%, auto);
   @include flex(center, center);
-  background-image: "";
   .pageline-div {
     @include pagelineAnim;
   }
   .hero-dark {
+    @include widthandheight(100%, 100vh);
     @include flex(center, center);
     padding: 0 12%;
     gap: 100px;
     position: relative;
-    left: 2%;
+    // left: 2%;
     @media screen and (max-width: 768px) {
       flex-direction: column;
       padding: 0%;
     }
     .hero-text {
-      // @include flex(center, center);
-      // flex-direction: column;
-      width: 80%;
-      // flex: 2;
-      .aboutlink {
-        color: $peachprimary;
+      width: 85%;
+      @include flex(flex-start, center);
+      flex-direction: column;
+      .namegradient {
+        color: $primaryColor;
+        font-size: 5rem;
+        position: relative;
+        left: -10%;
+        // background: linear-gradient(-45deg, "#eee", "#d7ad9d");
+        // background-clip: text;
+        // -webkit-background-clip: text;
+        // -webkit-text-fill-color: transparent;
+        // background-size: 400% 400%;
+        // animation: gradient 3s ease infinite;
+      }
+      .hero-h1 {
+        color: $white;
+        font-size: 5rem;
+        line-height: 5rem;
+        letter-spacing: 0.0125rem;
         font-weight: bold;
+        margin: 5px 0;
+        @media (max-width: 768px) {
+          font-size: 2.2rem;
+          margin-bottom: 20px;
+        }
       }
       p {
         color: $white;
-        margin: 13px 0;
+        padding: 16px 0;
+        width: 50%;
         // text-align: center;
         @media (max-width: 768px) {
           font-size: 14px;
           margin: 0;
         }
       }
-      h1 {
-        color: $white;
-
-        font-size: 2rem;
-        margin: 10px 0;
-        @media (max-width: 768px) {
-          font-size: 16px;
+      .techiconsdiv {
+        padding-top: 100px;
+        h1 {
+          color: $grey;
+          opacity: 0.4;
         }
       }
-      h3 {
-        color: $white;
-        font-size: 5rem;
-        // text-align: center;
-
-        font-family: "Clash Grotesk Semibold", serif;
-        // font-family: "Mark Pro,sans-serif";
-        line-height: 1;
-        font-weight: bold;
-        margin: 10px 0;
-        @media (max-width: 768px) {
-          font-size: 2.2rem;
-          margin-bottom: 20px;
-        }
-        .namegradient {
-          color: $peachprimary;
-          // background: linear-gradient(-45deg, "#eee", "#d7ad9d");
-          // background-clip: text;
-          // -webkit-background-clip: text;
-          // -webkit-text-fill-color: transparent;
-          // background-size: 400% 400%;
-          // animation: gradient 3s ease infinite;
-        }
-      }
-      .hand {
-        animation: hello 3s ease infinite;
-        transform-origin: 70% 70%;
-        width: 5%;
-        @media screen and (max-width: 768px) {
-          width: 4%;
-        }
-      }
-    }
-    .hero-btn {
-      @include outlineButton;
+      // .hand {
+      //   animation: hello 3s ease infinite;
+      //   transform-origin: 70% 70%;
+      //   width: 5%;
+      //   @media screen and (max-width: 768px) {
+      //     width: 4%;
+      //   }
+      // }
     }
   }
-  .hero-img {
-    flex: 1;
-    width: 100%;
-    // opacity: 50%;
-    img {
-      max-width: 160%;
-      height: 100vh;
-      border-radius: 6px;
-      @media screen and (max-width: 768px) {
-        max-width: 60%;
-      }
-    }
-  }
-  .btnTextDiv {
-    @include flex(center, space-between);
-    @media screen and (max-width: 768px) {
-      flex-direction: column-reverse;
-    }
-    button {
-      width: 100%;
-    }
+  .hero-btn {
+    // // @include flex(flex-start, center);
+    // @media screen and (max-width: 768px) {
+    //   flex-direction: column-reverse;
+    // }
     p {
       padding-left: 20px;
       @media screen and (max-width: 768px) {
@@ -117,29 +87,29 @@ $white: #ffffff;
   }
 }
 
-@keyframes hello {
-  0% {
-    transform: rotate(0deg);
-  }
-  10% {
-    transform: rotate(14deg);
-  }
-  20% {
-    transform: rotate(-8deg);
-  }
-  30% {
-    transform: rotate(14deg);
-  }
-  40% {
-    transform: rotate(10deg);
-  }
-  50% {
-    transform: rotate(-4deg);
-  }
-  60% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
+// @keyframes hello {
+//   0% {
+//     transform: rotate(0deg);
+//   }
+//   10% {
+//     transform: rotate(14deg);
+//   }
+//   20% {
+//     transform: rotate(-8deg);
+//   }
+//   30% {
+//     transform: rotate(14deg);
+//   }
+//   40% {
+//     transform: rotate(10deg);
+//   }
+//   50% {
+//     transform: rotate(-4deg);
+//   }
+//   60% {
+//     transform: rotate(0deg);
+//   }
+//   100% {
+//     transform: rotate(0deg);
+//   }
+// }

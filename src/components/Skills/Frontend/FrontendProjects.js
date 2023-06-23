@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import externallinkicon from "../../../Assets/external-link-alt-solid.svg";
-import githubicon from "../../../Assets/github-brands.svg";
+import { motion } from "framer-motion";
 import Footer from "../../Footer/Footer";
 import { ProjectsData } from "./ProjectsData";
+import Button from "../../Button/Button";
+import { heroAnim } from "../../../Animation";
 
 const FrontProjects = () => {
   const [show, setShow] = useState(3);
@@ -13,7 +14,7 @@ const FrontProjects = () => {
 
   return (
     <>
-      <div className="project-section">
+      <motion.div variants={heroAnim} className="project-section">
         <div className="title">
           <div className="line"></div>
           <div className="text">
@@ -31,7 +32,11 @@ const FrontProjects = () => {
                 <p></p>
                 <ul>
                   {item.stacks.map((list, index) => (
-                    <li key={index}>{list}</li>
+                    <div className="btngrey">
+                      <Button secondary key={index}>
+                        {list}
+                      </Button>
+                    </div>
                   ))}
                 </ul>
                 <div>
@@ -41,15 +46,13 @@ const FrontProjects = () => {
                   <div className="livelink">
                     <div className="link">
                       <a href={item.url} rel="noreferrer" target="_blank">
-                        <p>Live link</p>
+                        <Button primary>Live link</Button>
                       </a>
-                      <img src={externallinkicon} alt="livelink" />
                     </div>
                     <div className="link">
                       <a href={item.github} rel="noreferrer" target="_blank">
-                        <p>Code</p>
+                        <Button outline>Code</Button>
                       </a>
-                      <img src={githubicon} alt="livelink" />
                     </div>
                   </div>
                 </div>
@@ -57,11 +60,13 @@ const FrontProjects = () => {
             </div>
           </div>
         ))}
-        <button onClick={loadHandler} className="loadBtn">
-          Load More
-        </button>
-        <Footer />
-      </div>
+        <div className="loadBtn">
+          <Button primary onClick={loadHandler}>
+            Load More
+          </Button>
+        </div>
+      </motion.div>
+      <Footer />
     </>
   );
 };

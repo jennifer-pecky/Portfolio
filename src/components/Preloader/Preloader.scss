@@ -1,87 +1,82 @@
-$peachprimary: #D7AD9D;
-$peachlight: #D9C6C0;
-$lightblue: #D0DBF8;
-$greyprimary: #C3C3C3;
-$white: #ffffff;
-$projectcolor: #3F3F3F;
+@import "/color";
 
-:root{
+:root {
   --effect: scale 3s linear infinite;
-} 
-.loader{
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.808);
-    position: fixed;
-    z-index: 10;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  .name-anim{
+}
+.loader {
+  width: 100%;
+  height: 100vh;
+  background-color: $bgLightColor;
+  position: fixed;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .name-anim {
     .load {
-        display: inline-block;
-        text-transform: uppercase;
-        text-align: center;
-        font-size: 3em;
-        font-family: arial;
-        font-weight: 400;
-        transform: scale(.8);
-        color: $peachlight;
-        @media screen and (max-width: 768px) {
-            font-size: 2rem;
-        }
+      display: inline-block;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 3em;
+      font-family: "Plus Jakarta Sans", sans-serif;
+      font-weight: 400;
+      transform: scale(0.8);
+      color: $grey;
+      @media screen and (max-width: 768px) {
+        font-size: 2rem;
       }
+    }
   }
-    
 }
 
-.load:nth-child(1){
-    animation: var(--effect);
-   }
- .load:nth-child(2) {
-    animation: var(--effect) .125s;
-  }
-  .load:nth-child(3) {
-    animation: var(--effect) .25s;
-  }
-  .load:nth-child(4) {
-    animation: var(--effect) .375s;
-  }
-  .load:nth-child(5) {
-    animation: var(--effect) .5s;
-  }
-  .load:nth-child(6) {
-    animation: var(--effect) .675s;
-  }
-  .load:nth-child(7) {
-    animation: var(--effect) .75s;
-  }
-  .load:nth-child(8) {
-    animation: var(--effect) .75s;
-  }
-  .load:nth-child(9) {
-    animation: var(--effect) .175s;
-  }
-  .load:nth-child(10) {
-    animation: var(--effect) .275s;
-  }
-  @keyframes scale {
-    0% {
-      transform: scale(.8);
-      color: white;
-      -webkit-text-stroke: 1px white;
-    }
-  
-    20% {
-      transform: scale(1.2);
-      color: #D7AD9D;
-      filter: drop-shadow(0 0 1px #D7AD9D)drop-shadow(0 0 1px white)drop-shadow(0 0 3px rgba(171, 171, 255, 0.795))drop-shadow(0 0 5px #D7AD9D)hue-rotate(10turn);
-    }
-  
-    50% {
-      transform: scale(.8);
-      color: $peachprimary;
-      -webkit-text-stroke: 2px wheat;
-    }
+.load:nth-child(1) {
+  animation: var(--effect);
 }
-  
+.load:nth-child(2) {
+  animation: var(--effect) 0.125s;
+}
+.load:nth-child(3) {
+  animation: var(--effect) 0.25s;
+}
+.load:nth-child(4) {
+  animation: var(--effect) 0.375s;
+}
+.load:nth-child(5) {
+  animation: var(--effect) 0.5s;
+}
+.load:nth-child(6) {
+  animation: var(--effect) 0.675s;
+}
+.load:nth-child(7) {
+  animation: var(--effect) 0.75s;
+}
+.load:nth-child(8) {
+  animation: var(--effect) 0.75s;
+}
+.load:nth-child(9) {
+  animation: var(--effect) 0.175s;
+}
+.load:nth-child(10) {
+  animation: var(--effect) 0.275s;
+}
+@keyframes scale {
+  0% {
+    transform: scale(0.8);
+    color: white;
+    -webkit-text-stroke: 1px white;
+  }
+
+  20% {
+    transform: scale(1.2);
+    color: #d7ad9d;
+    filter: drop-shadow(0 0 1px #d7ad9d) drop-shadow(0 0 1px white)
+      drop-shadow(0 0 3px rgba(171, 171, 255, 0.795))
+      drop-shadow(0 0 5px #d7ad9d) hue-rotate(10turn);
+  }
+
+  50% {
+    transform: scale(0.8);
+    color: $primaryColor;
+    -webkit-text-stroke: 2px wheat;
+  }
+}

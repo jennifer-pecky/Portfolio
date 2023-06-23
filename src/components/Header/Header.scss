@@ -1,29 +1,24 @@
-$peachprimary: #d7ad9d;
-$peachlight: #d9c6c0;
-$peachlight2: #f0f0f0a6;
-$lightblue: #d0dbf8;
-$greyprimary: #c3c3c3;
-$greylight2: #c3c3c37e;
-$white: #ffffff;
-
+@import "/color";
 @import "../../mixins/mixins.scss";
 
 .header {
+  @include widthandheight(100%, 100%);
   .header-wrapper {
-    position: absolute;
-    min-width: 100%;
-    max-height: 100%;
-    z-index: 12;
     top: 25px;
     @include flex(center, space-between);
-
+    padding: 22px 16px;
     .logo-link {
-      margin-left: 5%;
       text-decoration: none;
       z-index: 10;
       .logo-img {
-        max-width: 4%;
+        @include widthandheight(3rem, 3rem);
+        object-fit: cover;
         border-radius: 50%;
+        border: 4px solid $primaryColor;
+        border-bottom: 20px;
+        border-left-width: 0;
+        border-bottom-width: 20px;
+        transform: rotate(-15deg);
         @media screen and (max-width: 768px) {
           max-width: 9%;
         }
@@ -34,15 +29,15 @@ $white: #ffffff;
     }
     .menu-btn,
     .social-icons {
-      margin-right: 4%;
       cursor: pointer;
       .line1,
       .line2,
       .line3 {
         position: relative;
-        width: 30px;
-        height: 3px;
-        background-color: $peachprimary;
+        z-index: 999;
+        @include widthandheight(25px, 3px);
+
+        background-color: $white;
         margin: 3px 0;
         top: 0px;
         -webkit-transition: 0.25s ease-in-out;
@@ -51,20 +46,63 @@ $white: #ffffff;
         transition: 0.25s ease-in-out;
       }
     }
-  }
+    .navsecondary {
+      @include flex(center, center);
+      position: relative;
+      z-index: 999;
+      .locationdiv {
+        @include flex(center, center);
+        margin: 0 20px;
+        p {
+          color: $white;
+          font-weight: bold;
+          font-size: 0.7rem;
+        }
+        .colordiv {
+          @include widthandheight(12px, 12px);
 
+          margin: 0 7px;
+          border: 2px solid red;
+          border-radius: 50%;
+          background-color: rgb(230, 100, 122);
+        }
+      }
+    }
+  }
+}
+
+.skew-div {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  @include widthandheight(100%, 100vh);
+  background-color: $black;
+  z-index: 2;
+  &:nth-child(2) {
+    background-color: $primaryColor;
+  }
+  &:nth-child(3) {
+    background-color: rgba(19, 18, 18, 0.884);
+  }
+}
+
+.navigation {
+  @include widthandheight(100%, 100vh);
+  position: absolute;
+  z-index: 999;
+  top: 0;
   .header-wrapper2 {
     width: 100%;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     z-index: 2;
-    color: $peachprimary;
+    color: $white;
     .gmail-text {
       position: absolute;
-      right: 6%;
-      bottom: 0;
+      right: 4%;
+      bottom: 2%;
       a {
-        color: $greylight2;
+        color: $grey;
         writing-mode: vertical-lr;
         font-size: 13px;
         margin: 10px auto;
@@ -74,15 +112,15 @@ $white: #ffffff;
           display: none;
         }
         &:hover {
-          color: $greyprimary;
+          color: $grey;
         }
       }
     }
     .social-icons {
       list-style: none;
-      position: relative;
+      position: absolute;
       z-index: 2;
-      left: 4%;
+      left: 2%;
       bottom: 0;
       @media screen and (max-width: 768px) {
         display: none;
@@ -98,36 +136,17 @@ $white: #ffffff;
       }
     }
   }
-}
-
-.skew-div {
-  position: fixed;
-  left: 0%;
-  top: 0%;
-  @include widthandheight;
-  background-color: $black;
-  z-index: 2;
-  &:nth-child(2) {
-    background-color: #b99181c2;
-  }
-  &:nth-child(3) {
-    background-color: rgba(19, 18, 18, 0.884);
-  }
-}
-
-.navigation {
-  background-color: #2f2f2f;
-  @include widthandheight;
-  @include flex(center, center);
-  position: fixed;
-  z-index: 2;
   .nav-items {
+    @include widthandheight(100%, 100vh);
+    position: absolute;
+    @include flex(center, center);
     ul {
       list-style: none;
+
       .navlinks {
         text-decoration: none;
-        color: $peachlight;
-        font-size: 30px;
+        color: $white;
+        font-size: 1.5rem;
         text-align: center;
         li {
           margin: 20px 0;

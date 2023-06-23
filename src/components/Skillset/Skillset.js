@@ -23,14 +23,15 @@ const Skillset = () => {
           <p className="back">&larr;</p>
         </Link>
         <div className="skill-h1">
-          <motion.h1 variants={heroh1}>My skillset</motion.h1>
-          <motion.div variants={heroAnim} className="underline"></motion.div>
+          <motion.h2 variants={heroh1}>Portfolio</motion.h2>
         </div>
 
         <div className="skills">
           <motion.div variants={heroAnim} className="frontend">
             <Link to="/frontend" className="skills-heading">
-              Front end development
+              <div className="skills-heading-frontend">
+                Front end development
+              </div>
             </Link>
             <Link to="/frontend" className="skill-link">
               <p>&rarr;</p>
@@ -38,14 +39,21 @@ const Skillset = () => {
           </motion.div>
           <motion.div variants={heroAnim} className="uiux">
             <Link to="/uiux" className="skills-heading">
-              Ui/Ux Design
+              <div className="skills-heading-uiux">Ui/Ux Design</div>
             </Link>
             <Link to="/uiux" className="skill-link">
               <p>&rarr;</p>
             </Link>
           </motion.div>
           <motion.div variants={heroAnim} className="wordpress">
-            <p className="skills-heading">Technical Writing</p>
+            <a href="https://blog.racheltomi.work/" className="skills-heading">
+              <div className="skills-heading-techwriting">
+                Technical Writing
+              </div>
+            </a>
+            <a href="https://blog.racheltomi.work/" className="skill-link">
+              <p>&rarr;</p>
+            </a>
           </motion.div>
         </div>
       </div>

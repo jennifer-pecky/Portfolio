@@ -1,0 +1,87 @@
+@import "/color";
+@import "../../mixins/mixins.scss";
+
+.root {
+  * {
+    margin: 8px 0;
+  }
+}
+.root_enable {
+  height: 40px;
+  padding: 0px 18px;
+  border-radius: 2px;
+  @include flex(center, center);
+  box-shadow: "none";
+  text-transform: capitalize;
+  font-size: 16;
+  font-weight: bold;
+  border: none;
+  line-height: 1.5;
+  background-color: $primaryColor;
+  color: $white;
+  cursor: pointer;
+  &:hover {
+    // background-color: $primaryHover;
+    border-color: $white;
+    box-shadow: none;
+  }
+  &:active {
+    box-shadow: none;
+    background-color: $primaryColor;
+    border-color: $white;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 11px;
+  }
+  @media screen and (max-width: 1024px) {
+    font-size: 12px;
+  }
+}
+.root_disabled {
+  height: 35px;
+  width: 100%;
+  padding: 0px 7px;
+  border-radius: 2px;
+  @include flex(center, center);
+  box-shadow: none;
+  text-transform: capitalize;
+  font-size: 16;
+  border: none;
+  line-height: 1.5;
+  color: $white;
+  background-color: $grey;
+  border-color: $primaryColor;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+.outlineBtn {
+  background-color: transparent;
+  border-radius: 4;
+  color: $white;
+  border: 1px solid $white;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.5s ease-in-out;
+}
+.PrimaryColor {
+  background-color: transparent;
+  border-radius: 4;
+  color: $white;
+  border: 1px solid $primaryColor;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.5s ease-in-out;
+}
+.secondaryColor {
+  background-color: transparent;
+  border-radius: 4;
+  color: $white;
+  font-size: 0.7rem;
+  border: 2px solid $deepGrey;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.5s ease-in-out;
+}

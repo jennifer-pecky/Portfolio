@@ -1,46 +1,30 @@
-$peachprimary: #d7ad9d;
-$peachlight: #d9c6c0;
-$lightblue: #d0dbf8;
-$greyprimary: #c3c3c3;
-$white: #ffffff;
-$projectcolor: #3f3f3f;
+@import "/color";
 
 @import "../../mixins/mixins.scss";
 
-#uiux-section {
-  @include widthandheight;
-  background-image: linear-gradient(
-      to bottom,
-      rgba(24, 23, 23, 0.911),
-      rgba(22, 21, 21, 0.911)
-    ),
-    url("../../Assets/uiux-img.jpg");
-  @include background;
-}
 .main-section {
-  @include widthandheight;
-  background-image: linear-gradient(
-      to bottom,
-      rgba(24, 23, 23, 0.911),
-      rgba(22, 21, 21, 0.911)
-    ),
-    url("../../Assets/Web-development.jpg");
-  @include background;
+  // @include widthandheight;
+  // @include background;
+  width: 100%;
+  height: 50vh;
   @media screen and (max-width: 768px) {
     height: 90vh;
   }
+  .pageline-div {
+    @include pagelineAnim;
+  }
   .hero {
-    @include widthandheight;
+    // @include widthandheight;
     .back {
       @include back(20%);
       font-size: 24px;
     }
     .hero-text {
-      color: white;
+      color: $white;
       width: 45%;
       position: absolute;
       top: 30%;
-      left: 17%;
+      left: 10%;
       @media screen and (max-width: 768px) {
         width: 90%;
         height: 100%;
@@ -66,7 +50,6 @@ $projectcolor: #3f3f3f;
 
 .project-section {
   height: 100%;
-  background-color: #e4e4e4;
   @media screen and (max-width: 768px) {
     padding: 50px 0px;
   }
@@ -75,19 +58,21 @@ $projectcolor: #3f3f3f;
   }
   .title {
     @include flex(center, flex-start);
-    padding: 25px 50px;
+    margin-top: 30px;
+    padding: 0px 140px;
     .line {
       width: 80px;
       height: 4px;
-      background-color: $peachlight;
+      background-color: $primaryColor;
     }
     .text {
-      font-size: 24px;
-      color: $projectcolor;
+      font-size: 1.4rem;
+      color: $white;
+      font-weight: bold;
     }
   }
   .projects {
-    padding: 35px 50px;
+    padding: 35px 140px;
     @media screen and (max-width: 768px) {
       padding: 25px 30px;
     }
@@ -98,11 +83,12 @@ $projectcolor: #3f3f3f;
       }
       .project-img {
         flex: 1;
-        border: 30px solid rgba(243, 239, 229, 0.705);
+        border: 2px solid rgba(243, 239, 229, 0.705);
+        border-radius: 5px;
         margin-right: 40px;
         cursor: pointer;
         @media screen and (max-width: 768px) {
-          border: 20px solid $peachlight;
+          border: 20px solid rgba(243, 239, 229, 0.705);
           margin-bottom: 30px;
           margin-right: 5px;
         }
@@ -113,15 +99,21 @@ $projectcolor: #3f3f3f;
       #img-2 {
         border: 30px solid rgb(164, 219, 217);
         @media screen and (max-width: 768px) {
-          border: 20px solid $lightblue;
+          border: 20px solid $grey;
         }
       }
 
       .project-text {
         flex: 1;
         margin-left: 30px;
+        p {
+          color: $greyText;
+          font-size: 0.9rem;
+        }
         .project-h1 {
-          font-size: 28px;
+          color: $white;
+          font-size: 1.5rem;
+          font-weight: bold;
           @media screen and (max-width: 768px) {
             font-size: 24px;
             margin: 10px 0;
@@ -131,31 +123,26 @@ $projectcolor: #3f3f3f;
           margin-left: 0;
         }
         ul {
+          display: inline-flex;
           padding: 16px 0;
-          li {
-            display: inline;
+          .btngrey {
             margin-right: 10px;
-            font-family: "Noto Serif", serif;
+            font-family: "Plus Jakarta Sans", sans-serif;
             font-weight: bold;
           }
         }
         .links {
           .livelink {
             display: flex;
-            flex-direction: column;
+            padding: 20px 0;
+            // flex-direction: column;
 
             .link {
-              display: inline-flex;
-              margin: 4px 0;
-              p {
-                color: $peachprimary;
+              // display: inline-flex;
+              margin-right: 8px;
+              a {
                 font-weight: bold;
-                text-decoration: underline;
-                text-decoration-color: $peachprimary;
-              }
-              img {
-                max-width: 3%;
-                margin-left: 10px;
+                text-decoration: none;
               }
             }
           }
@@ -166,9 +153,17 @@ $projectcolor: #3f3f3f;
 }
 
 //Ui/Ux card section
-
+#uiux-section {
+  width: 100%;
+  height: 50vh;
+  @include background;
+  .pageline-div {
+    @include pagelineAnim;
+  }
+}
 .card-section {
   min-height: 100vh;
+  padding: 50px 90px;
   @media screen and (max-width: 768px) {
     padding: 50px 0px;
   }
@@ -181,16 +176,15 @@ $projectcolor: #3f3f3f;
     .line {
       width: 80px;
       height: 4px;
-      background-color: $peachlight;
+      background-color: $primaryColor;
     }
     .text {
       font-size: 24px;
-      color: $projectcolor;
+      color: $greyText;
     }
   }
   .card-container {
     max-width: 100%;
-
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-gap: 55px;
@@ -204,7 +198,6 @@ $projectcolor: #3f3f3f;
       position: relative;
       bottom: 0;
       left: 0;
-
       background-color: #222222;
       width: 100%;
       height: 400px;
@@ -215,12 +208,10 @@ $projectcolor: #3f3f3f;
         position: absolute;
         bottom: 0;
         left: 0;
+        z-index: 2;
         width: 100%;
         height: 100%;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(center, center);
         &.front1 {
           h2 {
             margin: 0;
@@ -229,15 +220,15 @@ $projectcolor: #3f3f3f;
         }
         .content {
           width: 100%;
-          padding: 0 20px;
+          padding: 0 30px;
           left: 0;
           .card-h {
-            margin: 5px 0;
+            margin: 20px 0;
           }
           .view-text {
             .view-link {
               text-decoration: none;
-              color: $peachprimary;
+              color: $primaryColor;
               h5 {
                 margin: 14px 0;
                 span {
@@ -253,19 +244,25 @@ $projectcolor: #3f3f3f;
           }
         }
       }
-      .front2 {
+      .front2,
+      .front3,
+      .front4,
+      .front5 {
         transition: 0.5s;
         h2 {
           margin: 0;
           padding: 0;
-          font-size: 2.3em;
-          color: #fff;
+          font-size: 2rem;
+          color: $white;
           transition: 0.5s;
           z-index: 10;
           text-align: center;
         }
       }
-      &:hover .card-front.front2 {
+      &:hover .card-front.front2,
+      &:hover .card-front.front3,
+      &:hover .card-front.front4,
+      &:hover .card-front.front5 {
         height: 60px;
         cursor: pointer;
         h2 {
@@ -274,12 +271,38 @@ $projectcolor: #3f3f3f;
       }
 
       .card-front.front2 {
-        // background: linear-gradient(
-        //     rgba(21, 19, 19, 0.849),
-        //     rgba(44, 29, 25, 0.884)
-        //   ),
-        //   url("../../Assets/ffcut.jpg");
-        background: #222222;
+        background: linear-gradient(
+            rgba(21, 19, 19, 0.849),
+            rgba(20, 16, 15, 0.884)
+          ),
+          url("../../Assets/Paybox-mockup.png");
+        @include background;
+        border-radius: 15px;
+      }
+      .card-front.front3 {
+        background: linear-gradient(
+            rgba(21, 19, 19, 0.849),
+            rgba(23, 20, 19, 0.884)
+          ),
+          url("../../Assets/Unica-mockup.png");
+        @include background;
+        border-radius: 15px;
+      }
+      .card-front.front4 {
+        background: linear-gradient(
+            rgba(21, 19, 19, 0.849),
+            rgba(17, 14, 14, 0.884)
+          ),
+          url("../../Assets/uiux-img.jpg");
+        @include background;
+        border-radius: 15px;
+      }
+      .card-front.front5 {
+        background: linear-gradient(
+            rgba(21, 19, 19, 0.849),
+            rgba(16, 13, 13, 0.884)
+          ),
+          url("../../Assets/isshot.png");
         @include background;
         border-radius: 15px;
       }

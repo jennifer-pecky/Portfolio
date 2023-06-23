@@ -4,6 +4,7 @@ import { SvgWave } from "../../Svg/Svg";
 //Animations
 import { motion } from "framer-motion";
 import { heroAnim, pageAnim, pagelineAnim } from "../../Animation";
+import Button from "../Button/Button";
 
 const Contact = () => {
   const [success, setSuccess] = useState(false);
@@ -75,13 +76,14 @@ const Contact = () => {
             </div>
             <div data-netlify-recaptcha="true"></div>
             <div className="form-div">
-              <button
+              <Button
+                primary
                 type="submit"
                 value="send message"
                 className="contact-btn"
               >
                 Let's Talk
-              </button>
+              </Button>
             </div>
           </form>
         </motion.div>

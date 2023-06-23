@@ -1,16 +1,10 @@
-$peachprimary: #d7ad9d;
-$peachlight: #d9c6c0;
-$lightblue: #d0dbf8;
-$black: #222223;
-$white: #ffffff;
-$greyprimary: #c3c3c3;
-
+@import "/color";
 @import "../../mixins/mixins.scss";
 
 .main-main {
   display: flex;
-  background-color: rgb(15, 15, 15);
-  position: relative;
+  // background-color: rgb(15, 15, 15);
+  // position: relative;
   @media screen and (max-width: 768px) {
     flex-direction: column-reverse;
   }
@@ -22,18 +16,18 @@ $greyprimary: #c3c3c3;
   overflow: hidden;
 }
 .main {
-  width: 40%;
+  width: 60%;
   height: 100vh;
-  background-image: linear-gradient(
-      to left,
-      rgb(15, 15, 15),
-      rgba(14, 14, 14, 0.541)
-    ),
-    url("../../Assets/Tomi36new.png");
-  background-position-x: 63%;
+  background: linear-gradient(#1a1414a2, #1a1414b9),
+    url("../../Assets/professionalSmile.png");
+
   background-size: cover;
   background-repeat: no-repeat;
+  background-position-x: 63%;
   position: fixed;
+  right: -12%;
+  top: 0%;
+  z-index: 9;
   @media screen and (max-width: 768px) {
     position: relative;
     width: 100%;
@@ -41,14 +35,14 @@ $greyprimary: #c3c3c3;
   }
 }
 .content {
-  width: 60%;
+  width: 56%;
   height: auto;
   color: $white;
   position: relative;
   top: 0;
-  right: -45%;
-  padding: 18% 0;
-  padding-right: 12%;
+  z-index: 99;
+  padding: 8% 0;
+  padding-left: 8%;
   @media screen and (max-width: 768px) {
     width: 100%;
     right: 0;
@@ -56,22 +50,21 @@ $greyprimary: #c3c3c3;
     padding-right: 2%;
   }
   .small-heading {
-    color: $lightblue;
-    font-size: 24px;
+    color: $white;
+    font-size: 1.4rem;
   }
   .text-content {
-    .big-text {
-      font-size: 24px;
-      font-weight: bold;
-      padding: 30px 0;
-      width: 92%;
-      font-family: "Poppins", sans-serif;
-      .name {
-        color: $peachprimary;
+    color: $greyText;
+    font-size: 1.2rem;
+    font-family: Plus Jakarta Sans;
+    line-height: 2rem;
+    letter-spacing: 0.0125rem;
+    .text {
+      padding: 10px 0;
+
+      a {
+        color: $primaryColor;
       }
-    }
-    p {
-      line-height: 1.8;
     }
   }
   .download {
@@ -90,7 +83,7 @@ $greyprimary: #c3c3c3;
     }
   }
   h2 {
-    color: $peachprimary;
+    color: $white;
     margin: 30px 0;
   }
   .right-arrow {
@@ -109,27 +102,17 @@ $greyprimary: #c3c3c3;
   }
   .techs {
     display: flex;
-    ul {
-      margin-right: 100px;
-      .tech-h {
-        color: $lightblue;
-        margin-bottom: 20px;
+    flex-direction: column;
+    padding: 30px 0;
+    .tech-ul {
+      display: flex;
+      ul {
+        margin-right: 100px;
+        .tech-h {
+          color: $grey;
+          margin-bottom: 20px;
+        }
       }
-    }
-  }
-  .racheltomi {
-    font-family: "Notable", sans-serif;
-    color: $white;
-    position: absolute;
-    font-size: 92px;
-    top: 68%;
-    left: 25%;
-    opacity: 0.1;
-    @media screen and (max-width: 768px) {
-      right: 0;
-      top: 80%;
-      width: 60%;
-      font-size: 48px;
     }
   }
 }

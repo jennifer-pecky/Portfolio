@@ -1,100 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Charmonman&display=swap");
+@import "../../mixins/mixins.scss";
+@import "/color";
 
-@import url('https://fonts.googleapis.com/css2?family=Charmonman&display=swap');
-@import '../../mixins/mixins.scss';
+.main-footer {
+  background-color: $footerBg;
+  margin-top: 105px;
 
-$peachprimary: #D7AD9D;
-$black: #222223;
-$white: #ffffff;
-$peachlight: #D9C6C0;
-$greyprimary: #C3C3C3;
-
-.main-footer{
-    background-color: $black;
-    padding: 50px;
-    margin-top: 55px;
-    padding-bottom: 0;
-   
-    h4{color: $peachprimary;}
-    @media screen and (max-width: 768px) {
-        padding: 20px 30px; 
+  .footer-t {
+    padding: 20px 0;
+    p {
+      width: 100%;
+      color: $footerText;
+      font-size: 14px;
+      text-align: center;
+      @media screen and (max-width: 768px) {
+        margin-right: 75px;
+      }
     }
-    .talk-div{
-       @include flex(center, flex-start);
-       .talk-text{
-           .talk-link{
-               text-decoration: none;
-               h5{
-                font-size: 48px;
-                color: $white;
-                @media screen and (max-width:768px) {
-                    font-size: 32px;
-                    padding: 20px 0;
-                }
-            }
-           }
-       }
-       .talk-arrow{margin-left: 20px;}
-    }
-    hr{
-        width: 70%;
-        margin: 0 auto;
-        border: none;
-        height: 0.2px;
-        background: $peachprimary;
-    }
-    p{
-        width: 30%;
-        padding: 30px 0;
-        color: $white;
-        @media screen and (max-width:768px) {
-           width: 100%;
-        }
-        .gmail-link{color: $peachprimary; cursor: pointer;}
-    }
-   .footer-base{
-      @include flex(center, space-between);
-      @media screen and (max-width:768px) {
-       flex-direction: column;
-    }
-    .footer-icons{
-        @media screen and (max-width:768px) {
-           margin-right: 60px;
-           }
-        ul{
-            display: flex;
-            list-style: none;
-           
-            li{
-                margin-right: 20px;
-                @media screen and (max-width:768px) {
-                   margin-right: 15px;
-                   font-size: 14px;
-                }
-              .footer-menu{
-                  color: $white;
-                  text-decoration: none;
-                  font-family: 'Poppins', sans-serif;
-                  font-weight: bold;
-                  transition: all 0.4s ease-in-out;
-                  position: relative;
-                  z-index: 99;
-                  &:hover{
-                      color: $peachlight;
-                  }
-              }
-            }
-    }
-}
-.footer-t{
-    p{
-        width: 100%; 
-        color: $greyprimary;
-        font-size: 14px;
-        @media screen and (max-width:768px) {
-          margin-right: 75px;
-         }  
-    }
-}
-}
-
+  }
 }

@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Peralta&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Notable&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap");
+@import "./mixins/mixins.scss";
+
 * {
   margin: 0;
   padding: 0;
@@ -8,9 +8,7 @@
 }
 html,
 body {
-  height: 100%;
-  position: relative;
-  overflow-x: hidden;
+  @include widthandheight(100%, 100%);
 }
 h1,
 h2,
@@ -18,31 +16,33 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Noto Serif", serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 .hero-h1,
 .herotext-h3,
-.project-h1 {
-  font-family: "Noto Serif", serif;
+span,
+.project-h1,
+div {
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
+
 p {
-  font-family: "Noto Serif", serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   letter-spacing: 0.2px;
   line-height: 1.5;
 }
 .small-h {
-  font-family: "Peralta", cursive;
+  font-family: "Plus Jakarta Sans", sans-serif;
   margin: 0 10px;
 }
 .talk {
-  font-family: "Charmonman", cursive;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 //SCROLLBAR STYLES
 
 ::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
+  @include widthandheight(5px, 5px);
 }
 ::-webkit-scrollbar-track {
   background: #141414;
