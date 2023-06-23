@@ -21,10 +21,25 @@
   font-size: 14px;
   color: $primaryColor;
   @media screen and (max-width: 768px) {
-    top: 17%;
+    top: 12%;
   }
 }
-
+@mixin lineStyle {
+  width: 80px;
+  height: 4px;
+  background-color: $primaryColor;
+  @media screen and (max-width: 768px) {
+    width: 60px;
+  }
+}
+@mixin textStyle {
+  font-size: 1.4rem;
+  color: $white;
+  font-weight: bold;
+  @media screen and (max-width: 768px) {
+    font-size: 1.1rem;
+  }
+}
 @mixin line($top) {
   width: 70px;
   height: 4px;
@@ -52,6 +67,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 5px;
+  @media screen and (max-width: 768px) {
+    width: 21rem;
+    height: 13rem;
+  }
 }
 @mixin mainButton {
   padding: 22px 18px;

@@ -30,9 +30,9 @@ const Hero = () => {
       <SvgWave />
       <div className="hero-dark">
         <motion.div variants={heroAnim} className="hero-text">
-          <motion.p variants={heroh1} className="namegradient">
+          <motion.h2 variants={heroh1} className="namegradient">
             Rachel Tomi
-          </motion.p>
+          </motion.h2>
           <motion.h1 variants={heroh1} className="hero-h1">
             Front-End Developer
           </motion.h1>

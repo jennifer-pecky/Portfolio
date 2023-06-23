@@ -19,8 +19,7 @@ $white: #ffffff;
     margin-top: 8%;
     margin-left: 10%;
     @media screen and (max-width: 768px) {
-      margin-top: 56%;
-      width: 100%;
+      margin-top: 40%;
     }
     .back {
       @include back(15%);
@@ -41,16 +40,14 @@ $white: #ffffff;
     .skills {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-
       @media screen and (max-width: 768px) {
-        flex-direction: column;
+        grid-template-columns: 1fr;
       }
       .skills-heading {
         text-decoration: none;
         .skills-heading-frontend {
           background: linear-gradient(#000000e9, rgba(21, 20, 20, 0.919)),
             url("../../Assets/coding.jpg");
-
           @include flex(center, center);
           @include skillsBackground;
           border-width: 3px;
@@ -62,8 +59,6 @@ $white: #ffffff;
               #ffffff
             )
             1;
-
-          // outline: 3px solid rgb(215, 195, 198);
         }
       }
       .skills-heading {
@@ -121,7 +116,7 @@ $white: #ffffff;
         .skill-link {
           text-decoration: none;
           font-weight: bold;
-          color: $peachlight;
+          color: $primaryColor;
           text-align: center;
           p {
             font-size: 24px;

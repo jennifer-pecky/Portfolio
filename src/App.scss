@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap");
 @import "./mixins/mixins.scss";
 
 * {
@@ -30,6 +30,10 @@ p {
   font-family: "Plus Jakarta Sans", sans-serif;
   letter-spacing: 0.2px;
   line-height: 1.5;
+  @media screen and (max-width: 768px) {
+    line-height: 1.2;
+    letter-spacing: 0.3px;
+  }
 }
 .small-h {
   font-family: "Plus Jakarta Sans", sans-serif;

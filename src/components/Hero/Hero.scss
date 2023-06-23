@@ -10,18 +10,21 @@
   .hero-dark {
     @include widthandheight(100%, 100vh);
     @include flex(center, center);
-    padding: 0 12%;
-    gap: 100px;
+    padding: 0 15%;
     position: relative;
     @media screen and (max-width: 768px) {
+      @include widthandheight(100%, 100%);
       flex-direction: column;
-      padding: 0%;
+      padding: 15% 6%;
     }
 
     .hero-text {
-      width: 85%;
+      width: 100%;
       @include flex(flex-start, center);
       flex-direction: column;
+      @media (max-width: 768px) {
+        width: 100%;
+      }
       .namegradient {
         background-image: radial-gradient(
           circle at 250%,
@@ -31,37 +34,44 @@
           #b44c75 60%
         );
         @include textGradient;
-        font-size: 5rem;
+        font-size: 6rem;
         position: relative;
         left: -10%;
+        @media (max-width: 768px) {
+          width: 100%;
+          font-size: 3rem;
+          left: 0;
+        }
       }
       .hero-h1 {
         color: $white;
-        font-size: 5rem;
-        line-height: 5rem;
+        font-size: 6rem;
+        line-height: 7rem;
         letter-spacing: 0.0125rem;
         font-weight: bold;
         @media (max-width: 768px) {
-          font-size: 2.2rem;
-          margin-bottom: 20px;
+          font-size: 1.4rem;
+          line-height: 2.4rem;
         }
       }
       p {
         color: $white;
-        padding: 16px 0;
+        margin: 26px 0;
         width: 60%;
         font-weight: bold;
         font-size: 1.2rem;
-        @media (max-width: 768px) {
-          font-size: 14px;
-          margin: 0;
+        @media screen and (max-width: 768px) {
+          font-size: 0.9rem;
+          margin: 16px 0;
+          width: 100%;
+          line-height: 1.2rem;
         }
       }
       .techiconsdiv {
         padding-top: 100px;
         h1 {
           color: $grey;
-          font-size: 1.8rem;
+          font-size: 2rem;
           background-image: radial-gradient(
             circle at 250%,
             #62555a 50%,
@@ -69,6 +79,11 @@
             #9c8f94 85%
           );
           @include textGradient;
+        }
+        img {
+          @media screen and (max-width: 768px) {
+            width: 100%;
+          }
         }
       }
       // .hand {

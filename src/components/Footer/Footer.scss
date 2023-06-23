@@ -11,10 +11,11 @@
     p {
       width: 100%;
       color: $footerText;
-      font-size: 14px;
+      font-size: 0.9rem;
       text-align: center;
       @media screen and (max-width: 768px) {
         margin-right: 75px;
+        font-size: 0.6rem;
       }
     }
   }

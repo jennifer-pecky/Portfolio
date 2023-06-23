@@ -19,9 +19,6 @@
         border-left-width: 0;
         border-bottom-width: 20px;
         transform: rotate(-15deg);
-        @media screen and (max-width: 768px) {
-          max-width: 9%;
-        }
       }
     }
     .opens {
@@ -146,8 +143,12 @@
       .navlinks {
         text-decoration: none;
         color: $white;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+        font-weight: bold;
         text-align: center;
+        @media screen and (max-width: 768px) {
+          font-size: 1rem;
+        }
         li {
           margin: 20px 0;
           transition: all 0.3s ease-in-out;

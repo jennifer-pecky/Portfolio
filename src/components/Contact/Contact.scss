@@ -3,7 +3,6 @@
 
 .contact-page {
   width: 100%;
-
   .pageline-div {
     @include pagelineAnim;
   }
@@ -12,9 +11,12 @@
     @include widthandheight(100%, auto);
     gap: 100px;
     padding: 0 14%;
+    margin-top: 5%;
     @media screen and (max-width: 768px) {
+      @include widthandheight(100%, 100vh);
       padding: 0 10%;
       gap: 0;
+      margin-top: -8%;
       flex-direction: column;
     }
     .contact-text {
@@ -40,7 +42,7 @@
       flex: 1;
       //   margin-top: 3%;
       @media only screen and (min-width: 375px) and (max-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
-        margin-top: -100%;
+        margin-top: -120%;
       }
       @media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
         margin-top: -80%;
