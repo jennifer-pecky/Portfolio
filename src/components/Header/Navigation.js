@@ -4,10 +4,9 @@ import "./Header.scss";
 //Animations
 import { motion } from "framer-motion";
 import { lineAnim, lineAnimContainer, navAnim } from "../../Animation";
-import github from "../../Assets/Vector-github.svg";
-import IG from "../../Assets/Vector-IG.svg";
-import twitter from "../../Assets/Vector-twitter.svg";
-import linkedin from "../../Assets/Vector-linkedin.svg";
+import github from "../../Assets/github.png";
+import twitter from "../../Assets/twitter.png";
+import linkedin from "../../Assets/linkedin.png";
 import { SvgWave } from "../../Svg/Svg";
 import Button from "../Button/Button";
 import { useHistory } from "react-router-dom/cjs/react-router-dom";
@@ -74,18 +73,13 @@ const Navigation = (props) => {
             </a>
           </li>
           <li>
-            <a href="https://instagram.com/theracheltomi">
-              <img src={IG} className="icon2" alt="instagram" />
+            <a href="https://www.linkedin.com/in/rachel-tomi-03572a195/">
+              <img src={linkedin} className="icon4" alt="linkedin" />
             </a>
           </li>
           <li>
             <a href="https://twitter.com/theracheltomi">
               <img src={twitter} className="icon3" alt="twitter" />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/rachel-tomi-03572a195/">
-              <img src={linkedin} className="icon4" alt="linkedin" />
             </a>
           </li>
         </ul>

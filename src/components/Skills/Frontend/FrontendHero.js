@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { heroAnim, pagelineAnim } from "../../../Animation";
 
@@ -9,9 +8,6 @@ const FrontendHero = () => {
       <motion.div className="pageline-div" variants={pagelineAnim}></motion.div>
       <motion.div className="pageline-div" variants={pagelineAnim}></motion.div>
       <div className="hero">
-        <Link to="/skillset">
-          <p className="back">&larr;</p>
-        </Link>
         <div className="hero-text">
           <motion.h1 variants={heroAnim}>Front end Development</motion.h1>
           <motion.p variants={heroAnim}>

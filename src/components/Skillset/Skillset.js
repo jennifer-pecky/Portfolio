@@ -19,9 +19,6 @@ const Skillset = () => {
       <motion.div className="pageline-div" variants={pagelineAnim}></motion.div>
       <SvgWave />
       <div className="skills-div">
-        <Link to="/">
-          <p className="back">&larr;</p>
-        </Link>
         <div className="skill-h1">
           <motion.h2 variants={heroh1}>Portfolio</motion.h2>
         </div>

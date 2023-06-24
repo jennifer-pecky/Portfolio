@@ -6,6 +6,9 @@
   @media screen and (max-width: 768px) {
     flex-direction: column;
   }
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+  }
   .pageline-div {
     @include pagelineAnim;
   }
@@ -27,6 +30,12 @@
   top: 0%;
   z-index: 9;
 
+  @media screen and (max-width: 1024px) {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    right: 0%;
+  }
   @media screen and (max-width: 768px) {
     position: relative;
     width: 100%;
@@ -34,21 +43,28 @@
     right: 0%;
   }
 }
-.content {
+.about-content {
   width: 56%;
-  height: auto;
+  height: 100vh;
   color: $white;
   position: relative;
   top: 0;
   z-index: 99;
   padding: 8% 0;
   padding-left: 8%;
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+    right: 0;
+    padding: 8% 6%;
+    padding-right: 2%;
+  }
   @media screen and (max-width: 768px) {
     width: 100%;
     right: 0;
     padding: 8% 6%;
     padding-right: 2%;
   }
+
   .small-heading {
     color: $white;
     font-size: 1.4rem;
@@ -58,9 +74,9 @@
   }
   .text-content {
     color: $greyText;
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     font-family: Plus Jakarta Sans;
-    line-height: 2rem;
+    line-height: 2.5rem;
     letter-spacing: 0.0125rem;
     @media screen and (max-width: 768px) {
       font-size: 1rem;
@@ -74,7 +90,7 @@
   }
   .download {
     display: inline-flex;
-    margin: 30px 0;
+    margin: 20px 0;
     cursor: pointer;
     .link {
       font-size: 14px;
@@ -113,6 +129,7 @@
       display: flex;
       ul {
         margin-right: 100px;
+        color: $grey;
         .tech-h {
           color: $grey;
           margin-bottom: 20px;

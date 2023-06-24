@@ -26,7 +26,7 @@ const About = () => {
       <motion.div variants={imgAnim} className="main"></motion.div>
       <motion.div className="pageline-div" variants={pagelineAnim}></motion.div>
       <motion.div className="pageline-div" variants={pagelineAnim}></motion.div>
-      <div className="content">
+      <div className="about-content">
         <div className="small-heading">
           <motion.h2 variants={heroh1} className="small-h">
             About Me
@@ -58,8 +58,8 @@ const About = () => {
             </span>
           </motion.p>
         </div>
-        <Button primary>
-          <div className="download">
+        <motion.div variants={heroAnim} className="download">
+          <Button primary>
             <a
               href="https://drive.google.com/file/d/1FwEzCY5Hv52DPoonMBIY0Qo490lOZ0-V/view?usp=sharing"
               target="_blank"
@@ -69,8 +69,8 @@ const About = () => {
             >
               <p>View Resume</p>
             </a>
-          </div>
-        </Button>
+          </Button>
+        </motion.div>
 
         <div className="techs">
           <h2 className="tech-h2">Technologies I Use?</h2>

@@ -31,12 +31,11 @@
       .line2,
       .line3 {
         position: relative;
-        z-index: 999;
+        z-index: 9999;
         @include widthandheight(25px, 3px);
-
         background-color: $white;
         margin: 3px 0;
-        top: 0px;
+        top: 0;
         -webkit-transition: 0.25s ease-in-out;
         -moz-transition: 0.25s ease-in-out;
         -o-transition: 0.25s ease-in-out;
@@ -45,11 +44,11 @@
     }
     .navsecondary {
       @include flex(center, center);
-      position: relative;
-      z-index: 999;
       .locationdiv {
         @include flex(center, center);
         margin: 0 20px;
+        position: relative;
+        z-index: 999;
         p {
           color: $white;
           font-weight: bold;
@@ -57,7 +56,6 @@
         }
         .colordiv {
           @include widthandheight(12px, 12px);
-
           margin: 0 7px;
           border: 2px solid red;
           border-radius: 50%;
@@ -85,9 +83,10 @@
 
 .navigation {
   @include widthandheight(100%, 100vh);
-  position: absolute;
-  z-index: 999;
+  position: fixed;
+  z-index: 9999;
   top: 0;
+  // overflow-y: hidden;
   .header-wrapper2 {
     width: 100%;
     position: absolute;
@@ -100,8 +99,9 @@
       bottom: 2%;
       a {
         color: $grey;
+        opacity: 0.6;
         writing-mode: vertical-lr;
-        font-size: 13px;
+        font-size: 0.7rem;
         margin: 10px auto;
         letter-spacing: 0.1em;
         text-decoration: none;
@@ -139,7 +139,6 @@
     @include flex(center, center);
     ul {
       list-style: none;
-
       .navlinks {
         text-decoration: none;
         color: $white;

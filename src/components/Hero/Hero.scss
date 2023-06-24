@@ -2,7 +2,7 @@
 @import "../../mixins/mixins.scss";
 
 .hero-section {
-  @include widthandheight(100%, auto);
+  @include widthandheight(100%, 100vh);
   @include flex(center, center);
   .pageline-div {
     @include pagelineAnim;
@@ -37,9 +37,13 @@
         font-size: 6rem;
         position: relative;
         left: -10%;
+
+        @media (max-width: 1024px) {
+          font-size: 5rem;
+        }
         @media (max-width: 768px) {
           width: 100%;
-          font-size: 3rem;
+          font-size: 2.25rem;
           left: 0;
         }
       }
@@ -49,8 +53,13 @@
         line-height: 7rem;
         letter-spacing: 0.0125rem;
         font-weight: bold;
+
+        @media screen and (max-width: 1024px) {
+          font-size: 3.4rem;
+          line-height: 5.4rem;
+        }
         @media (max-width: 768px) {
-          font-size: 1.4rem;
+          font-size: 1.9rem;
           line-height: 2.4rem;
         }
       }
@@ -66,6 +75,9 @@
           width: 100%;
           line-height: 1.2rem;
         }
+        @media screen and (max-width: 1024px) {
+          width: 100%;
+        }
       }
       .techiconsdiv {
         padding-top: 100px;
@@ -79,6 +91,9 @@
             #9c8f94 85%
           );
           @include textGradient;
+          @media screen and (max-width: 768px) {
+            font-size: 1.4rem;
+          }
         }
         img {
           @media screen and (max-width: 768px) {
@@ -97,10 +112,6 @@
     }
   }
   .hero-btn {
-    // // @include flex(flex-start, center);
-    // @media screen and (max-width: 768px) {
-    //   flex-direction: column-reverse;
-    // }
     p {
       padding-left: 20px;
       @media screen and (max-width: 768px) {

@@ -15,17 +15,21 @@ $white: #ffffff;
   .skills-div {
     display: flex;
     flex-direction: column;
-    width: 70%;
     margin-top: 8%;
-    margin-left: 10%;
     @media screen and (max-width: 768px) {
       margin-top: 25%;
     }
-    .back {
-      @include back(15%);
-      font-size: 24px;
-    }
+
     .skill-h1 {
+      padding: 0 120px;
+      @media screen and (max-width: 768px) {
+        @include flex(center, center);
+        padding: 0;
+      }
+      @media screen and (max-width: 1024px) {
+        @include flex(center, center);
+        padding: 0;
+      }
       h2 {
         @include headings(60px);
         @media screen and (max-width: 768px) {
@@ -38,11 +42,9 @@ $white: #ffffff;
     }
 
     .skills {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      @media screen and (max-width: 768px) {
-        grid-template-columns: 1fr;
-      }
+      @include flex(center, center);
+      flex-wrap: wrap;
+
       .skills-heading {
         text-decoration: none;
         .skills-heading-frontend {
@@ -104,7 +106,8 @@ $white: #ffffff;
         text-align: left;
         margin-right: 30px;
         @media screen and (max-width: 768px) {
-          margin-bottom: 25px;
+          margin-bottom: 5px;
+          margin-right: 0px;
         }
         h2 {
           color: $white;
