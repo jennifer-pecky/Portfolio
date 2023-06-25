@@ -7,6 +7,9 @@
   .pageline-div {
     @include pagelineAnim;
   }
+  @media screen and (max-width: 768px) {
+    @include widthandheight(100%, 100%);
+  }
   .hero-dark {
     @include widthandheight(100%, 100vh);
     @include flex(center, center);
@@ -60,6 +63,10 @@
         }
         @media (max-width: 768px) {
           font-size: 1.9rem;
+          line-height: 2.4rem;
+        }
+        @media (max-width: 360px) {
+          font-size: 1.8rem;
           line-height: 2.4rem;
         }
       }
