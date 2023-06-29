@@ -110,7 +110,10 @@ const UiUxProjects = () => {
                   trending and top rated series for free.
                 </p>
                 <div className="view-text">
-                  <a href="/" className="view-link">
+                  <a
+                    href="https://dribbble.com/shots/21869372-InstaMovieSearch/"
+                    className="view-link"
+                  >
                     <h5>
                       View Project<span>&#8594;</span>
                     </h5>

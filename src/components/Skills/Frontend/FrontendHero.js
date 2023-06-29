@@ -11,10 +11,12 @@ const FrontendHero = () => {
         <div className="hero-text">
           <motion.h1 variants={heroAnim}>Front end Development</motion.h1>
           <motion.p variants={heroAnim}>
-            This is where my strength lies. I’m vast with HTML, CSS and
-            JAVASCRIPT to help create websites of any kind. I use react mostly
-            for my front-end projects. I’m currently in the process of mastering
-            Node JS to complete the full stack developer journey.
+            As a frontend developer with over 3 years of experience, building
+            beautiful and robust user interfaces for web applications has become
+            second nature to me. I am deeply passionate about developing
+            products that not only look appealing but are also well-optimized
+            for performance and scalability, and I consistently strive to
+            instill this mindset into all of my work.
           </motion.p>
         </div>
       </div>

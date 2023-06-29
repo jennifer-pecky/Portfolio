@@ -34,24 +34,39 @@ const About = () => {
         </div>
         <div className="text-content">
           <motion.p variants={heroAnim}>
-            Hi. My name is <span className="name">Tomi</span>, I’m a
-            highly-motivated front end developer who’s able to translate designs
-            into clean and beautiful websites that work. Having worked with
-            remote teams on a few projects, I specialize mostly in using react
-            JS to create web applications.
+            Hi. My name is <span className="name">Tomi</span>, I’m a front-end
+            developer specializing in building accessible web applications for
+            organizations. As a highly passionate developer, I’m constantly
+            motivated to bring my A-game to every project I’m a part of. My
+            passion for web development has always led me to learn about the
+            latest tech trends, which has helped me stay on top of my game.
           </motion.p>
           <motion.p className="text" variants={heroAnim}>
-            As a tech blogger and community builder, I’m passionate about words
-            that motivate and educate. I’m able to craft persuasive website copy
-            for your website project. So yeah, I write, design and code. When
-            I’m not in the streets of Figma or VS Code, you will find me writing
-            on my{" "}
-            <a href="https://racheltomi.com" rel="noreferrer" target="_blank">
+            My core qualities are empathy, good communication, and organization.
+            This has played a significant role in my approach to development, as
+            well as my relationship with team members in every company I’ve
+            worked with or projects I’ve been a part of. I truly believe that
+            understanding the needs and emotions of users is the key to creating
+            websites that not only work great but also leave a positive impact.
+            I'm always on the lookout for new skills to add to my arsenal.
+            Whether it's attending webinars, and conferences, or diving into
+            online resources, I'm dedicated to staying on the cutting edge of
+            frontend development. When I’m not coding, you will find me writing
+            on my {""}
+            <a
+              href="https://blog.racheltomi.work/"
+              rel="noreferrer"
+              target="_blank"
+            >
               blog
             </a>{" "}
-            creating helpful content on tech, especially for beginners. My
-            hobbies are all over the place. I love to watch movies, listen to
-            music and hang out with friends.
+            creating helpful tech content, especially for beginners. My hobbies
+            are all over the place. I love to watch movies, listen to music, and
+            hang out with friends.
+            <div className="marginDiv">
+              I'm eager to collaborate, learn from others, and work on projects
+              that make a real difference in the digital world.
+            </div>
             <span className="text">
               {" "}
               I’m open to work. It would be a pleasure to hear from you.
@@ -79,11 +94,11 @@ const About = () => {
               <h5 className="tech-h">CORE</h5>
               <div className="right-arrow">
                 <img src={rightarrow} alt="downloadlink" />
-                <p>HTML</p>
+                <p>HTML5</p>
               </div>
               <div className="right-arrow">
                 <img src={rightarrow} alt="downloadlink" />
-                <p>CSS</p>
+                <p>CSS3</p>
               </div>
               <div className="right-arrow">
                 <img src={rightarrow} alt="downloadlink" />
@@ -95,7 +110,19 @@ const About = () => {
               </div>
               <div className="right-arrow">
                 <img src={rightarrow} alt="downloadlink" />
+                <p>Typescript</p>
+              </div>
+              <div className="right-arrow">
+                <img src={rightarrow} alt="downloadlink" />
                 <p>Bootstrap</p>
+              </div>
+              <div className="right-arrow">
+                <img src={rightarrow} alt="downloadlink" />
+                <p>RTK Query</p>
+              </div>
+              <div className="right-arrow">
+                <img src={rightarrow} alt="downloadlink" />
+                <p>Tailwindcss</p>
               </div>
               <div className="right-arrow">
                 <img src={rightarrow} alt="downloadlink" />
@@ -104,6 +131,10 @@ const About = () => {
               <div className="right-arrow">
                 <img src={rightarrow} alt="downloadlink" />
                 <p>Redux</p>
+              </div>
+              <div className="right-arrow">
+                <img src={rightarrow} alt="downloadlink" />
+                <p>Nextjs</p>
               </div>
               <div className="right-arrow">
                 <img src={rightarrow} alt="downloadlink" />
@@ -121,7 +152,6 @@ const About = () => {
                 <img src={rightarrow} alt="downloadlink" />
                 <p>gsap</p>
               </div>
-
               <div className="right-arrow">
                 <img src={rightarrow} alt="downloadlink" />
                 <p>framer motion</p>
@@ -144,7 +174,7 @@ const About = () => {
               </div>
               <div className="right-arrow">
                 <img src={rightarrow} alt="downloadlink" />
-                <p>tailwindcss</p>
+                <p>Supabase</p>
               </div>
               <div className="right-arrow">
                 <img src={rightarrow} alt="downloadlink" />

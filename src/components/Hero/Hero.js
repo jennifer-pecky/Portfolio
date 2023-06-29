@@ -32,8 +32,8 @@ const Hero = () => {
           </motion.h1>
 
           <motion.p className="texth1" variants={heroAnim}>
-            I design and build beautiful and functional user interfaces for
-            websites and applications.
+            I design and develop experiences that make people's lives easier and
+            more efficient.
           </motion.p>
 
           <motion.div
