@@ -76,7 +76,7 @@ const About = () => {
         <motion.div variants={heroAnim} className="download">
           <Button primary>
             <a
-              href="https://drive.google.com/file/d/1FwEzCY5Hv52DPoonMBIY0Qo490lOZ0-V/view?usp=sharing"
+              href="https://drive.google.com/file/d/1-BzUasPYddJnGcDkqTFV9RYqdd244fM3/view?usp=sharing"
               target="_blank"
               className="link"
               rel="noreferrer"
