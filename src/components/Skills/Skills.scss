@@ -9,7 +9,10 @@
     @include widthandheight(100%, 37vh);
   }
   @media screen and (max-width: 768px) {
-    @include widthandheight(100%, 37vh);
+    @include widthandheight(100%, 42vh);
+  }
+  @media screen and (device-width: 280px) {
+    @include widthandheight(100%, 57vh);
   }
 
   .pageline-div {
@@ -54,7 +57,6 @@
 
 .project-section {
   height: 100%;
-
   .loadBtn {
     @include loadmore;
   }

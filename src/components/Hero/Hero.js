@@ -44,7 +44,7 @@ const Hero = () => {
             <Button primary> Check out my work</Button>
           </motion.div>
 
-          <motion.div className="techiconsdiv">
+          <motion.div className="techiconsdiv" variants={heroAnim}>
             <h1>Technologies</h1>
             <motion.img src={techimages} alt="techs-icons" />
           </motion.div>

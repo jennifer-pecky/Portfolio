@@ -58,6 +58,9 @@
       @media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
         margin-top: -120%;
       }
+      @media screen and (device-width: 280px) {
+        margin-top: 0%;
+      }
 
       form {
         .form-div {

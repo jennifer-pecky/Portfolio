@@ -11,8 +11,8 @@ export const ProjectsData = [
     title: "Dashtrack",
     img: project6,
     info: "A performance monitoring tool that is used to diagose performance issues, and also suggests best ways to fix or prevent them.",
-    stacks: ["Typescript", "React Js", "Context API", "Tailwind CSS"],
-    url: "https://dasht-rack.vercel.app",
+    stacks: ["Typescript", "React Js", "Context API", "Tailwind CSS", "Vite"],
+    url: "https://dash-track.vercel.app",
     github: "https://github.com/Racheal-spec/dash-track",
   },
   {
