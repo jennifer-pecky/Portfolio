@@ -45,9 +45,22 @@ const FrontProjects = () => {
                 <div className="links">
                   <div className="livelink">
                     <div className="link">
-                      <a href={item.url} rel="noreferrer" target="_blank">
-                        <Button primary>Live link</Button>
-                      </a>
+                      {item.url === "Coming Soon" ? (
+                        <Button
+                          primary
+                          disabled={item.url === "Coming Soon" ? true : false}
+                        >
+                          <a href={item.url} rel="noreferrer" target="_blank">
+                            {item.url === "Coming Soon"
+                              ? "Coming Soon"
+                              : "Live link"}
+                          </a>
+                        </Button>
+                      ) : (
+                        <a href={item.url} rel="noreferrer" target="_blank">
+                          <Button primary>Live link</Button>
+                        </a>
+                      )}
                     </div>
                     <div className="link">
                       <a href={item.github} rel="noreferrer" target="_blank">

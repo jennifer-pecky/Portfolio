@@ -96,7 +96,7 @@
     }
 
     .project-1 {
-      @include flex(center, center);
+      @include flex(center, space-between);
       @media screen and (max-width: 1024px) {
         flex-direction: column;
       }
@@ -110,6 +110,7 @@
         border-radius: 5px;
         margin-right: 40px;
         cursor: pointer;
+
         @media screen and (max-width: 1024px) {
           margin-bottom: 40px;
         }
@@ -121,6 +122,7 @@
 
         img {
           max-width: 100%;
+          // @include widthandheight(300px, 200px);
         }
       }
       #img-2 {
@@ -133,6 +135,7 @@
       .project-text {
         flex: 1;
         margin-left: 30px;
+        //@include widthandheight(300px, 200px);
         @media screen and (max-width: 1024px) {
           margin-left: 0px;
         }
@@ -158,6 +161,7 @@
         }
         ul {
           display: flex;
+          flex-wrap: wrap;
           padding: 16px 0;
           @media screen and (max-width: 768px) {
             flex-wrap: wrap;
