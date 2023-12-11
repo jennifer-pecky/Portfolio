@@ -1,4 +1,4 @@
-@import "/color";
+@import "../../color";
 
 @mixin flex($align, $justify) {
   display: flex;
