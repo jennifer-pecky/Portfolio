@@ -302,7 +302,7 @@
       .front2,
       .front3,
       .front4,
-      .front5 {
+      .front5, .front6, .front7 {
         transition: 0.5s;
         h2 {
           margin: 0;
@@ -323,7 +323,9 @@
       &:hover .card-front.front2,
       &:hover .card-front.front3,
       &:hover .card-front.front4,
-      &:hover .card-front.front5 {
+      &:hover .card-front.front5,
+      &:hover .card-front.front6,
+      &:hover .card-front.front7 {
         height: 60px;
         cursor: pointer;
         h2 {
@@ -348,7 +350,7 @@
             rgba(21, 19, 19, 0.715),
             rgba(23, 20, 19, 0.761)
           ),
-          url("../../Assets/Unica-mockup.png");
+          url("../../Assets/kunng_pow_design.jpg");
         @include background;
         border-radius: 15px;
       }
@@ -357,11 +359,29 @@
             rgba(21, 19, 19, 0.733),
             rgba(17, 14, 14, 0.728)
           ),
-          url("../../Assets/Akinlawon.png");
+          url("../../Assets/clipstyles_design.png");
         @include background;
         border-radius: 15px;
       }
       .card-front.front5 {
+        background: linear-gradient(
+            rgba(23, 21, 21, 0.731),
+            rgba(16, 13, 13, 0.75)
+          ),
+          url("../../Assets/Unica-mockup.png");
+        @include background;
+        border-radius: 15px;
+      }
+      .card-front.front6 {
+        background: linear-gradient(
+            rgba(23, 21, 21, 0.731),
+            rgba(16, 13, 13, 0.75)
+          ),
+          url("../../Assets/Akinlawon.png");
+        @include background;
+        border-radius: 15px;
+      }
+      .card-front.front7 {
         background: linear-gradient(
             rgba(23, 21, 21, 0.731),
             rgba(16, 13, 13, 0.75)

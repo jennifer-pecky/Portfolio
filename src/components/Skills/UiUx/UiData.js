@@ -8,12 +8,25 @@ export const UiData = [
     url: "https://dribbble.com/shots/15957084-App-landing-page-PayBox-Homepage",
   },
   {
+    id: "6",
+    title: "KungPow Marketing Redesign",
+    info: "Kungpow is a marketing agency in the USA that specializes in website development, advertising and SEO strategy.",
+    url: "https://dribbble.com/shots/23685192-Digital-Marketing-Agency",
+  },
+  {
+    id: "5",
+    title: "Clipstyles",
+    info: " Clipstyles is the fastest and easiest to get basic CSS styles for your UI developments. Just select and copy any element you want.",
+    url: "https://dribbble.com/shots/23685129-CSS-Tool-Dashboard",
+  },
+  {
     id: "2",
     title: "Unica",
     info: "Unica is a digital marketing agency focused on branding and marketing. This website was designed with the intent to increase the company's sales and conversation rate",
     url: "https://dribbble.com/shots/15957155-Digital-Marketing-website-landing-page",
     img: img1,
   },
+ 
   {
     id: "3",
     title: "Rachel Tomi Portfolio",

@@ -1,5 +1,4 @@
 import project3 from "../../../Assets/isshot.png";
-import project1 from "../../../Assets/ffcut.jpg";
 import project2 from "../../../Assets/spotify-clone-app4.jpg";
 import project5 from "../../../Assets/Paybox-screenshot.png";
 import project4 from "../../../Assets/dashboard-screenshot2.jpg";
@@ -62,16 +61,6 @@ export const ProjectsData = [
     stacks: ["React Js", "CSS", "Redux", "Material UI", "Spotify Web API"],
     url: "https://tomi-spotify.vercel.app/",
     github: "https://github.com/Racheal-spec/Tomi-spotify-clone",
-  },
-
-  {
-    id: "5",
-    title: "FashionFiesta",
-    img: project1,
-    info: "FashionFiesta is an ecommerce website I developed using react js.A user can create an account, login, add items to cart, remove items from cart, view details of each item and proceed to make a payment using Paystack.",
-    stacks: ["React Js", "SCSS", "Context API", "Firebase", "Paystack API"],
-    url: "https://fashionfiesta-a4172.web.app",
-    github: "https://github.com/Racheal-spec/FashionFiesta",
   },
   {
     id: "6",

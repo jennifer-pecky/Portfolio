@@ -47,14 +47,66 @@ const UiUxProjects = () => {
               <h2>Paybox</h2>
             </div>
           </div>
+
           {/*******************SECOND CARD *******************/}
+          <div className="card">
+            <div className="card-front front1">
+              <div className="content">
+                <h2 className="card-h">KungPow Marketing</h2>
+                <p className="card-h">
+                Kungpow is a marketing agency in the USA that specializes in website development, advertising and SEO strategy.
+                </p>
+                <div className="view-text">
+                  <a
+                    href="https://dribbble.com/shots/23685192-Digital-Marketing-Agency"
+                    className="view-link"
+                  >
+                    <h5>
+                      View Project<span>&#8594;</span>
+                    </h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="card-front front3">
+              <h2>KungPow Marketing</h2>
+            </div>
+          </div>
+
+           {/*******************THIRD CARD *******************/}
+           <div className="card">
+            <div className="card-front front1">
+              <div className="content">
+                <h2 className="card-h">Clipstyles</h2>
+                <p className="card-h">
+                Clipstyles is the fastest and easiest to get basic CSS styles for your UI developments. Just select and copy any element you want.
+                </p>
+                <div className="view-text">
+                  <a
+                    href="https://dribbble.com/shots/23685129-CSS-Tool-Dashboard"
+                    className="view-link"
+                  >
+                    <h5>
+                      View Project<span>&#8594;</span>
+                    </h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="card-front front4">
+              <h2>Clipstyles</h2>
+            </div>
+          </div>
+
+
+          {/*******************FOURTH CARD *******************/}
           <div className="card">
             <div className="card-front front1">
               <div className="content">
                 <h2 className="card-h">Unica</h2>
                 <p className="card-h">
                   Unica is a digital marketing agency focused on branding and
-                  marketing. This website was designed with the intent to
+                  marketing. It was designed with the intent to
                   increase the company's sales and conversation rate
                 </p>
                 <div className="view-text">
@@ -69,12 +121,12 @@ const UiUxProjects = () => {
                 </div>
               </div>
             </div>
-            <div className="card-front front3">
+            <div className="card-front front5">
               <h2>Unica</h2>
             </div>
           </div>
 
-          {/**************** THIRD CARD ***************/}
+          {/**************** FIFTH CARD ***************/}
           <div className="card">
             <div className="card-front front1">
               <div className="content">
@@ -95,12 +147,12 @@ const UiUxProjects = () => {
                 </div>
               </div>
             </div>
-            <div className="card-front front4">
+            <div className="card-front front6">
               <h2>Akinlawon</h2>
             </div>
           </div>
 
-          {/****************FOURTH CARD *********************/}
+          {/****************SIXTH CARD *********************/}
           <div className="card">
             <div className="card-front front1">
               <div className="content">
@@ -121,7 +173,7 @@ const UiUxProjects = () => {
                 </div>
               </div>
             </div>
-            <div className="card-front front5">
+            <div className="card-front front7">
               <h2>Instamoviesearch</h2>
             </div>
           </div>
