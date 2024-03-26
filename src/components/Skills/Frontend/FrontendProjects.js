@@ -62,11 +62,6 @@ const FrontProjects = () => {
                         </a>
                       )}
                     </div>
-                    <div className="link">
-                      <a href={item.github} rel="noreferrer" target="_blank">
-                        <Button outline>Code</Button>
-                      </a>
-                    </div>
                   </div>
                 </div>
               </div>

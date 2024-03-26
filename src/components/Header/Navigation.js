@@ -5,14 +5,10 @@ import "./Header.scss";
 import { motion } from "framer-motion";
 import { lineAnim, lineAnimContainer, navAnim } from "../../Animation";
 import github from "../../Assets/github.png";
-import twitter from "../../Assets/twitter.png";
 import linkedin from "../../Assets/linkedin.png";
 import { SvgWave } from "../../Svg/Svg";
-import Button from "../Button/Button";
-import { useHistory } from "react-router-dom/cjs/react-router-dom";
 
 const Navigation = (props) => {
-  let history = useHistory();
   return (
     <motion.div className="navigation">
       <SvgWave />
@@ -36,23 +32,10 @@ const Navigation = (props) => {
           <NavLink to="/about" className="navlinks" onClick={props.closeMenu}>
             <li>About</li>
           </NavLink>
-          <a
-            href="https://blog.racheltomi.work"
-            target="_blank"
-            rel="noreferrer"
-            className="navlinks"
-            onClick={props.closeMenu}
-          >
-            <li>My Blog</li>
-          </a>
-          <NavLink to="/contact" className="navlinks" onClick={props.closeMenu}>
-            <li>Contact</li>
-          </NavLink>
 
-          <Button onClick={() => history.push("/frontend")} primary>
-            {" "}
-            Download Resume
-          </Button>
+          {/* <NavLink to="/contact" className="navlinks" onClick={props.closeMenu}>
+            <li>Contact</li>
+          </NavLink> */}
         </motion.ul>
       </div>
       <div className="header-wrapper2">
@@ -62,24 +45,19 @@ const Navigation = (props) => {
             method="POST"
             encType="multipart/form-data"
           >
-            Let's chat &rarr; tomisinrachel@gmail.com
+            Let's chat &rarr; ugwojennifer7@gmail.com
           </a>
         </div>
 
         <ul className="social-icons">
           <li>
-            <a href="https://github.com/Racheal-spec/">
+            <a href="https://github.com/jennifer-pecky">
               <img src={github} className="icon1" alt="github" />
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/rachel-tomi-03572a195/">
+            <a href="https://www.linkedin.com/in/jennifer-chioma-maduagwu-7051ab236/">
               <img src={linkedin} className="icon4" alt="linkedin" />
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com/theracheltomi">
-              <img src={twitter} className="icon3" alt="twitter" />
             </a>
           </li>
         </ul>

@@ -1,6 +1,8 @@
 import React from "react";
 import "./About.scss";
 import rightarrow from "../../Assets/Right-arrow.png";
+import cv from "../../Assets/MaduagwuJennifer_Chioma_frontend_resume.pdf";
+// import CV from
 //Animations
 import { motion } from "framer-motion";
 import {
@@ -34,12 +36,13 @@ const About = () => {
         </div>
         <div className="text-content">
           <motion.p variants={heroAnim}>
-            Hi. My name is <span className="name">Tomi</span>, I’m a front-end
-            developer specializing in building accessible web applications for
-            organizations. As a highly passionate developer, I’m constantly
-            motivated to bring my A-game to every project I’m a part of. My
-            passion for web development has always led me to learn about the
-            latest tech trends, which has helped me stay on top of my game.
+            Hello! I'm <span className="name">Jennifer</span>,a frontend
+            developer with a focus on creating accessible web applications for
+            various organizations. With a strong passion for development, I
+            consistently strive to deliver top-notch results in every project I
+            undertake. My enthusiasm for web development drives me to
+            continuously explore and adopt the latest technological
+            advancements, ensuring that I remain at the forefront of my field.
           </motion.p>
           <motion.p className="text" variants={heroAnim}>
             My core qualities are empathy, good communication, and organization.
@@ -51,38 +54,19 @@ const About = () => {
             I'm always on the lookout for new skills to add to my arsenal.
             Whether it's attending webinars, and conferences, or diving into
             online resources, I'm dedicated to staying on the cutting edge of
-            frontend development. When I’m not coding, you will find me writing
-            on my {""}
-            <a
-              href="https://blog.racheltomi.work/"
-              rel="noreferrer"
-              target="_blank"
-            >
-              blog
-            </a>{" "}
-            creating helpful tech content, especially for beginners. My hobbies
-            are all over the place. I love to watch movies, listen to music, and
-            hang out with friends.
-            <div className="marginDiv">
-              I'm eager to collaborate, learn from others, and work on projects
-              that make a real difference in the digital world.
-            </div>
-            <span className="text">
-              {" "}
-              I’m open to work. It would be a pleasure to hear from you.
-            </span>
+            frontend development.
           </motion.p>
         </div>
         <motion.div variants={heroAnim} className="download">
           <Button primary>
             <a
-              href="https://drive.google.com/file/d/1-BzUasPYddJnGcDkqTFV9RYqdd244fM3/view?usp=sharing"
-              target="_blank"
-              className="link"
-              rel="noreferrer"
+              href={cv}
               download
+              className="link btn" // Combine class names
+              target="_blank"
+              rel="noreferrer"
             >
-              <p>View Resume</p>
+              Download Resume
             </a>
           </Button>
         </motion.div>
@@ -114,12 +98,13 @@ const About = () => {
               </div>
               <div className="right-arrow">
                 <img src={rightarrow} alt="downloadlink" />
-                <p>Bootstrap</p>
+                <p>Vue js</p>
               </div>
               <div className="right-arrow">
                 <img src={rightarrow} alt="downloadlink" />
-                <p>RTK Query</p>
+                <p>Bootstrap</p>
               </div>
+
               <div className="right-arrow">
                 <img src={rightarrow} alt="downloadlink" />
                 <p>Tailwindcss</p>
@@ -144,49 +129,10 @@ const About = () => {
                 <img src={rightarrow} alt="downloadlink" />
                 <p>Figma</p>
               </div>
-              <div className="right-arrow">
-                <img src={rightarrow} alt="downloadlink" />
-                <p>Material UI</p>
-              </div>
-              <div className="right-arrow">
-                <img src={rightarrow} alt="downloadlink" />
-                <p>gsap</p>
-              </div>
+
               <div className="right-arrow">
                 <img src={rightarrow} alt="downloadlink" />
                 <p>framer motion</p>
-              </div>
-            </ul>
-
-            <ul>
-              <h5 className="tech-h">FAMILIAR</h5>
-              <div className="right-arrow">
-                <img src={rightarrow} alt="downloadlink" />
-                <p>Node</p>
-              </div>
-              <div className="right-arrow">
-                <img src={rightarrow} alt="downloadlink" />
-                <p>express</p>
-              </div>
-              <div className="right-arrow">
-                <img src={rightarrow} alt="downloadlink" />
-                <p>mongodb</p>
-              </div>
-              <div className="right-arrow">
-                <img src={rightarrow} alt="downloadlink" />
-                <p>Supabase</p>
-              </div>
-              <div className="right-arrow">
-                <img src={rightarrow} alt="downloadlink" />
-                <p>web3</p>
-              </div>
-              <div className="right-arrow">
-                <img src={rightarrow} alt="downloadlink" />
-                <p>adobexd</p>
-              </div>
-              <div className="right-arrow">
-                <img src={rightarrow} alt="downloadlink" />
-                <p>firebase</p>
               </div>
             </ul>
           </div>

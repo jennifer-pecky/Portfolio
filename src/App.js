@@ -30,7 +30,7 @@ function App() {
               <Route path="/frontend" component={Frontend} />
               <Route path="/uiux" component={UiUx} />
               <Route path="/about" component={About} />
-              <Route path="/contact" component={Contact} />
+              {/* <Route path="/contact" component={Contact} /> */}
             </Switch>
           </AnimatePresence>
         </div>

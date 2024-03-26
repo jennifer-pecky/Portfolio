@@ -12,16 +12,16 @@ const Preloader = ({ setLoading }) => {
   return (
     <div className="loader">
       <div className="name-anim">
-        <p className="load">r</p>
-        <p className="load">a</p>
-        <p className="load">c</p>
-        <p className="load">h</p>
+        <p className="load">j</p>
         <p className="load">e</p>
-        <p className="load">l</p>
+        <p className="load">n</p>
+        <p className="load">n</p>
+        <p className="load">y</p>
+        {/* <p className="load">l</p>
         <p className="load">t</p>
         <p className="load">o</p>
         <p className="load">m</p>
-        <p className="load">i</p>
+        <p className="load">i</p> */}
       </div>
     </div>
   );

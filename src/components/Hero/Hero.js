@@ -25,15 +25,15 @@ const Hero = () => {
       <div className="hero-dark">
         <motion.div className="hero-text">
           <motion.h2 variants={heroAnim} className="namegradient">
-            Rachel Tomi
+            Jennifer Chioma
           </motion.h2>
           <motion.h1 variants={heroAnim} className="hero-h1">
             Front-End Developer
           </motion.h1>
 
           <motion.p className="texth1" variants={heroAnim}>
-            I design and develop experiences that make people's lives easier and
-            more efficient.
+            I develop experiences that make people's lives easier and more
+            efficient.
           </motion.p>
 
           <motion.div

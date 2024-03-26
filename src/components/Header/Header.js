@@ -34,7 +34,7 @@ const Header = () => {
             <div className="colordiv"></div>
             <div>
               {" "}
-              <p>Lagos, Nigeria</p>
+              <p>Abuja, Nigeria</p>
             </div>
           </div>
           <div
