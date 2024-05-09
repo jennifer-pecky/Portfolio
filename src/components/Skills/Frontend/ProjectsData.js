@@ -1,8 +1,34 @@
 import project4 from "../../../Assets/dashboard-screenshot2.jpg";
 import project6 from "../../../Assets/dashtrackimg.png";
 import project7 from "../../../Assets/anonimg.png";
+import project5 from "../../../Assets/dami.png";
+import project2 from "../../../Assets/sirleaf.png";
 
 export const ProjectsData = [
+  {
+    id: "4",
+    title: "Pages by dami",
+    img: project5,
+    info: "Pages by dami design-built with Next js and Tailwind",
+    stacks: [
+      "Tech Stack:",
+      "Next js",
+      "Tailwind css",
+      "Material UI",
+
+      "Typescript",
+    ],
+    url: "https://pagesbydami.printivo.com/",
+  },
+
+  {
+    id: "4",
+    title: "Sirleaf Software agency",
+    img: project2,
+    info: "Sirleaf Software Agency crafted its design using React.js and Bootstrap",
+    stacks: ["Tech Stack:", "Next js", "Bootstrap css", "Typescript"],
+    url: "https://ssda-web.vercel.app/",
+  },
   {
     id: "1",
     title: "Dashtrack",
